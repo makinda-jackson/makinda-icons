@@ -22,11 +22,14 @@ class MakindaFileIconProvider : FileIconProvider {
             IconLoader.getIcon("/icons/makinda/$name.svg", MakindaFileIconProvider::class.java)
 
         private val ICON_ARCHIVE: Icon = load("archive")
+        private val ICON_ASTRO: Icon = load("astro")
         private val ICON_AUDIO: Icon = load("audio")
+        private val ICON_C: Icon = load("c")
         private val ICON_CODE: Icon = load("code")
         private val ICON_CODE_SQUARE: Icon = load("code-square")
         private val ICON_COMMAND_LINE: Icon = load("command-line")
         private val ICON_CONFIG: Icon = load("config")
+        private val ICON_CPP: Icon = load("cpp")
         private val ICON_CSS: Icon = load("css")
         private val ICON_CSV: Icon = load("csv")
         private val ICON_DATABASE: Icon = load("database")
@@ -47,18 +50,30 @@ class MakindaFileIconProvider : FileIconProvider {
         private val ICON_FOLDER_SHARED: Icon = load("folder-shared")
         private val ICON_FOLDER_VIDEO: Icon = load("folder-video")
         private val ICON_FOLDER_ZIP: Icon = load("folder-zip")
+        private val ICON_FONT: Icon = load("font")
         private val ICON_GIF: Icon = load("gif")
         private val ICON_GITHUB: Icon = load("github")
+        private val ICON_GO: Icon = load("go")
         private val ICON_HTML: Icon = load("html")
         private val ICON_IMAGE: Icon = load("image")
+        private val ICON_JAVA: Icon = load("java")
+        private val ICON_JS: Icon = load("js")
         private val ICON_JSON: Icon = load("json")
         private val ICON_LICENSE: Icon = load("license")
+        private val ICON_LOCK: Icon = load("lock")
         private val ICON_MARKDOWN: Icon = load("markdown")
         private val ICON_PDF: Icon = load("pdf")
+        private val ICON_PHP: Icon = load("php")
         private val ICON_PPT: Icon = load("ppt")
+        private val ICON_PYTHON: Icon = load("python")
+        private val ICON_RUBY: Icon = load("ruby")
+        private val ICON_RUST: Icon = load("rust")
+        private val ICON_SVELTE: Icon = load("svelte")
         private val ICON_SVG: Icon = load("svg")
+        private val ICON_TS: Icon = load("ts")
         private val ICON_TXT: Icon = load("txt")
         private val ICON_VIDEO: Icon = load("video")
+        private val ICON_VUE: Icon = load("vue")
         private val ICON_XML: Icon = load("xml")
         private val ICON_YAML: Icon = load("yaml")
 
@@ -66,42 +81,60 @@ class MakindaFileIconProvider : FileIconProvider {
         "7z" to ICON_ARCHIVE,
         "aac" to ICON_AUDIO,
         "adoc" to ICON_MARKDOWN,
+        "astro" to ICON_ASTRO,
         "avi" to ICON_VIDEO,
         "avif" to ICON_IMAGE,
         "bash" to ICON_COMMAND_LINE,
         "bat" to ICON_COMMAND_LINE,
         "bmp" to ICON_IMAGE,
         "bz2" to ICON_ARCHIVE,
+        "c" to ICON_C,
+        "cc" to ICON_CPP,
         "cfg" to ICON_CONFIG,
-        "cjs" to ICON_CODE,
+        "cjs" to ICON_JS,
+        "class" to ICON_JAVA,
         "cmd" to ICON_COMMAND_LINE,
         "coffee" to ICON_CODE,
         "conf" to ICON_CONFIG,
         "config" to ICON_CONFIG,
+        "cpp" to ICON_CPP,
         "css" to ICON_CSS,
         "csv" to ICON_CSV,
+        "cts" to ICON_TS,
+        "cxx" to ICON_CPP,
         "db" to ICON_DATABASE,
         "doc" to ICON_DOC,
         "docx" to ICON_DOC,
         "env" to ICON_CONFIG,
+        "eot" to ICON_FONT,
+        "erb" to ICON_RUBY,
         "fig" to ICON_FIGMA,
         "fish" to ICON_COMMAND_LINE,
         "flac" to ICON_AUDIO,
         "flv" to ICON_VIDEO,
+        "gemspec" to ICON_RUBY,
         "gif" to ICON_GIF,
+        "go" to ICON_GO,
         "gz" to ICON_ARCHIVE,
+        "h" to ICON_C,
         "heic" to ICON_IMAGE,
+        "hh" to ICON_CPP,
+        "hpp" to ICON_CPP,
         "htm" to ICON_HTML,
         "html" to ICON_HTML,
+        "hxx" to ICON_CPP,
         "ico" to ICON_IMAGE,
         "ini" to ICON_CONFIG,
+        "ipynb" to ICON_PYTHON,
+        "jar" to ICON_JAVA,
+        "java" to ICON_JAVA,
         "jpeg" to ICON_IMAGE,
         "jpg" to ICON_IMAGE,
-        "js" to ICON_CODE,
+        "js" to ICON_JS,
         "json" to ICON_JSON,
         "json5" to ICON_JSON,
         "jsonc" to ICON_JSON,
-        "jsx" to ICON_CODE,
+        "jsx" to ICON_JS,
         "key" to ICON_PPT,
         "less" to ICON_CSS,
         "log" to ICON_TXT,
@@ -110,22 +143,32 @@ class MakindaFileIconProvider : FileIconProvider {
         "md" to ICON_MARKDOWN,
         "mdown" to ICON_MARKDOWN,
         "mdx" to ICON_MARKDOWN,
-        "mjs" to ICON_CODE,
+        "mjs" to ICON_JS,
         "mkv" to ICON_VIDEO,
         "mov" to ICON_VIDEO,
         "mp3" to ICON_AUDIO,
         "mp4" to ICON_VIDEO,
+        "mts" to ICON_TS,
         "odt" to ICON_DOC,
         "ogg" to ICON_AUDIO,
+        "otf" to ICON_FONT,
         "pcss" to ICON_CSS,
         "pdf" to ICON_PDF,
+        "php" to ICON_PHP,
+        "phtml" to ICON_PHP,
         "plist" to ICON_XML,
         "png" to ICON_IMAGE,
         "ppt" to ICON_PPT,
         "pptx" to ICON_PPT,
         "properties" to ICON_CONFIG,
         "ps1" to ICON_COMMAND_LINE,
+        "py" to ICON_PYTHON,
+        "pyc" to ICON_PYTHON,
+        "pyi" to ICON_PYTHON,
+        "pyw" to ICON_PYTHON,
         "rar" to ICON_ARCHIVE,
+        "rb" to ICON_RUBY,
+        "rs" to ICON_RUST,
         "rst" to ICON_MARKDOWN,
         "rtf" to ICON_DOC,
         "sass" to ICON_CSS,
@@ -135,18 +178,23 @@ class MakindaFileIconProvider : FileIconProvider {
         "sqlite" to ICON_DATABASE,
         "sqlite3" to ICON_DATABASE,
         "styl" to ICON_CSS,
+        "svelte" to ICON_SVELTE,
         "svg" to ICON_SVG,
         "tar" to ICON_ARCHIVE,
         "tgz" to ICON_ARCHIVE,
         "tiff" to ICON_IMAGE,
         "toml" to ICON_YAML,
-        "ts" to ICON_CODE,
+        "ts" to ICON_TS,
         "tsv" to ICON_CSV,
-        "tsx" to ICON_CODE,
+        "tsx" to ICON_TS,
+        "ttf" to ICON_FONT,
         "txt" to ICON_TXT,
+        "vue" to ICON_VUE,
         "wav" to ICON_AUDIO,
         "webm" to ICON_VIDEO,
         "webp" to ICON_IMAGE,
+        "woff" to ICON_FONT,
+        "woff2" to ICON_FONT,
         "xhtml" to ICON_HTML,
         "xml" to ICON_XML,
         "xsd" to ICON_XML,
@@ -161,6 +209,7 @@ class MakindaFileIconProvider : FileIconProvider {
 
         private val BY_NAME: Map<String, Icon> = mapOf(
         ".browserslistrc" to ICON_CONFIG,
+        ".dockerignore" to ICON_COMMAND_LINE,
         ".editorconfig" to ICON_CONFIG,
         ".env" to ICON_CONFIG,
         ".env.development" to ICON_CONFIG,
@@ -176,22 +225,45 @@ class MakindaFileIconProvider : FileIconProvider {
         ".prettierignore" to ICON_CONFIG,
         ".prettierrc" to ICON_CONFIG,
         ".stylelintrc" to ICON_CONFIG,
+        "bun.lockb" to ICON_LOCK,
+        "cargo.lock" to ICON_RUST,
+        "cargo.toml" to ICON_RUST,
         "codeowners" to ICON_GITHUB,
+        "composer.lock" to ICON_LOCK,
         "copying" to ICON_LICENSE,
+        "docker-compose.yaml" to ICON_YAML,
+        "docker-compose.yml" to ICON_YAML,
+        "dockerfile" to ICON_COMMAND_LINE,
         "funding.yml" to ICON_GITHUB,
+        "gemfile" to ICON_RUBY,
+        "gemfile.lock" to ICON_RUBY,
+        "go.mod" to ICON_GO,
+        "go.sum" to ICON_GO,
         "issue_template.md" to ICON_GITHUB,
         "jsconfig.json" to ICON_JSON,
         "license" to ICON_LICENSE,
         "license.md" to ICON_LICENSE,
         "license.txt" to ICON_LICENSE,
+        "makefile" to ICON_COMMAND_LINE,
         "notice" to ICON_LICENSE,
+        "package-lock.json" to ICON_JSON,
         "package.json" to ICON_JSON,
+        "pipfile" to ICON_PYTHON,
+        "pipfile.lock" to ICON_PYTHON,
+        "pnpm-lock.yaml" to ICON_LOCK,
+        "poetry.lock" to ICON_LOCK,
         "pull_request_template.md" to ICON_GITHUB,
+        "pyproject.toml" to ICON_PYTHON,
+        "rakefile" to ICON_RUBY,
         "readme" to ICON_MARKDOWN,
         "readme.markdown" to ICON_MARKDOWN,
         "readme.md" to ICON_MARKDOWN,
+        "requirements.txt" to ICON_PYTHON,
+        "setup.cfg" to ICON_PYTHON,
+        "setup.py" to ICON_PYTHON,
         "tsconfig.base.json" to ICON_JSON,
         "tsconfig.json" to ICON_JSON,
+        "yarn.lock" to ICON_LOCK,
         )
     }
 }

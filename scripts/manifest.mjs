@@ -22,19 +22,101 @@ export const fileIcons = [
     {
         name: "code",
         src: "Programming Language/source-code.svg",
-        extensions: ["mjs", "cjs", "jsx", "tsx", "ts", "js", "coffee"],
-        languageIds: ["javascript", "typescript", "javascriptreact", "typescriptreact"]
+        extensions: ["coffee"],
+        languageIds: ["coffeescript"]
     },
     {
         name: "code-square",
         src: "Programming Language/source-code-square.svg",
-        languageIds: ["coffeescript"]
+    },
+    {
+        name: "js",
+        src: "Programming Language/java-script.svg",
+        extensions: ["js", "mjs", "cjs", "jsx"],
+        languageIds: ["javascript", "javascriptreact"]
+    },
+    {
+        name: "ts",
+        src: "Programming Language/code.svg",
+        extensions: ["ts", "tsx", "mts", "cts"],
+        languageIds: ["typescript", "typescriptreact"]
+    },
+    {
+        name: "java",
+        src: "Programming Language/java.svg",
+        extensions: ["java", "class", "jar"],
+        languageIds: ["java"]
+    },
+    {
+        name: "php",
+        src: "Programming Language/php.svg",
+        extensions: ["php", "phtml"],
+        languageIds: ["php"]
+    },
+    {
+        name: "c",
+        src: "Programming Language/c-programming.svg",
+        extensions: ["c", "h"],
+        languageIds: ["c"]
+    },
+    {
+        name: "cpp",
+        src: "Programming Language/c++.svg",
+        extensions: ["cpp", "cc", "cxx", "hpp", "hh", "hxx"],
+        languageIds: ["cpp"]
+    },
+    {
+        name: "python",
+        src: "Programming Language/source-code.svg",
+        extensions: ["py", "pyi", "pyc", "pyw", "ipynb"],
+        fileNames: ["requirements.txt", "Pipfile", "Pipfile.lock", "pyproject.toml", "setup.py", "setup.cfg"],
+        languageIds: ["python"]
+    },
+    {
+        name: "ruby",
+        src: "Programming Language/source-code.svg",
+        extensions: ["rb", "erb", "gemspec"],
+        fileNames: ["Gemfile", "Gemfile.lock", "Rakefile"],
+        languageIds: ["ruby"]
+    },
+    {
+        name: "go",
+        src: "Programming Language/source-code.svg",
+        extensions: ["go"],
+        fileNames: ["go.mod", "go.sum"],
+        languageIds: ["go"]
+    },
+    {
+        name: "rust",
+        src: "Programming Language/source-code.svg",
+        extensions: ["rs"],
+        fileNames: ["Cargo.toml", "Cargo.lock"],
+        languageIds: ["rust"]
+    },
+    {
+        name: "vue",
+        src: "Programming Language/web-design-01.svg",
+        extensions: ["vue"],
+        languageIds: ["vue"]
+    },
+    {
+        name: "svelte",
+        src: "Programming Language/web-design-01.svg",
+        extensions: ["svelte"],
+        languageIds: ["svelte"]
+    },
+    {
+        name: "astro",
+        src: "Programming Language/web-design-01.svg",
+        extensions: ["astro"],
+        languageIds: ["astro"]
     },
     {
         name: "command-line",
         src: "Programming Language/command-line.svg",
         extensions: ["sh", "bash", "zsh", "fish", "ps1", "bat", "cmd"],
-        languageIds: ["shellscript", "powershell", "bat"]
+        fileNames: ["Makefile", "Dockerfile", ".dockerignore"],
+        languageIds: ["shellscript", "powershell", "bat", "dockerfile", "makefile"]
     },
 
     // Web markup / styles
@@ -54,15 +136,16 @@ export const fileIcons = [
     // Data / config
     {
         name: "json",
-        src: "Programming Language/source-code.svg",
+        src: "Programming Language/document-code.svg",
         extensions: ["json", "jsonc", "json5"],
-        fileNames: ["package.json", "tsconfig.json", "tsconfig.base.json", "jsconfig.json"],
+        fileNames: ["package.json", "package-lock.json", "tsconfig.json", "tsconfig.base.json", "jsconfig.json"],
         languageIds: ["json", "jsonc"]
     },
     {
         name: "yaml",
-        src: "Programming Language/document-code.svg",
+        src: "Programming Language/binary-code.svg",
         extensions: ["yml", "yaml", "toml"],
+        fileNames: ["docker-compose.yml", "docker-compose.yaml"],
         languageIds: ["yaml", "toml"]
     },
     {
@@ -139,6 +222,18 @@ export const fileIcons = [
         extensions: ["fig"]
     },
 
+    // Fonts
+    {
+        name: "font",
+        src: "Edit Formatting/text-font.svg",
+        extensions: ["ttf", "otf", "woff", "woff2", "eot"]
+    },
+    // Lockfiles / misc
+    {
+        name: "lock",
+        src: "Files Folders/file-locked.svg",
+        fileNames: ["yarn.lock", "pnpm-lock.yaml", "bun.lockb", "composer.lock", "poetry.lock"]
+    },
     // Folder variants (each gets a `-open` companion below)
     { name: "folder-shared", src: "Files Folders/folder-shared-01.svg" },
     { name: "folder-cloud", src: "Files Folders/folder-cloud.svg" },

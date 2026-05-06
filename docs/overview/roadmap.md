@@ -66,14 +66,15 @@ Editors covered after Phase 1: **VS Code, VS Code Insiders, VSCodium, Cursor, Wi
 
 **Why:** small, high-leverage. Lua overlay is a few hundred lines.
 
-- [ ] New emitter `scripts/build-nvim.mjs`
-- [ ] Generate `lua/makinda-icons/init.lua` calling `nvim-web-devicons.set_icon` per manifest entry
-- [ ] Pick closest Nerd Font glyph per icon (table maintained in the emitter)
+- [x] New emitter [`scripts/build-nvim.mjs`](../../scripts/build-nvim.mjs)
+- [x] Generate `lua/makinda-icons/init.lua` + `icons.lua` calling `nvim-web-devicons.set_icon` / `set_icon_by_filename` per manifest entry
+- [x] Pick closest Nerd Font glyph + Makinda palette color per icon (table maintained in the emitter)
+- [x] `npm run build:nvim` produces a drop-in plugin under [`packages/nvim/`](../../packages/nvim/) — 55 icons, 127 ext mappings, 56 filename mappings, zero missing
 - [ ] Optional later: `mini.icons` adapter
-- [ ] Publish on GitHub; document `lazy.nvim` / `packer` install
+- [ ] Publish on GitHub as its own repo (or `packages/nvim` subtree); document `lazy.nvim` / `packer` install
 - [ ] **Stretch:** custom Nerd Font patch that bakes Makinda's own SVGs into private-use codepoints
 
-**Known limitation:** terminal Neovim is monochrome — duotone collapses to a single foreground color.
+**Known limitation:** terminal Neovim is monochrome — icons are Nerd Font glyphs, not the SVGs themselves. Highlight colors still come from the Makinda palette.
 
 ---
 

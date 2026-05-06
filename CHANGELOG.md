@@ -2,6 +2,13 @@
 
 All notable changes to **Makinda Icons** will be documented in this file.
 
+## [Unreleased]
+
+### Added
+
+- **Phase 3 — Neovim emitter.** New build script [`scripts/build-nvim.mjs`](scripts/build-nvim.mjs) reads the manifest and generates a `nvim-web-devicons` overlay plugin under [`packages/nvim/`](packages/nvim/) (`lua/makinda-icons/init.lua` + `icons.lua`). Maps 55 Makinda file icons to Nerd Font codepoints + Makinda palette colors, covering 127 extensions and 56 exact filenames with zero gaps. Install via `lazy.nvim` / `packer` and call `require("makinda-icons").setup()`. See [`packages/nvim/README.md`](packages/nvim/README.md).
+- New npm scripts: `build:nvim` and an updated `build:all` that now chains VS Code → JetBrains → Neovim.
+
 ## [1.0.11] — 2026-05-06
 
 ### Fixed
