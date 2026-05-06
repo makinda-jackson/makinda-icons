@@ -10,13 +10,13 @@
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-icons">
-    <img alt="Version" src="https://img.shields.io/vscode-marketplace/v/makindajack.makinda-icons.svg?style=for-the-badge&labelColor=0e0e0f&color=ff6b0d&label=version">
+    <img alt="Version" src="https://vsmarketplacebadges.dev/version-short/makindajack.makinda-icons.svg?style=for-the-badge&labelColor=0e0e0f&color=ff6b0d&label=version">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-icons">
-    <img alt="Installs" src="https://img.shields.io/vscode-marketplace/d/makindajack.makinda-icons.svg?style=for-the-badge&labelColor=0e0e0f&color=ff6b0d&label=installs">
+    <img alt="Installs" src="https://vsmarketplacebadges.dev/installs-short/makindajack.makinda-icons.svg?style=for-the-badge&labelColor=0e0e0f&color=ff6b0d&label=installs">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-icons">
-    <img alt="Rating" src="https://img.shields.io/vscode-marketplace/r/makindajack.makinda-icons.svg?style=for-the-badge&labelColor=0e0e0f&color=ff6b0d&label=rating">
+    <img alt="Rating" src="https://vsmarketplacebadges.dev/rating-short/makindajack.makinda-icons.svg?style=for-the-badge&labelColor=0e0e0f&color=ff6b0d&label=rating">
   </a>
 </p>
 

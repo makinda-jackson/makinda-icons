@@ -13,6 +13,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import url from "node:url";
+import { generateFonts, FontAssetType, OtherAssetType } from "fantasticon";
 import { fileIcons, folderNames, productIcons } from "./manifest.mjs";
 import { enabledStyles, styles as allStyles } from "./styles.mjs";
 
@@ -43,7 +44,7 @@ function resolveSrc(style, manifestPath) {
     return path.join(HUGEICONS_ROOT, style.srcRoot, remapped, rest.join("/"));
 }
 
-function buildStyle(style) {
+async function buildStyle(style) {
     const fileIconsDarkDir = path.join(repoRoot, "icons", style.id, "file-icons", "dark");
     const fileIconsLightDir = path.join(repoRoot, "icons", style.id, "file-icons", "light");
     const productIconsDir = path.join(repoRoot, "icons", style.id, "product-icons");
@@ -178,20 +179,61 @@ function buildStyle(style) {
         JSON.stringify(fileTheme, null, 2) + "\n",
     );
 
-    // ---- Product icons ----
+    // Product icon themes only support glyphs from a font (not iconPath/SVG).
+    // We copy SVGs (currentColor) and bake them into a WOFF font with
+    // deterministic PUA codepoints starting at 0xE000.
     const productDefs = {};
+    const codepoints = {};
+    let nextCp = 0xe000;
+    const validIds = [];
     for (const icon of productIcons) {
         const dest = path.join(productIconsDir, `${icon.id}.svg`);
         if (!copyIcon(icon.src, dest, {
             label: `product-icon ${icon.id}`,
             recolorToCurrentColor: true,
         })) continue;
-        productDefs[icon.id] = { iconPath: `../icons/${style.id}/product-icons/${icon.id}.svg` };
+        codepoints[icon.id] = nextCp++;
+        validIds.push(icon.id);
     }
+
+    const fontsDir = path.join(themesDir, "fonts");
+    fs.mkdirSync(fontsDir, { recursive: true });
+    const fontName = `makinda-product-icons-${style.id}`;
+
+    await generateFonts({
+        name: fontName,
+        inputDir: productIconsDir,
+        outputDir: fontsDir,
+        fontTypes: [FontAssetType.WOFF, FontAssetType.WOFF2],
+        assetTypes: [OtherAssetType.JSON],
+        codepoints,
+        normalize: true,
+        fontHeight: 1000,
+        descent: 0,
+        prefix: "",
+        tag: "",
+        formatOptions: { json: { indent: 2 } },
+    });
+
+    for (const id of validIds) {
+        const cp = codepoints[id].toString(16).toUpperCase().padStart(4, "0");
+        productDefs[id] = { fontCharacter: `\\${cp}`, fontId: fontName };
+    }
+
     const productTheme = {
         $schema: "vscode://schemas/product-icon-theme",
+        fonts: [
+            {
+                id: fontName,
+                src: [
+                    { path: `./fonts/${fontName}.woff2`, format: "woff2" },
+                    { path: `./fonts/${fontName}.woff`, format: "woff" },
+                ],
+                weight: "normal",
+                style: "normal",
+            },
+        ],
         iconDefinitions: productDefs,
-        fonts: [],
     };
     fs.writeFileSync(
         path.join(themesDir, `makinda-product-icon-theme.${style.id}.json`),
@@ -207,7 +249,7 @@ console.log(`  HUGEICONS_ROOT: ${HUGEICONS_ROOT}`);
 let failed = false;
 for (const style of targetStyles) {
     console.log(`\n  ▸ ${style.id} (${style.label}) — ${style.srcRoot}`);
-    const { copied, missing } = buildStyle(style);
+    const { copied, missing } = await buildStyle(style);
     console.log(`      copied:  ${copied}`);
     console.log(`      missing: ${missing.length}`);
     if (missing.length) {

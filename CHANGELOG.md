@@ -2,6 +2,18 @@
 
 All notable changes to **Makinda Icons** will be documented in this file.
 
+## [1.0.10] — 2026-05-06
+
+### Fixed
+
+- **Product icon theme — invalid format.** Earlier 1.0.x releases shipped the product icon theme with `iconDefinitions` pointing at `iconPath` (SVG files). VS Code's product icon theme spec only accepts glyphs from a bundled font (`fontCharacter` + `fontId`), so it rejected the theme with `"Invalid format for product icons theme file: Must contain iconDefinitions and fonts."`
+  - Added [`fantasticon`](https://www.npmjs.com/package/fantasticon) to bake the 84 product-icon SVGs into a real WOFF/WOFF2 font with deterministic PUA codepoints (`U+E000`+).
+  - Build now emits `themes/fonts/makinda-product-icons-<style>.woff{,2}` and a sidecar JSON map.
+  - Theme JSON rewritten to a single `fonts` entry referencing both formats and `iconDefinitions` mapping each codicon ID to a `fontCharacter`.
+- **Marketplace overview** — logo and badges now load:
+  - Switched the version / installs / rating badges from `img.shields.io/vscode-marketplace/*` (retired by shields.io — was rendering as "RETIRED BADGE") to Microsoft's `vsmarketplacebadges.dev`, which still honours the Makinda colour params.
+  - Repushed all `images/` assets to `main` so the absolute logo URL resolves.
+
 ## [1.0.9] — 2026-05-06
 
 ### Changed

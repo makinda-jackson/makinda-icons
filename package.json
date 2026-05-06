@@ -2,7 +2,7 @@
     "name": "makinda-icons",
     "displayName": "Makinda Icons",
     "description": "Multi-style icon themes for VS Code by Makinda Jackson, inspired by Hugeicons. File icons + product icons.",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "publisher": "makindajack",
     "icon": "images/icon-dark.png",
     "galleryBanner": {
@@ -53,5 +53,8 @@
         "build:clean": "rm -rf icons themes && node scripts/build.mjs",
         "build:solid": "node scripts/build.mjs --style=solid",
         "build:duotone": "node scripts/build.mjs --style=duotone"
+    },
+    "devDependencies": {
+        "fantasticon": "^4.1.0"
     }
 }
