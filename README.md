@@ -65,6 +65,7 @@ Edit [scripts/manifest.mjs](scripts/manifest.mjs) and re-run `npm run build`. Th
 - [What are VS Code icons](docs/overview/what-are-vscode-icons.md)
 - [How the project works](docs/overview/how-it-works.md)
 - [Supported IDEs](docs/overview/supported-ides.md)
+- [Roadmap & TODO](docs/overview/roadmap.md)
 - [How file icons work](docs/file-icons/how-file-icons-work.md)
 - [File icons checklist](docs/file-icons/file-icons-list.md)
 - [How product icons work](docs/product-icons/how-product-icons-work.md)
