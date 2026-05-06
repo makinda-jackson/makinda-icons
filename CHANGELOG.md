@@ -2,6 +2,12 @@
 
 All notable changes to **Makinda Icons** will be documented in this file.
 
+## [1.0.3] — 2026-05-06
+
+### Fixed
+
+- **Product icons now adopt the editor theme color.** Previously every product-icon SVG shipped with a hard-coded `#141B34` fill from Hugeicons, which made them invisible (or near-invisible) on dark themes. The build now rewrites all `fill`/`stroke` colors on product icons to `currentColor`, so VS Code's CSS-driven theming applies correctly. File icons retain their original colors — VS Code never recolors file icons.
+
 ## [1.0.2] — 2026-05-06
 
 ### Changed

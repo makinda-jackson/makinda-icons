@@ -61,7 +61,18 @@ function buildStyle(style) {
             missing.push(`${opts.label}: ${srcRel}`);
             return false;
         }
-        fs.copyFileSync(srcAbs, destPath);
+        if (opts.recolorToCurrentColor) {
+            // VS Code colors product icons via CSS `color`, which only works when
+            // the SVG uses fill="currentColor"/stroke="currentColor". Hugeicons
+            // ships with hard-coded #141B34 fills, so without this rewrite the
+            // icons render as dark navy on dark themes (invisible).
+            const svg = fs.readFileSync(srcAbs, "utf8")
+                .replace(/fill\s*=\s*"#[0-9a-fA-F]{3,8}"/g, 'fill="currentColor"')
+                .replace(/stroke\s*=\s*"#[0-9a-fA-F]{3,8}"/g, 'stroke="currentColor"');
+            fs.writeFileSync(destPath, svg);
+        } else {
+            fs.copyFileSync(srcAbs, destPath);
+        }
         copied++;
         return true;
     }
@@ -117,7 +128,10 @@ function buildStyle(style) {
     const productDefs = {};
     for (const icon of productIcons) {
         const dest = path.join(productIconsDir, `${icon.id}.svg`);
-        if (!copyIcon(icon.src, dest, { label: `product-icon ${icon.id}` })) continue;
+        if (!copyIcon(icon.src, dest, {
+            label: `product-icon ${icon.id}`,
+            recolorToCurrentColor: true,
+        })) continue;
         productDefs[icon.id] = { iconPath: `../icons/${style.id}/product-icons/${icon.id}.svg` };
     }
     const productTheme = {
