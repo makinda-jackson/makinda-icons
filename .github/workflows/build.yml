@@ -1,0 +1,41 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # The Hugeicons Pro source tree isn't checked into the repo. Without it,
+    # only the validation steps that touch `themes/` and the existing
+    # generated assets can run. The matrix targets are exercised in the
+    # `package` job below using a stub fixture if HUGEICONS_FIXTURE is set.
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      # Sanity-check the manifest + theme JSON parsers without needing
+      # access to the proprietary Hugeicons SVG library.
+      - name: Validate manifest
+        run: node -e "import('./scripts/manifest.mjs').then(m => { if (!Array.isArray(m.fileIcons)) process.exit(1); console.log('manifest ok:', m.fileIcons.length, 'file icons'); })"
+
+      - name: Validate generated theme JSON
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('themes/makinda-file-icon-theme.solid.json','utf8'))"
+          node -e "JSON.parse(require('fs').readFileSync('themes/makinda-product-icon-theme.solid.json','utf8'))"
+
+      - name: vsce package smoke test
+        run: npx --yes @vscode/vsce package --no-dependencies --out makinda-icons.ci.vsix
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vsix
+          path: makinda-icons.ci.vsix
+          if-no-files-found: error

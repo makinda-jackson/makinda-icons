@@ -21,7 +21,19 @@ In practice that means **every editor in the VS Code family** — the original M
 | **Coder / code-server**                |     ✅     |      ✅       | Open VSX or `.vsix`                                                                     |
 | **Eclipse Theia**–based IDEs           |     ✅     |      ✅       | Open VSX · most Theia distributions support both icon-theme types                       |
 
-> **Not supported:** JetBrains IDEs (IntelliJ, WebStorm, PyCharm…), Sublime Text, Atom, Vim/Neovim, Emacs, Xcode, Visual Studio (the full IDE), Android Studio, Fleet. These editors don't implement the VS Code icon-theme format. A separate icon pack would be needed for each — that work is out of scope for this repo.
+> **Other editors (separate packages, same source manifest):**
+> JetBrains IDEs · Neovim · Emacs · Sublime Text · Visual Studio (Windows IDE).
+> Each lives under [`packages/`](../../packages/) and is generated from
+> [`scripts/manifest.mjs`](../../scripts/manifest.mjs) — no icon copying.
+> See the per-package READMEs for install steps:
+>
+> - [packages/jetbrains/README.md](../../packages/jetbrains/README.md) — IntelliJ IDEA, WebStorm, PyCharm, GoLand, Rider, RubyMine, CLion, PhpStorm, DataGrip, Android Studio
+> - [packages/nvim/README.md](../../packages/nvim/README.md) — Neovim via `nvim-web-devicons` (Nerd Font glyphs)
+> - [packages/emacs/README.md](../../packages/emacs/README.md) — Emacs via `nerd-icons.el`
+> - [packages/sublime/Makinda Icons/README.md](../../packages/sublime/Makinda%20Icons/README.md) — Sublime Text 3+
+> - [packages/visualstudio/MakindaIcons/README.md](../../packages/visualstudio/MakindaIcons/README.md) — Visual Studio 2022 (Windows)
+>
+> **Not planned:** Xcode, Fleet, Atom — no public icon-theme API.
 
 ## Marketplaces
 

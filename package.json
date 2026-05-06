@@ -58,7 +58,8 @@
         "build:emacs": "node scripts/build-emacs.mjs",
         "build:sublime": "node scripts/build-sublime.mjs",
         "build:vsfull": "node scripts/build-vsfull.mjs",
-        "build:all": "node scripts/build.mjs && node scripts/build-jetbrains.mjs && node scripts/build-nvim.mjs && node scripts/build-emacs.mjs && node scripts/build-sublime.mjs && node scripts/build-vsfull.mjs"
+        "build:contact-sheet": "node scripts/build-contact-sheet.mjs",
+        "build:all": "node scripts/build.mjs && node scripts/build-jetbrains.mjs && node scripts/build-nvim.mjs && node scripts/build-emacs.mjs && node scripts/build-sublime.mjs && node scripts/build-vsfull.mjs && node scripts/build-contact-sheet.mjs"
     },
     "devDependencies": {
         "@resvg/resvg-js": "^2.6.2",

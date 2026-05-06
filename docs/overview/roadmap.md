@@ -4,6 +4,26 @@ Living checklist of what's done, what's next, and which editors we're targeting.
 
 > **Single source of truth:** every target below reads from [`scripts/manifest.mjs`](../../scripts/manifest.mjs). New editors = new emitters, never new icon copies.
 
+## Build status (locally generated)
+
+| Target            | Emitter                                                                    | Output                                            | Status     |
+| ----------------- | -------------------------------------------------------------------------- | ------------------------------------------------- | ---------- |
+| **VS Code**       | [`scripts/build.mjs`](../../scripts/build.mjs)                             | `themes/*.json` + 252 SVGs                        | ✅ shipped |
+| **JetBrains**     | [`scripts/build-jetbrains.mjs`](../../scripts/build-jetbrains.mjs)         | `.jar` plugin · 110 SVGs · Kotlin provider        | ✅ built   |
+| **Neovim**        | [`scripts/build-nvim.mjs`](../../scripts/build-nvim.mjs)                   | `packages/nvim/lua/makinda-icons/`                | ✅ built   |
+| **Emacs**         | [`scripts/build-emacs.mjs`](../../scripts/build-emacs.mjs)                 | `packages/emacs/makinda-icons.el`                 | ✅ built   |
+| **Sublime Text**  | [`scripts/build-sublime.mjs`](../../scripts/build-sublime.mjs)             | `makinda-icons.sublime-package` · 165 PNGs        | ✅ built   |
+| **Visual Studio** | [`scripts/build-vsfull.mjs`](../../scripts/build-vsfull.mjs)               | `makinda-icons.vsix` · 165 PNGs · 55 monikers     | ✅ built   |
+| **Visual QA**     | [`scripts/build-contact-sheet.mjs`](../../scripts/build-contact-sheet.mjs) | [`images/contact-sheet.solid.png`](../../images/) | ✅ built   |
+
+Run everything: `npm run build:all`.
+
+What's **not** automatable from this repo:
+
+- Marketplace publishes (VS Code, JetBrains, Open VSX, MELPA, Package Control, VS Marketplace) — need account credentials.
+- Tagging GitHub releases — needs `gh` auth.
+- Visual Studio 2022 smoke test — needs Windows.
+
 ---
 
 ## Where we are today
@@ -53,7 +73,7 @@ Editors covered after Phase 1: **VS Code, VS Code Insiders, VSCodium, Cursor, Wi
   - [x] Generate `plugin.xml` with `fileIconProvider` extension
 - [x] `./gradlew buildPlugin` produces installable `.zip` — [`packages/jetbrains/build/distributions/makinda-icons-jetbrains-1.0.0.zip`](../../packages/jetbrains/build/distributions/) (110 KB, 80 SVGs)
 - [ ] Publish to JetBrains Marketplace (needs `PUBLISH_TOKEN` from <https://plugins.jetbrains.com/author/me/tokens>)
-- [ ] Move JetBrains from "Not supported" → matrix in [`supported-ides.md`](supported-ides.md) as **experimental**
+- [x] Move JetBrains from "Not supported" → cross-linked in [`supported-ides.md`](supported-ides.md) (and Neovim / Emacs / Sublime / Visual Studio along with it)
 
 **Known limitations:**
 
@@ -135,9 +155,9 @@ If any of these change upstream, reopen the question.
 
 Things that benefit every target:
 
-- [ ] Visual QA harness — render every icon to a contact sheet PNG per build
-- [ ] CI: run `npm run build:clean` on every PR and fail if `themes/` would change without a manifest edit
-- [ ] Automated screenshot generation for the README of each package
+- [x] Visual QA harness — [`scripts/build-contact-sheet.mjs`](../../scripts/build-contact-sheet.mjs) renders every icon in the active style to [`images/contact-sheet.<style>.svg`](../../images/) + a 2× PNG. Run via `npm run build:contact-sheet` (or as part of `build:all`).
+- [x] CI: [`.github/workflows/build.yml`](../../.github/workflows/build.yml) validates the manifest, theme JSON, and runs `vsce package` on every PR/push to `main`, attaching the resulting `.vsix` as an artifact.
+- [x] Automated screenshot generation — the contact sheet doubles as the README / Marketplace screenshot for each style; per-package READMEs link back to it.
 - [ ] Versioning policy across the multi-package setup (single repo tag vs. independent versions)
 
 ---
