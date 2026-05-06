@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>com.makinda.icons</id>
+    <name>Makinda Icons</name>
+    <vendor email="hello@makinda.dev" url="https://github.com/makindajack/makinda-icons">Makinda Jackson</vendor>
+
+    <description><![CDATA[
+        File icons for the IntelliJ Platform — inspired by Hugeicons, tuned for the Makinda brand.<br/>
+        Same icon set as the <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-icons">Makinda Icons VS Code extension</a>.<br/><br/>
+        Currently shipping the <b>Solid</b> style (40 file icons). Auto-adapts to light/dark themes.
+    ]]></description>
+
+    <change-notes><![CDATA[
+        <h3>1.0.0</h3>
+        <ul>
+            <li>Initial JetBrains release: 40 file icons via FileIconProvider</li>
+            <li>Auto light/dark via <code>_dark.svg</code> variants</li>
+        </ul>
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileIconProvider implementation="com.makinda.icons.MakindaFileIconProvider"/>
+    </extensions>
+</idea-plugin>

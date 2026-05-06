@@ -250,108 +250,340 @@
       "fontCharacter": "\\E039",
       "fontId": "makinda-product-icons-solid"
     },
-    "debug-step-into": {
+    "debug-continue": {
       "fontCharacter": "\\E03A",
       "fontId": "makinda-product-icons-solid"
     },
-    "debug-step-out": {
+    "debug-pause": {
       "fontCharacter": "\\E03B",
       "fontId": "makinda-product-icons-solid"
     },
-    "debug-step-over": {
+    "debug-stop": {
       "fontCharacter": "\\E03C",
       "fontId": "makinda-product-icons-solid"
     },
-    "terminal": {
+    "debug-restart": {
       "fontCharacter": "\\E03D",
       "fontId": "makinda-product-icons-solid"
     },
-    "terminal-bash": {
+    "debug-disconnect": {
       "fontCharacter": "\\E03E",
       "fontId": "makinda-product-icons-solid"
     },
-    "bell": {
+    "debug-step-into": {
       "fontCharacter": "\\E03F",
       "fontId": "makinda-product-icons-solid"
     },
-    "bell-dot": {
+    "debug-step-out": {
       "fontCharacter": "\\E040",
       "fontId": "makinda-product-icons-solid"
     },
-    "heart": {
+    "debug-step-over": {
       "fontCharacter": "\\E041",
       "fontId": "makinda-product-icons-solid"
     },
-    "star-empty": {
+    "stop": {
       "fontCharacter": "\\E042",
       "fontId": "makinda-product-icons-solid"
     },
-    "star-full": {
+    "stop-circle": {
       "fontCharacter": "\\E043",
       "fontId": "makinda-product-icons-solid"
     },
-    "bookmark": {
+    "record": {
       "fontCharacter": "\\E044",
       "fontId": "makinda-product-icons-solid"
     },
-    "tag": {
+    "record-keys": {
       "fontCharacter": "\\E045",
       "fontId": "makinda-product-icons-solid"
     },
-    "filter": {
+    "terminal": {
       "fontCharacter": "\\E046",
       "fontId": "makinda-product-icons-solid"
     },
-    "refresh": {
+    "terminal-bash": {
       "fontCharacter": "\\E047",
       "fontId": "makinda-product-icons-solid"
     },
-    "sync": {
+    "bell": {
       "fontCharacter": "\\E048",
       "fontId": "makinda-product-icons-solid"
     },
-    "lock": {
+    "bell-dot": {
       "fontCharacter": "\\E049",
       "fontId": "makinda-product-icons-solid"
     },
-    "unlock": {
+    "heart": {
       "fontCharacter": "\\E04A",
       "fontId": "makinda-product-icons-solid"
     },
-    "menu": {
+    "star-empty": {
       "fontCharacter": "\\E04B",
       "fontId": "makinda-product-icons-solid"
     },
-    "ellipsis": {
+    "star-full": {
       "fontCharacter": "\\E04C",
       "fontId": "makinda-product-icons-solid"
     },
-    "kebab-vertical": {
+    "bookmark": {
       "fontCharacter": "\\E04D",
       "fontId": "makinda-product-icons-solid"
     },
-    "home": {
+    "tag": {
       "fontCharacter": "\\E04E",
       "fontId": "makinda-product-icons-solid"
     },
-    "globe": {
+    "filter": {
       "fontCharacter": "\\E04F",
       "fontId": "makinda-product-icons-solid"
     },
-    "key": {
+    "refresh": {
       "fontCharacter": "\\E050",
       "fontId": "makinda-product-icons-solid"
     },
-    "gear": {
+    "sync": {
       "fontCharacter": "\\E051",
       "fontId": "makinda-product-icons-solid"
     },
-    "tools": {
+    "lock": {
       "fontCharacter": "\\E052",
       "fontId": "makinda-product-icons-solid"
     },
-    "lightbulb": {
+    "unlock": {
       "fontCharacter": "\\E053",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "menu": {
+      "fontCharacter": "\\E054",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "ellipsis": {
+      "fontCharacter": "\\E055",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "kebab-vertical": {
+      "fontCharacter": "\\E056",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "home": {
+      "fontCharacter": "\\E057",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "globe": {
+      "fontCharacter": "\\E058",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "key": {
+      "fontCharacter": "\\E059",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "gear": {
+      "fontCharacter": "\\E05A",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "tools": {
+      "fontCharacter": "\\E05B",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "lightbulb": {
+      "fontCharacter": "\\E05C",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "pin": {
+      "fontCharacter": "\\E05D",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "pinned": {
+      "fontCharacter": "\\E05E",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "unpin": {
+      "fontCharacter": "\\E05F",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "clock": {
+      "fontCharacter": "\\E060",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "history": {
+      "fontCharacter": "\\E061",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "calendar": {
+      "fontCharacter": "\\E062",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "layout-sidebar-left": {
+      "fontCharacter": "\\E063",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "layout-sidebar-right": {
+      "fontCharacter": "\\E064",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "chrome-close": {
+      "fontCharacter": "\\E065",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "chrome-minimize": {
+      "fontCharacter": "\\E066",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "chrome-maximize": {
+      "fontCharacter": "\\E067",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "chrome-restore": {
+      "fontCharacter": "\\E068",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "screen-full": {
+      "fontCharacter": "\\E069",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "screen-normal": {
+      "fontCharacter": "\\E06A",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "cloud": {
+      "fontCharacter": "\\E06B",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "cloud-download": {
+      "fontCharacter": "\\E06C",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "cloud-upload": {
+      "fontCharacter": "\\E06D",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "desktop-download": {
+      "fontCharacter": "\\E06E",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "archive": {
+      "fontCharacter": "\\E06F",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "package": {
+      "fontCharacter": "\\E070",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "repo": {
+      "fontCharacter": "\\E071",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "library": {
+      "fontCharacter": "\\E072",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "code": {
+      "fontCharacter": "\\E073",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "go-to-file": {
+      "fontCharacter": "\\E074",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "file-code": {
+      "fontCharacter": "\\E075",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "export": {
+      "fontCharacter": "\\E076",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "import": {
+      "fontCharacter": "\\E077",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "discard": {
+      "fontCharacter": "\\E078",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "link": {
+      "fontCharacter": "\\E079",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "link-external": {
+      "fontCharacter": "\\E07A",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "share": {
+      "fontCharacter": "\\E07B",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "mail": {
+      "fontCharacter": "\\E07C",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "mail-read": {
+      "fontCharacter": "\\E07D",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "inbox": {
+      "fontCharacter": "\\E07E",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "reply": {
+      "fontCharacter": "\\E07F",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "comment-discussion": {
+      "fontCharacter": "\\E080",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "note": {
+      "fontCharacter": "\\E081",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "notebook": {
+      "fontCharacter": "\\E082",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "output": {
+      "fontCharacter": "\\E083",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "console": {
+      "fontCharacter": "\\E084",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "sign-in": {
+      "fontCharacter": "\\E085",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "sign-out": {
+      "fontCharacter": "\\E086",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "feedback": {
+      "fontCharacter": "\\E087",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "thumbsup": {
+      "fontCharacter": "\\E088",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "thumbsdown": {
+      "fontCharacter": "\\E089",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "loading": {
+      "fontCharacter": "\\E08A",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "search-stop": {
+      "fontCharacter": "\\E08B",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "zoom-in": {
+      "fontCharacter": "\\E08C",
+      "fontId": "makinda-product-icons-solid"
+    },
+    "zoom-out": {
+      "fontCharacter": "\\E08D",
       "fontId": "makinda-product-icons-solid"
     }
   }

@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/makindajack/makinda-icons/main/images/icon-dark.png" alt="Makinda Icons" width="128">
+  <img src="images/icon-dark.png" alt="Makinda Icons" width="128">
   <br>
   Makinda Icons
   <br>

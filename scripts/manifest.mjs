@@ -236,8 +236,11 @@ export const productIcons = [
     { id: "source-control-view-icon", src: "Git/git-branch.svg" },
     { id: "debug-alt", src: "Programming Language/bug-01.svg" },
     { id: "run-view-icon", src: "Programming Language/bug-01.svg" },
-    { id: "extensions", src: "Geometric Shapes/shapes.svg" },
-    { id: "extensions-view-icon", src: "Geometric Shapes/shapes.svg" },
+    // Hugeicons doesn't ship a puzzle-piece in many categories; the Game &
+    // Sports puzzle reads more like "extension/plugin" than the previous
+    // generic "shapes" glyph.
+    { id: "extensions", src: "Game & Sports/puzzle.svg" },
+    { id: "extensions-view-icon", src: "Game & Sports/puzzle.svg" },
     { id: "account", src: "Users/user-circle.svg", optional: true },
     { id: "settings-gear", src: "Settings/setting-01.svg" },
     { id: "settings-view-bar-icon", src: "Settings/setting-01.svg" },
@@ -299,11 +302,22 @@ export const productIcons = [
 
     // Debug
     { id: "bug", src: "Programming Language/bug-01.svg" },
-    { id: "play", src: "Edit Formatting/view.svg" },
-    { id: "debug-start", src: "Edit Formatting/view.svg" },
+    // `play` and `debug-start` previously pointed at view.svg (an eye glyph);
+    // Media/play is the proper triangle play button.
+    { id: "play", src: "Media/play.svg" },
+    { id: "debug-start", src: "Media/play.svg" },
+    { id: "debug-continue", src: "Media/play.svg" },
+    { id: "debug-pause", src: "Media/pause.svg" },
+    { id: "debug-stop", src: "Media/stop.svg" },
+    { id: "debug-restart", src: "Edit Formatting/reload.svg" },
+    { id: "debug-disconnect", src: "Login Logout/logout-01.svg" },
     { id: "debug-step-into", src: "Programming Language/step-into.svg" },
     { id: "debug-step-out", src: "Programming Language/step-out.svg" },
     { id: "debug-step-over", src: "Programming Language/step-over.svg" },
+    { id: "stop", src: "Media/stop.svg" },
+    { id: "stop-circle", src: "Media/stop.svg" },
+    { id: "record", src: "Media/record.svg" },
+    { id: "record-keys", src: "Media/record.svg" },
 
     // Terminal
     { id: "terminal", src: "Programming Language/command-line.svg" },
@@ -335,4 +349,71 @@ export const productIcons = [
     { id: "gear", src: "Settings/setting-01.svg" },
     { id: "tools", src: "Settings/wrench-01.svg" },
     { id: "lightbulb", src: "Devices/bulb.svg" },
+
+    // Pin / clock / history
+    { id: "pin", src: "Location Map/pin.svg" },
+    { id: "pinned", src: "Location Map/pin.svg" },
+    { id: "unpin", src: "Location Map/pin-off.svg" },
+    { id: "clock", src: "Date and Time/clock-01.svg" },
+    { id: "history", src: "Date and Time/time-04.svg" },
+    { id: "calendar", src: "Date and Time/calendar-01.svg" },
+
+    // Layout / window chrome
+    { id: "layout-sidebar-left", src: "Programming Language/sidebar-left.svg" },
+    { id: "layout-sidebar-right", src: "Programming Language/sidebar-right.svg" },
+    { id: "chrome-close", src: "Add Remove Delete/cancel-01.svg" },
+    { id: "chrome-minimize", src: "Edit Formatting/minimize-screen.svg" },
+    { id: "chrome-maximize", src: "Edit Formatting/maximize-screen.svg" },
+    { id: "chrome-restore", src: "Edit Formatting/minimize-screen.svg" },
+    { id: "screen-full", src: "Edit Formatting/maximize-screen.svg" },
+    { id: "screen-normal", src: "Edit Formatting/minimize-screen.svg" },
+
+    // Cloud / transfer
+    { id: "cloud", src: "Weather/cloud.svg" },
+    { id: "cloud-download", src: "Download Upload/cloud-download.svg" },
+    { id: "cloud-upload", src: "Download Upload/cloud-upload.svg" },
+    { id: "desktop-download", src: "Download Upload/download-01.svg" },
+
+    // Files / archive / package / repo
+    { id: "archive", src: "Files Folders/archive-01.svg" },
+    { id: "package", src: "E-Commerce/package.svg" },
+    { id: "repo", src: "Programming Language/repository.svg" },
+    { id: "library", src: "Files Folders/folder-library.svg" },
+    { id: "code", src: "Programming Language/code.svg" },
+    { id: "go-to-file", src: "Files Folders/file-search.svg" },
+    { id: "file-code", src: "Programming Language/document-code.svg" },
+    { id: "export", src: "Files Folders/file-export.svg" },
+    { id: "import", src: "Files Folders/file-import.svg" },
+    { id: "discard", src: "Edit Formatting/eraser.svg" },
+
+    // Links / sharing
+    { id: "link", src: "Link Unlink/link-01.svg" },
+    { id: "link-external", src: "Link Unlink/link-forward.svg" },
+    { id: "share", src: "Link Unlink/share-01.svg" },
+
+    // Mail / inbox / chat
+    { id: "mail", src: "Communications/mail-01.svg" },
+    { id: "mail-read", src: "Communications/mail-open-01.svg" },
+    { id: "inbox", src: "Communications/inbox.svg" },
+    { id: "reply", src: "Communications/mail-reply-01.svg" },
+    { id: "comment-discussion", src: "Communications/bubble-chat.svg" },
+
+    // Notes / output
+    { id: "note", src: "Note Task/note-01.svg" },
+    { id: "notebook", src: "Note Task/notebook.svg" },
+    { id: "output", src: "Programming Language/console.svg" },
+    { id: "console", src: "Programming Language/console.svg" },
+
+    // Sign in/out
+    { id: "sign-in", src: "Login Logout/login-01.svg" },
+    { id: "sign-out", src: "Login Logout/logout-01.svg" },
+
+    // Feedback / misc
+    { id: "feedback", src: "Bookmark Favorite/thumbs-up.svg" },
+    { id: "thumbsup", src: "Bookmark Favorite/thumbs-up.svg" },
+    { id: "thumbsdown", src: "Bookmark Favorite/thumbs-down.svg" },
+    { id: "loading", src: "Edit Formatting/reload.svg" },
+    { id: "search-stop", src: "Search/search-remove.svg" },
+    { id: "zoom-in", src: "Search/zoom-in-area.svg" },
+    { id: "zoom-out", src: "Search/zoom-out-area.svg" },
 ];

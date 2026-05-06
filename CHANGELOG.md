@@ -2,6 +2,12 @@
 
 All notable changes to **Makinda Icons** will be documented in this file.
 
+## [1.0.11] — 2026-05-06
+
+### Fixed
+
+- **Marketplace overview logo** — switched the README H1 image from an absolute `raw.githubusercontent.com` URL to a relative `images/icon-dark.png` path so the VS Code Marketplace renders it from the packaged asset (matches the approach used in `makinda-themes`).
+
 ## [1.0.10] — 2026-05-06
 
 ### Fixed

@@ -45,17 +45,20 @@ Editors covered after Phase 1: **VS Code, VS Code Insiders, VSCodium, Cursor, Wi
 
 **Targets:** IntelliJ IDEA, WebStorm, PyCharm, Rider, GoLand, RubyMine, CLion, PhpStorm, DataGrip, Android Studio.
 
-- [ ] Scaffold `packages/jetbrains/` Gradle plugin project (`org.jetbrains.intellij`)
-- [ ] New emitter `scripts/build-jetbrains.mjs`
-  - [ ] Copy SVGs into `src/main/resources/icons/`
-  - [ ] Generate `MakindaFileIconProvider.kt` from manifest
-  - [ ] Emit `_dark.svg` variants from the duotone palette
-  - [ ] Generate `plugin.xml` extensions: `fileIconProvider`, `iconMapper`
-- [ ] `./gradlew buildPlugin` produces installable `.zip`
-- [ ] Publish to JetBrains Marketplace
+- [x] Scaffold `packages/jetbrains/` Gradle plugin project (`org.jetbrains.intellij`)
+- [x] New emitter `scripts/build-jetbrains.mjs`
+  - [x] Copy SVGs into `src/main/resources/icons/makinda/`
+  - [x] Generate `MakindaFileIconProvider.kt` from manifest
+  - [x] Emit `_dark.svg` variants (auto-picked by IntelliJ in dark themes)
+  - [x] Generate `plugin.xml` with `fileIconProvider` extension
+- [x] `./gradlew buildPlugin` produces installable `.zip` — [`packages/jetbrains/build/distributions/makinda-icons-jetbrains-1.0.0.zip`](../../packages/jetbrains/build/distributions/) (110 KB, 80 SVGs)
+- [ ] Publish to JetBrains Marketplace (needs `PUBLISH_TOKEN` from <https://plugins.jetbrains.com/author/me/tokens>)
 - [ ] Move JetBrains from "Not supported" → matrix in [`supported-ides.md`](supported-ides.md) as **experimental**
 
-**Known limitation:** product-icon parity is partial — JetBrains exposes overrides for a subset of UI icons only.
+**Known limitations:**
+
+- Product/UI icon parity is **out of scope** — JetBrains does not expose a public API for UI icons (only individual platform plugins can theme themselves). The plugin ships file icons only.
+- `iconMapper` was removed from the plan — `FileIconProvider` covers the full Project view + tabs use case.
 
 ---
 
