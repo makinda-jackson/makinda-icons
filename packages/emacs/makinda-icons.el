@@ -3,7 +3,7 @@
 ;; Author: Makinda Jackson <hello@makinda.dev>
 ;; Maintainer: Makinda Jackson <hello@makinda.dev>
 ;; URL: https://github.com/makindajack/makinda-icons
-;; Version: 1.0.11
+;; Version: 1.0.12
 ;; Package-Requires: ((emacs "27.1") (nerd-icons "0.1.0"))
 ;; Keywords: faces, icons, files
 

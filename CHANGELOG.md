@@ -2,15 +2,17 @@
 
 All notable changes to **Makinda Icons** will be documented in this file.
 
-## [Unreleased]
+## [1.0.12] — 2026-05-06
 
 ### Added
 
-- **Visual QA contact sheet.** New build script [`scripts/build-contact-sheet.mjs`](scripts/build-contact-sheet.mjs) composes every file icon in the active style into a labeled grid SVG and rasterizes it via `@resvg/resvg-js` to [`images/contact-sheet.solid.png`](images/contact-sheet.solid.png) (142 KB) — usable as the README hero / Marketplace screenshot, and as a regression check between builds.
+- **mini.icons adapter** for Neovim — `scripts/build-nvim.mjs` now also emits `packages/nvim/lua/makinda-icons/mini.lua`, a ready-to-merge config you can pass straight to `require("mini.icons").setup(require("makinda-icons.mini"))`.
+- **Versioning policy** — [`docs/overview/versioning.md`](docs/overview/versioning.md) documents the single-version, single-tag, multi-package release flow.
+- **Visual QA contact sheet.** New build script [`scripts/build-contact-sheet.mjs`](scripts/build-contact-sheet.mjs) composes every file icon in the active style into a labeled grid SVG and rasterizes it via `@resvg/resvg-js` to [`images/contact-sheet.solid.png`](images/contact-sheet.solid.png) (142 KB).
 - **CI workflow.** New [`.github/workflows/build.yml`](.github/workflows/build.yml) validates the manifest + theme JSON and runs `vsce package` on every push and PR to `main`, attaching the resulting `.vsix` as a build artifact.
-- **Multi-IDE cross-references.** [`docs/overview/supported-ides.md`](docs/overview/supported-ides.md) now links to each per-package README (JetBrains, Neovim, Emacs, Sublime, Visual Studio) so the multi-target story is discoverable from the main docs.
+- **Multi-IDE cross-references.** [`docs/overview/supported-ides.md`](docs/overview/supported-ides.md) now links to each per-package README (JetBrains, Neovim, Emacs, Sublime, Visual Studio).
 - **Phase 6 — Visual Studio (Windows IDE) emitter.** New build script [`scripts/build-vsfull.mjs`](scripts/build-vsfull.mjs) emits a VSIX 2.0 package under [`packages/visualstudio/MakindaIcons/`](packages/visualstudio/) targeting Visual Studio 2022 Community / Pro / Enterprise. Generates 165 PNGs (55 icons × 16/24/32 px), a `MakindaIcons.imagemanifest` with 55 monikers / 127 extension bindings / 57 filename bindings, an `extension.vsixmanifest`, and a `[Content_Types].xml`. Auto-zips into `packages/visualstudio/makinda-icons.vsix` (~126 KB) when `zip` is on PATH.
-- New npm scripts `build:vsfull` and `build:contact-sheet`; `build:all` now chains VS Code → JetBrains → Neovim → Emacs → Sublime → Visual Studio → contact sheet.
+- New npm scripts `build:vsfull`, `build:contact-sheet`; `build:all` now chains VS Code → JetBrains → Neovim → Emacs → Sublime → Visual Studio → contact sheet.
 
 ### Changed
 
