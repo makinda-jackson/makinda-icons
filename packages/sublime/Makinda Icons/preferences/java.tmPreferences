@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda java</string>
+    <key>scope</key>
+    <string>source.java</string>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>Packages/Makinda Icons/icons/java</string>
+    </dict>
+    <key>uuid</key>
+    <string>BE4F421F-F0D5-5BDF-9689-58463B64CD34</string>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda go</string>
+    <key>scope</key>
+    <string>source.go</string>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>Packages/Makinda Icons/icons/go</string>
+    </dict>
+    <key>uuid</key>
+    <string>B39E31FB-5BC9-5695-9F15-A41CF7032742</string>
+</dict>
+</plist>

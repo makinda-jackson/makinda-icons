@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda php</string>
+    <key>scope</key>
+    <string>source.php</string>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>Packages/Makinda Icons/icons/php</string>
+    </dict>
+    <key>uuid</key>
+    <string>C8C4961D-69F1-511D-978C-51FB055E9C5A</string>
+</dict>
+</plist>

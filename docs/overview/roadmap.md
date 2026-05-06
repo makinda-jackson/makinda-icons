@@ -94,10 +94,11 @@ Same Nerd Font / monochrome caveats as Neovim.
 
 **Why later:** Sublime needs **rasterized PNGs** at 1×/2×/3× and only ships file icons (no product-icon API). Slower iteration loop.
 
-- [ ] Emitter `scripts/build-sublime.mjs` using `resvg-js` or `sharp`
-- [ ] Output 18 / 36 / 54 px PNGs
-- [ ] Generate `.tmPreferences` per syntax binding
-- [ ] Package as `Makinda Icons.sublime-package`
+- [x] Emitter [`scripts/build-sublime.mjs`](../../scripts/build-sublime.mjs) using [`@resvg/resvg-js`](https://www.npmjs.com/package/@resvg/resvg-js)
+- [x] Output 16 / 32 / 48 px PNGs (Sublime's `@2x` / `@3x` convention) — 55 icons × 3 sizes = 165 PNGs per build
+- [x] Generate `.tmPreferences` per scope binding — 23 prefs covering the 23 manifest entries with mapped TextMate scopes (extension-only icons can't bind via Sublime's public API)
+- [x] Package layout under [`packages/sublime/Makinda Icons/`](../../packages/sublime/) with self-contained README and zip command
+- [ ] Auto-zip into `makinda-icons.sublime-package` (currently a documented one-liner)
 - [ ] Submit to Package Control
 
 ---

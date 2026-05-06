@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda rust</string>
+    <key>scope</key>
+    <string>source.rust</string>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>Packages/Makinda Icons/icons/rust</string>
+    </dict>
+    <key>uuid</key>
+    <string>50159FE9-7AB6-5711-9B15-EBBB83D629F6</string>
+</dict>
+</plist>
