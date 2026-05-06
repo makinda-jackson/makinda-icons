@@ -1,0 +1,49 @@
+{
+    "name": "makinda-icons",
+    "displayName": "Makinda Icons",
+    "description": "Multi-style icon themes for VS Code by Makinda Jackson, drawn from Hugeicons. File icons + product icons.",
+    "version": "0.0.1",
+    "publisher": "makindajack",
+    "private": true,
+    "license": "SEE LICENSE IN LICENSE.md",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "icons",
+        "icon-theme",
+        "product-icons",
+        "solid",
+        "duotone",
+        "hugeicons"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/makindajack/makinda-icons"
+    },
+    "contributes": {
+        "iconThemes": [
+            {
+                "id": "makinda-file-icons-solid",
+                "label": "Makinda Icons (Solid)",
+                "path": "./themes/makinda-file-icon-theme.solid.json"
+            }
+        ],
+        "productIconThemes": [
+            {
+                "id": "makinda-product-icons-solid",
+                "label": "Makinda Product Icons (Solid)",
+                "path": "./themes/makinda-product-icon-theme.solid.json"
+            }
+        ]
+    },
+    "scripts": {
+        "build": "node scripts/build.mjs",
+        "build:clean": "rm -rf icons themes && node scripts/build.mjs",
+        "build:solid": "node scripts/build.mjs --style=solid",
+        "build:duotone": "node scripts/build.mjs --style=duotone"
+    }
+}

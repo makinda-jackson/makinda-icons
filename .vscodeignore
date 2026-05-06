@@ -1,0 +1,12 @@
+.git/
+.github/
+.vscode/
+.gitignore
+node_modules/
+scripts/
+docs/
+
+# Source SVG folders are shipped (themes reference them)
+# but raw Hugeicons originals stay out of the .vsix.
+
+*.vsix
