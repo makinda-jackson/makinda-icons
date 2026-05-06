@@ -2,124 +2,244 @@
   "$schema": "vscode://schemas/icon-theme",
   "iconDefinitions": {
     "_file": {
-      "iconPath": "../icons/solid/file-icons/file.svg"
+      "iconPath": "../icons/solid/file-icons/dark/file.svg"
     },
     "_folder": {
-      "iconPath": "../icons/solid/file-icons/folder.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder.svg"
     },
     "_folder_open": {
-      "iconPath": "../icons/solid/file-icons/folder-open.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-open.svg"
     },
     "_code": {
-      "iconPath": "../icons/solid/file-icons/code.svg"
+      "iconPath": "../icons/solid/file-icons/dark/code.svg"
     },
     "_code_square": {
-      "iconPath": "../icons/solid/file-icons/code-square.svg"
+      "iconPath": "../icons/solid/file-icons/dark/code-square.svg"
     },
     "_command_line": {
-      "iconPath": "../icons/solid/file-icons/command-line.svg"
+      "iconPath": "../icons/solid/file-icons/dark/command-line.svg"
     },
     "_html": {
-      "iconPath": "../icons/solid/file-icons/html.svg"
+      "iconPath": "../icons/solid/file-icons/dark/html.svg"
     },
     "_css": {
-      "iconPath": "../icons/solid/file-icons/css.svg"
+      "iconPath": "../icons/solid/file-icons/dark/css.svg"
     },
     "_json": {
-      "iconPath": "../icons/solid/file-icons/json.svg"
+      "iconPath": "../icons/solid/file-icons/dark/json.svg"
     },
     "_yaml": {
-      "iconPath": "../icons/solid/file-icons/yaml.svg"
+      "iconPath": "../icons/solid/file-icons/dark/yaml.svg"
     },
     "_xml": {
-      "iconPath": "../icons/solid/file-icons/xml.svg"
+      "iconPath": "../icons/solid/file-icons/dark/xml.svg"
     },
     "_markdown": {
-      "iconPath": "../icons/solid/file-icons/markdown.svg"
+      "iconPath": "../icons/solid/file-icons/dark/markdown.svg"
     },
     "_license": {
-      "iconPath": "../icons/solid/file-icons/license.svg"
+      "iconPath": "../icons/solid/file-icons/dark/license.svg"
     },
     "_config": {
-      "iconPath": "../icons/solid/file-icons/config.svg"
+      "iconPath": "../icons/solid/file-icons/dark/config.svg"
     },
     "_pdf": {
-      "iconPath": "../icons/solid/file-icons/pdf.svg"
+      "iconPath": "../icons/solid/file-icons/dark/pdf.svg"
     },
     "_doc": {
-      "iconPath": "../icons/solid/file-icons/doc.svg"
+      "iconPath": "../icons/solid/file-icons/dark/doc.svg"
     },
     "_ppt": {
-      "iconPath": "../icons/solid/file-icons/ppt.svg"
+      "iconPath": "../icons/solid/file-icons/dark/ppt.svg"
     },
     "_csv": {
-      "iconPath": "../icons/solid/file-icons/csv.svg"
+      "iconPath": "../icons/solid/file-icons/dark/csv.svg"
     },
     "_txt": {
-      "iconPath": "../icons/solid/file-icons/txt.svg"
+      "iconPath": "../icons/solid/file-icons/dark/txt.svg"
     },
     "_image": {
-      "iconPath": "../icons/solid/file-icons/image.svg"
+      "iconPath": "../icons/solid/file-icons/dark/image.svg"
     },
     "_svg": {
-      "iconPath": "../icons/solid/file-icons/svg.svg"
+      "iconPath": "../icons/solid/file-icons/dark/svg.svg"
     },
     "_gif": {
-      "iconPath": "../icons/solid/file-icons/gif.svg"
+      "iconPath": "../icons/solid/file-icons/dark/gif.svg"
     },
     "_video": {
-      "iconPath": "../icons/solid/file-icons/video.svg"
+      "iconPath": "../icons/solid/file-icons/dark/video.svg"
     },
     "_audio": {
-      "iconPath": "../icons/solid/file-icons/audio.svg"
+      "iconPath": "../icons/solid/file-icons/dark/audio.svg"
     },
     "_archive": {
-      "iconPath": "../icons/solid/file-icons/archive.svg"
+      "iconPath": "../icons/solid/file-icons/dark/archive.svg"
     },
     "_database": {
-      "iconPath": "../icons/solid/file-icons/database.svg"
+      "iconPath": "../icons/solid/file-icons/dark/database.svg"
     },
     "_github": {
-      "iconPath": "../icons/solid/file-icons/github.svg"
+      "iconPath": "../icons/solid/file-icons/dark/github.svg"
     },
     "_figma": {
-      "iconPath": "../icons/solid/file-icons/figma.svg"
+      "iconPath": "../icons/solid/file-icons/dark/figma.svg"
     },
     "_folder_shared": {
-      "iconPath": "../icons/solid/file-icons/folder-shared.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-shared.svg"
     },
     "_folder_cloud": {
-      "iconPath": "../icons/solid/file-icons/folder-cloud.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-cloud.svg"
     },
     "_folder_locked": {
-      "iconPath": "../icons/solid/file-icons/folder-locked.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-locked.svg"
     },
     "_folder_zip": {
-      "iconPath": "../icons/solid/file-icons/folder-zip.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-zip.svg"
     },
     "_folder_music": {
-      "iconPath": "../icons/solid/file-icons/folder-music.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-music.svg"
     },
     "_folder_video": {
-      "iconPath": "../icons/solid/file-icons/folder-video.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-video.svg"
     },
     "_folder_audio": {
-      "iconPath": "../icons/solid/file-icons/folder-audio.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-audio.svg"
     },
     "_folder_search": {
-      "iconPath": "../icons/solid/file-icons/folder-search.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-search.svg"
     },
     "_folder_favourite": {
-      "iconPath": "../icons/solid/file-icons/folder-favourite.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-favourite.svg"
     },
     "_folder_library": {
-      "iconPath": "../icons/solid/file-icons/folder-library.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-library.svg"
     },
     "_folder_management": {
-      "iconPath": "../icons/solid/file-icons/folder-management.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-management.svg"
     },
     "_folder_code": {
-      "iconPath": "../icons/solid/file-icons/folder-code.svg"
+      "iconPath": "../icons/solid/file-icons/dark/folder-code.svg"
+    },
+    "_file_light": {
+      "iconPath": "../icons/solid/file-icons/light/file.svg"
+    },
+    "_folder_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder.svg"
+    },
+    "_folder_open_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-open.svg"
+    },
+    "_code_light": {
+      "iconPath": "../icons/solid/file-icons/light/code.svg"
+    },
+    "_code_square_light": {
+      "iconPath": "../icons/solid/file-icons/light/code-square.svg"
+    },
+    "_command_line_light": {
+      "iconPath": "../icons/solid/file-icons/light/command-line.svg"
+    },
+    "_html_light": {
+      "iconPath": "../icons/solid/file-icons/light/html.svg"
+    },
+    "_css_light": {
+      "iconPath": "../icons/solid/file-icons/light/css.svg"
+    },
+    "_json_light": {
+      "iconPath": "../icons/solid/file-icons/light/json.svg"
+    },
+    "_yaml_light": {
+      "iconPath": "../icons/solid/file-icons/light/yaml.svg"
+    },
+    "_xml_light": {
+      "iconPath": "../icons/solid/file-icons/light/xml.svg"
+    },
+    "_markdown_light": {
+      "iconPath": "../icons/solid/file-icons/light/markdown.svg"
+    },
+    "_license_light": {
+      "iconPath": "../icons/solid/file-icons/light/license.svg"
+    },
+    "_config_light": {
+      "iconPath": "../icons/solid/file-icons/light/config.svg"
+    },
+    "_pdf_light": {
+      "iconPath": "../icons/solid/file-icons/light/pdf.svg"
+    },
+    "_doc_light": {
+      "iconPath": "../icons/solid/file-icons/light/doc.svg"
+    },
+    "_ppt_light": {
+      "iconPath": "../icons/solid/file-icons/light/ppt.svg"
+    },
+    "_csv_light": {
+      "iconPath": "../icons/solid/file-icons/light/csv.svg"
+    },
+    "_txt_light": {
+      "iconPath": "../icons/solid/file-icons/light/txt.svg"
+    },
+    "_image_light": {
+      "iconPath": "../icons/solid/file-icons/light/image.svg"
+    },
+    "_svg_light": {
+      "iconPath": "../icons/solid/file-icons/light/svg.svg"
+    },
+    "_gif_light": {
+      "iconPath": "../icons/solid/file-icons/light/gif.svg"
+    },
+    "_video_light": {
+      "iconPath": "../icons/solid/file-icons/light/video.svg"
+    },
+    "_audio_light": {
+      "iconPath": "../icons/solid/file-icons/light/audio.svg"
+    },
+    "_archive_light": {
+      "iconPath": "../icons/solid/file-icons/light/archive.svg"
+    },
+    "_database_light": {
+      "iconPath": "../icons/solid/file-icons/light/database.svg"
+    },
+    "_github_light": {
+      "iconPath": "../icons/solid/file-icons/light/github.svg"
+    },
+    "_figma_light": {
+      "iconPath": "../icons/solid/file-icons/light/figma.svg"
+    },
+    "_folder_shared_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-shared.svg"
+    },
+    "_folder_cloud_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-cloud.svg"
+    },
+    "_folder_locked_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-locked.svg"
+    },
+    "_folder_zip_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-zip.svg"
+    },
+    "_folder_music_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-music.svg"
+    },
+    "_folder_video_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-video.svg"
+    },
+    "_folder_audio_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-audio.svg"
+    },
+    "_folder_search_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-search.svg"
+    },
+    "_folder_favourite_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-favourite.svg"
+    },
+    "_folder_library_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-library.svg"
+    },
+    "_folder_management_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-management.svg"
+    },
+    "_folder_code_light": {
+      "iconPath": "../icons/solid/file-icons/light/folder-code.svg"
     }
   },
   "file": "_file",
@@ -415,6 +535,302 @@
     ".next": "_folder_zip",
     ".nuxt": "_folder_zip",
     ".svelte-kit": "_folder_zip"
+  },
+  "light": {
+    "file": "_file_light",
+    "folder": "_folder_light",
+    "folderExpanded": "_folder_open_light",
+    "rootFolder": "_folder_light",
+    "rootFolderExpanded": "_folder_open_light",
+    "fileExtensions": {
+      "mjs": "_code_light",
+      "cjs": "_code_light",
+      "jsx": "_code_light",
+      "tsx": "_code_light",
+      "ts": "_code_light",
+      "js": "_code_light",
+      "coffee": "_code_light",
+      "sh": "_command_line_light",
+      "bash": "_command_line_light",
+      "zsh": "_command_line_light",
+      "fish": "_command_line_light",
+      "ps1": "_command_line_light",
+      "bat": "_command_line_light",
+      "cmd": "_command_line_light",
+      "html": "_html_light",
+      "htm": "_html_light",
+      "xhtml": "_html_light",
+      "css": "_css_light",
+      "scss": "_css_light",
+      "sass": "_css_light",
+      "less": "_css_light",
+      "styl": "_css_light",
+      "pcss": "_css_light",
+      "json": "_json_light",
+      "jsonc": "_json_light",
+      "json5": "_json_light",
+      "yml": "_yaml_light",
+      "yaml": "_yaml_light",
+      "toml": "_yaml_light",
+      "xml": "_xml_light",
+      "xsl": "_xml_light",
+      "xslt": "_xml_light",
+      "xsd": "_xml_light",
+      "plist": "_xml_light",
+      "md": "_markdown_light",
+      "mdx": "_markdown_light",
+      "markdown": "_markdown_light",
+      "mdown": "_markdown_light",
+      "rst": "_markdown_light",
+      "adoc": "_markdown_light",
+      "config": "_config_light",
+      "conf": "_config_light",
+      "ini": "_config_light",
+      "cfg": "_config_light",
+      "properties": "_config_light",
+      "env": "_config_light",
+      "pdf": "_pdf_light",
+      "doc": "_doc_light",
+      "docx": "_doc_light",
+      "rtf": "_doc_light",
+      "odt": "_doc_light",
+      "ppt": "_ppt_light",
+      "pptx": "_ppt_light",
+      "key": "_ppt_light",
+      "csv": "_csv_light",
+      "tsv": "_csv_light",
+      "txt": "_txt_light",
+      "log": "_txt_light",
+      "png": "_image_light",
+      "jpg": "_image_light",
+      "jpeg": "_image_light",
+      "webp": "_image_light",
+      "avif": "_image_light",
+      "bmp": "_image_light",
+      "ico": "_image_light",
+      "tiff": "_image_light",
+      "heic": "_image_light",
+      "svg": "_svg_light",
+      "gif": "_gif_light",
+      "mp4": "_video_light",
+      "mov": "_video_light",
+      "webm": "_video_light",
+      "mkv": "_video_light",
+      "avi": "_video_light",
+      "flv": "_video_light",
+      "mp3": "_audio_light",
+      "wav": "_audio_light",
+      "flac": "_audio_light",
+      "ogg": "_audio_light",
+      "aac": "_audio_light",
+      "m4a": "_audio_light",
+      "zip": "_archive_light",
+      "tar": "_archive_light",
+      "gz": "_archive_light",
+      "tgz": "_archive_light",
+      "rar": "_archive_light",
+      "7z": "_archive_light",
+      "bz2": "_archive_light",
+      "xz": "_archive_light",
+      "sql": "_database_light",
+      "db": "_database_light",
+      "sqlite": "_database_light",
+      "sqlite3": "_database_light",
+      "fig": "_figma_light"
+    },
+    "fileNames": {
+      "package.json": "_json_light",
+      "tsconfig.json": "_json_light",
+      "tsconfig.base.json": "_json_light",
+      "jsconfig.json": "_json_light",
+      "readme": "_markdown_light",
+      "readme.md": "_markdown_light",
+      "readme.markdown": "_markdown_light",
+      "license": "_license_light",
+      "license.md": "_license_light",
+      "license.txt": "_license_light",
+      "copying": "_license_light",
+      "notice": "_license_light",
+      ".env": "_config_light",
+      ".env.local": "_config_light",
+      ".env.development": "_config_light",
+      ".env.production": "_config_light",
+      ".editorconfig": "_config_light",
+      ".gitattributes": "_config_light",
+      ".gitignore": "_config_light",
+      ".npmrc": "_config_light",
+      ".npmignore": "_config_light",
+      ".prettierrc": "_config_light",
+      ".prettierignore": "_config_light",
+      ".eslintrc": "_config_light",
+      ".eslintrc.json": "_config_light",
+      ".eslintignore": "_config_light",
+      ".stylelintrc": "_config_light",
+      ".browserslistrc": "_config_light",
+      "funding.yml": "_github_light",
+      "codeowners": "_github_light",
+      "pull_request_template.md": "_github_light",
+      "issue_template.md": "_github_light"
+    },
+    "languageIds": {
+      "javascript": "_code_light",
+      "typescript": "_code_light",
+      "javascriptreact": "_code_light",
+      "typescriptreact": "_code_light",
+      "coffeescript": "_code_square_light",
+      "shellscript": "_command_line_light",
+      "powershell": "_command_line_light",
+      "bat": "_command_line_light",
+      "html": "_html_light",
+      "css": "_css_light",
+      "scss": "_css_light",
+      "sass": "_css_light",
+      "less": "_css_light",
+      "stylus": "_css_light",
+      "postcss": "_css_light",
+      "json": "_json_light",
+      "jsonc": "_json_light",
+      "yaml": "_yaml_light",
+      "toml": "_yaml_light",
+      "xml": "_xml_light",
+      "xsl": "_xml_light",
+      "markdown": "_markdown_light",
+      "mdx": "_markdown_light",
+      "ini": "_config_light",
+      "properties": "_config_light",
+      "dotenv": "_config_light",
+      "sql": "_database_light"
+    },
+    "folderNames": {
+      "src": "_folder_code_light",
+      "app": "_folder_code_light",
+      "pages": "_folder_code_light",
+      "routes": "_folder_code_light",
+      "components": "_folder_code_light",
+      "hooks": "_folder_code_light",
+      "utils": "_folder_code_light",
+      "lib": "_folder_library_light",
+      "helpers": "_folder_library_light",
+      "services": "_folder_cloud_light",
+      "api": "_folder_cloud_light",
+      "server": "_folder_cloud_light",
+      "client": "_folder_code_light",
+      "store": "_folder_management_light",
+      "context": "_folder_management_light",
+      "providers": "_folder_management_light",
+      "layouts": "_folder_code_light",
+      "styles": "_folder_favourite_light",
+      "public": "_folder_shared_light",
+      "static": "_folder_shared_light",
+      "assets": "_folder_favourite_light",
+      "images": "_folder_video_light",
+      "fonts": "_folder_favourite_light",
+      "icons": "_folder_favourite_light",
+      "themes": "_folder_favourite_light",
+      "locales": "_folder_shared_light",
+      "i18n": "_folder_shared_light",
+      "config": "_folder_management_light",
+      "scripts": "_folder_code_light",
+      "tools": "_folder_management_light",
+      "test": "_folder_search_light",
+      "tests": "_folder_search_light",
+      "__tests__": "_folder_search_light",
+      "spec": "_folder_search_light",
+      "e2e": "_folder_search_light",
+      "mocks": "_folder_search_light",
+      "fixtures": "_folder_search_light",
+      "types": "_folder_code_light",
+      "typings": "_folder_code_light",
+      "docs": "_folder_library_light",
+      "examples": "_folder_library_light",
+      "demo": "_folder_library_light",
+      "controllers": "_folder_code_light",
+      "models": "_folder_code_light",
+      "middleware": "_folder_cloud_light",
+      "migrations": "_folder_management_light",
+      "prisma": "_folder_management_light",
+      "database": "_folder_management_light",
+      "node_modules": "_folder_zip_light",
+      "dist": "_folder_zip_light",
+      "build": "_folder_zip_light",
+      "out": "_folder_zip_light",
+      "coverage": "_folder_search_light",
+      "cache": "_folder_zip_light",
+      ".cache": "_folder_zip_light",
+      ".git": "_folder_locked_light",
+      ".github": "_folder_shared_light",
+      ".vscode": "_folder_management_light",
+      ".husky": "_folder_locked_light",
+      ".vercel": "_folder_cloud_light",
+      ".next": "_folder_zip_light",
+      ".nuxt": "_folder_zip_light",
+      ".svelte-kit": "_folder_zip_light"
+    },
+    "folderNamesExpanded": {
+      "src": "_folder_code_light",
+      "app": "_folder_code_light",
+      "pages": "_folder_code_light",
+      "routes": "_folder_code_light",
+      "components": "_folder_code_light",
+      "hooks": "_folder_code_light",
+      "utils": "_folder_code_light",
+      "lib": "_folder_library_light",
+      "helpers": "_folder_library_light",
+      "services": "_folder_cloud_light",
+      "api": "_folder_cloud_light",
+      "server": "_folder_cloud_light",
+      "client": "_folder_code_light",
+      "store": "_folder_management_light",
+      "context": "_folder_management_light",
+      "providers": "_folder_management_light",
+      "layouts": "_folder_code_light",
+      "styles": "_folder_favourite_light",
+      "public": "_folder_shared_light",
+      "static": "_folder_shared_light",
+      "assets": "_folder_favourite_light",
+      "images": "_folder_video_light",
+      "fonts": "_folder_favourite_light",
+      "icons": "_folder_favourite_light",
+      "themes": "_folder_favourite_light",
+      "locales": "_folder_shared_light",
+      "i18n": "_folder_shared_light",
+      "config": "_folder_management_light",
+      "scripts": "_folder_code_light",
+      "tools": "_folder_management_light",
+      "test": "_folder_search_light",
+      "tests": "_folder_search_light",
+      "__tests__": "_folder_search_light",
+      "spec": "_folder_search_light",
+      "e2e": "_folder_search_light",
+      "mocks": "_folder_search_light",
+      "fixtures": "_folder_search_light",
+      "types": "_folder_code_light",
+      "typings": "_folder_code_light",
+      "docs": "_folder_library_light",
+      "examples": "_folder_library_light",
+      "demo": "_folder_library_light",
+      "controllers": "_folder_code_light",
+      "models": "_folder_code_light",
+      "middleware": "_folder_cloud_light",
+      "migrations": "_folder_management_light",
+      "prisma": "_folder_management_light",
+      "database": "_folder_management_light",
+      "node_modules": "_folder_zip_light",
+      "dist": "_folder_zip_light",
+      "build": "_folder_zip_light",
+      "out": "_folder_zip_light",
+      "coverage": "_folder_search_light",
+      "cache": "_folder_zip_light",
+      ".cache": "_folder_zip_light",
+      ".git": "_folder_locked_light",
+      ".github": "_folder_shared_light",
+      ".vscode": "_folder_management_light",
+      ".husky": "_folder_locked_light",
+      ".vercel": "_folder_cloud_light",
+      ".next": "_folder_zip_light",
+      ".nuxt": "_folder_zip_light",
+      ".svelte-kit": "_folder_zip_light"
+    }
   },
   "hidesExplorerArrows": false
 }

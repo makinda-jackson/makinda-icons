@@ -6,7 +6,7 @@ Copyright © Makinda Jackson. All rights reserved (until a permissive license is
 
 ## Icon assets
 
-The SVG files inside `icons/file-icons/` and `icons/product-icons/` are derived
+The SVG files inside `icons/<style>/file-icons/` and `icons/<style>/product-icons/` are derived
 from **Hugeicons Pro** (Rounded → Duotone style).
 
 - Hugeicons Pro is a paid asset library. Use here is permitted under the

@@ -80,7 +80,7 @@ A style is "shipped" when:
 | Display label (file)    | `Makinda Icons (Solid)` / `(Duotone)` / …                 |
 | Display label (product) | `Makinda Product Icons (Solid)` / …                       |
 | Manifest icon name      | kebab-case, no style suffix (`folder-code`, `git-branch`) |
-| On-disk SVG path        | `icons/<style>/file-icons/<name>.svg`                     |
+| On-disk SVG path        | `icons/<style>/file-icons/{dark,light}/<name>.svg`        |
 | Generated theme JSON    | `themes/makinda-file-icon-theme.<style>.json`             |
 
 ## 6. Architecture

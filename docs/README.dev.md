@@ -17,6 +17,8 @@ makinda-icons/
 ├── icons/
 │   └── <style>/                       SVGs copied from Hugeicons per style
 │       ├── file-icons/
+│       │   ├── dark/
+│       │   └── light/
 │       └── product-icons/
 ├── scripts/
 │   ├── manifest.mjs                   Single source of truth: name → Hugeicons path

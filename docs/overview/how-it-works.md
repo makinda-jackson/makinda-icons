@@ -37,7 +37,7 @@ What happens, step by step:
 1. The script resolves the Hugeicons root. Default is the path documented in the [README](../../README.md#develop); override with `HUGEICONS_ROOT=/path npm run build`.
 2. For each entry in the manifest:
    - Locate the matching SVG in the Hugeicons tree.
-   - Copy it into `icons/file-icons/` or `icons/product-icons/` under its Makinda alias.
+   - Copy it into `icons/<style>/file-icons/{dark,light}/` (file icons get two color variants) or `icons/<style>/product-icons/` (single `currentColor` variant) under its Makinda alias.
 3. Generate `themes/makinda-file-icon-theme.json`:
    - One `iconDefinitions` entry per file icon SVG.
    - `fileExtensions`, `fileNames`, and `languageIds` maps wiring extensions / filenames / language IDs to those definitions.

@@ -253,5 +253,6 @@
     "lightbulb": {
       "iconPath": "../icons/solid/product-icons/lightbulb.svg"
     }
-  }
+  },
+  "fonts": []
 }
