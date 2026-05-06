@@ -52,12 +52,12 @@ OVSX_PAT="$OPEN_VSX_TOKEN"  npx ovsx publish "makinda-icons-$NEW.vsix"
 
 Store these credentials somewhere safe (1Password, macOS Keychain, etc.). Never commit them.
 
-| Env var               | Where to get it                                                                | Used by                          |
-| --------------------- | ------------------------------------------------------------------------------ | -------------------------------- |
-| `VSCE_PAT`            | <https://dev.azure.com/makindajack/_usersSettings/tokens> · scope `Marketplace (Manage)` · org `All accessible organizations` | `vsce publish`                   |
-| `OPEN_VSX_TOKEN`      | <https://open-vsx.org/user-settings/tokens> · click `Generate New Token`       | `ovsx publish`                   |
-| `JETBRAINS_TOKEN`     | <https://plugins.jetbrains.com/author/me/tokens> · scope `Plugin upload`       | `./gradlew publishPlugin`        |
-| `gh` CLI auth         | `gh auth login`                                                                | `gh release create`, fork PRs    |
+| Env var           | Where to get it                                                                                                               | Used by                       |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| `VSCE_PAT`        | <https://dev.azure.com/makindajack/_usersSettings/tokens> · scope `Marketplace (Manage)` · org `All accessible organizations` | `vsce publish`                |
+| `OPEN_VSX_TOKEN`  | <https://open-vsx.org/user-settings/tokens> · click `Generate New Token`                                                      | `ovsx publish`                |
+| `JETBRAINS_TOKEN` | <https://plugins.jetbrains.com/author/me/tokens> · scope `Plugin upload`                                                      | `./gradlew publishPlugin`     |
+| `gh` CLI auth     | `gh auth login`                                                                                                               | `gh release create`, fork PRs |
 
 `vsce` already remembers the publisher PAT after first `vsce login makindajack`. The others are passed as env vars per-command.
 
@@ -68,6 +68,7 @@ Store these credentials somewhere safe (1Password, macOS Keychain, etc.). Never 
 ### 1. Pick the version number
 
 Follow [`docs/overview/versioning.md`](versioning.md):
+
 - **patch** (1.0.x): icon polish, doc fixes — no new bindings
 - **minor** (1.x.0): new file types, new emitter, new style
 - **major** (x.0.0): manifest schema break, removal of a target
@@ -189,12 +190,10 @@ One-time: open a PR adding an entry to `repository/m.json` in <https://github.co
 
 ```json
 {
-    "name": "Makinda Icons",
-    "details": "https://github.com/makindajack/makinda-icons-sublime",
-    "labels": ["theme", "icons", "file icons"],
-    "releases": [
-        { "sublime_text": ">=3000", "platforms": ["*"], "tags": true }
-    ]
+  "name": "Makinda Icons",
+  "details": "https://github.com/makindajack/makinda-icons-sublime",
+  "labels": ["theme", "icons", "file icons"],
+  "releases": [{ "sublime_text": ">=3000", "platforms": ["*"], "tags": true }]
 }
 ```
 
@@ -239,13 +238,13 @@ curl -s "https://plugins.jetbrains.com/plugin/makinda-icons" | grep -o "Version 
 
 ## Recovery
 
-| Problem                                     | Fix                                                                                |
-| ------------------------------------------- | ---------------------------------------------------------------------------------- |
-| `vsce publish` says version already exists  | Bump again — marketplaces never accept overwrites                                  |
-| `ovsx publish` returns "Unknown publisher"  | First-time only: `OVSX_PAT=… npx ovsx create-namespace makindajack`                |
-| JetBrains plugin page 404 after publish     | Moderation queue. Check status at <https://plugins.jetbrains.com/author/me>        |
-| Need to unpublish a broken release          | All three marketplaces support it via their dashboards. Open VSX is fastest.       |
-| MELPA build broken                          | Watch <https://melpa.org/packages/makinda-icons-badge.svg> — turns red on failure  |
+| Problem                                    | Fix                                                                               |
+| ------------------------------------------ | --------------------------------------------------------------------------------- |
+| `vsce publish` says version already exists | Bump again — marketplaces never accept overwrites                                 |
+| `ovsx publish` returns "Unknown publisher" | First-time only: `OVSX_PAT=… npx ovsx create-namespace makindajack`               |
+| JetBrains plugin page 404 after publish    | Moderation queue. Check status at <https://plugins.jetbrains.com/author/me>       |
+| Need to unpublish a broken release         | All three marketplaces support it via their dashboards. Open VSX is fastest.      |
+| MELPA build broken                         | Watch <https://melpa.org/packages/makinda-icons-badge.svg> — turns red on failure |
 
 ---
 
