@@ -2,6 +2,13 @@
 
 All notable changes to **Makinda Icons** will be documented in this file.
 
+## [1.0.4] — 2026-05-06
+
+### Added
+
+- Brand identity from [makinda-themes](https://github.com/makindajack/makinda-themes): logo (`images/icon.png`) is now the Marketplace icon, and the README ships a centered logo banner with version / downloads / rating badges in brand orange (`#ff6b0d`).
+- `galleryBanner` set to `#0e0e0f` (Makinda Dark editor background) so the Marketplace header matches the brand.
+
 ## [1.0.3] — 2026-05-06
 
 ### Fixed

@@ -1,13 +1,41 @@
-# Makinda Icons
+<h1 align="center">
+  <br>
+  <img src="images/icon-dark.png" alt="Makinda Icons" width="128">
+  <br>
+  Makinda Icons
+  <br>
+</h1>
 
-Multi-style icon themes for Visual Studio Code and the wider VS Code family, by Makinda Jackson. Drawn from [Hugeicons](https://hugeicons.com), tuned to pair with the [Makinda Themes](https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes) color set.
+<h4 align="center">Multi-style icon themes for VS Code and the wider VS Code family — inspired by Hugeicons, tuned for the Makinda brand.</h4>
+
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-icons">
+    <img alt="Version" src="https://img.shields.io/visual-studio-marketplace/v/makindajack.makinda-icons.svg?style=for-the-badge&labelColor=0e0e0f&color=ff6b0d">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-icons">
+    <img alt="Downloads" src="https://img.shields.io/visual-studio-marketplace/d/makindajack.makinda-icons.svg?style=for-the-badge&labelColor=0e0e0f&color=ff6b0d">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-icons">
+    <img alt="Rating" src="https://img.shields.io/visual-studio-marketplace/stars/makindajack.makinda-icons.svg?style=for-the-badge&labelColor=0e0e0f&color=ff6b0d">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#install">Install</a> •
+  <a href="#activate">Activate</a> •
+  <a href="#pair-with-makinda-themes">Pair with Makinda Themes</a> •
+  <a href="#troubleshooting">Troubleshooting</a> •
+  <a href="#license">License</a>
+</p>
+
+---
 
 This extension ships **two** independent themes you can mix and match:
 
 - **`Makinda Icons (Solid)`** — file & folder icons in the Explorer, tabs, breadcrumbs, Quick Open.
 - **`Makinda Product Icons (Solid)`** — UI icons in the Activity Bar, status bar, gutters, and panels (84 codicon overrides).
 
-> Currently shipping the **Solid** style. Duotone, Twotone, Stroke, Bulk, and Sharp variants are on the roadmap.
+> Iconography inspired by [Hugeicons](https://hugeicons.com). Currently shipping the **Solid** style. Duotone, Twotone, Stroke, Bulk, and Sharp variants are on the roadmap.
 
 ---
 
