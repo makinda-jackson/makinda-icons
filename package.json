@@ -2,7 +2,7 @@
     "name": "makinda-icons",
     "displayName": "Makinda Icons",
     "description": "Multi-style icon themes for VS Code by Makinda Jackson, inspired by Hugeicons. File icons + product icons.",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "publisher": "makindajack",
     "icon": "images/icon-dark.png",
     "galleryBanner": {

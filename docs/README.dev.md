@@ -1,6 +1,6 @@
 # makinda-icons
 
-Multi-style icon themes for Visual Studio Code by Makinda Jackson, drawn from [Hugeicons](https://hugeicons.com). Covers both file/folder icons and product (UI) icons.
+Multi-style icon themes for Visual Studio Code by Makinda Jackson, inspired by [Hugeicons](https://hugeicons.com). Covers both file/folder icons and product (UI) icons.
 
 ## Status
 

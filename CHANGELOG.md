@@ -2,6 +2,20 @@
 
 All notable changes to **Makinda Icons** will be documented in this file.
 
+## [1.0.6] — 2026-05-06
+
+### Fixed
+
+- README hero logo now resolves on the Marketplace overview (switched from a relative `images/icon-dark.png` path to an absolute `raw.githubusercontent.com` URL).
+- Replaced the retired shields.io `visual-studio-marketplace` badges with the current `vscode-marketplace` endpoint so version / installs / rating render correctly.
+
+## [1.0.5] — 2026-05-06
+
+### Changed
+
+- Marketplace tile now uses the dark brand logo (`images/icon-dark.png`) — interim asset until a custom icon-pack logo is designed.
+- Wording: "drawn from Hugeicons" → **"inspired by Hugeicons"** across the README, package description, and dev docs.
+
 ## [1.0.4] — 2026-05-06
 
 ### Added

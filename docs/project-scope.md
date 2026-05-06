@@ -6,7 +6,7 @@ This document defines **what we're building, why, and how we work on it**. It is
 
 ## 1. What this project is
 
-`makinda-icons` is a single VS Code extension that ships **multiple icon themes** by Makinda Jackson, drawn from the [Hugeicons](https://hugeicons.com) Pro library.
+`makinda-icons` is a single VS Code extension that ships **multiple icon themes** by Makinda Jackson, inspired by the [Hugeicons](https://hugeicons.com) Pro library.
 
 Each Hugeicons drawing style becomes a separate, user-selectable theme. Each style covers **both** kinds of VS Code iconography:
 
@@ -17,7 +17,7 @@ So a user can, for example, pick _Makinda Icons (Solid)_ for files and _Makinda 
 
 ## 2. Why
 
-- One coherent visual language across **the entire VS Code surface** — file icons and product icons drawn from the same family.
+- One coherent visual language across **the entire VS Code surface** — file icons and product icons sharing one visual family.
 - A personal brand artifact for Makinda Jackson's portfolio.
 - A practical, license-respecting reuse of an asset library I already own (Hugeicons Pro).
 
