@@ -6,6 +6,15 @@ All notable changes to **Makinda Icons** will be documented in this file.
 
 ### Added
 
+- **Phase 6 — Visual Studio (Windows IDE) emitter.** New build script [`scripts/build-vsfull.mjs`](scripts/build-vsfull.mjs) emits a VSIX 2.0 package under [`packages/visualstudio/MakindaIcons/`](packages/visualstudio/) targeting Visual Studio 2022 Community / Pro / Enterprise. Generates 165 PNGs (55 icons × 16/24/32 px), a `MakindaIcons.imagemanifest` with 55 monikers / 127 extension bindings / 57 filename bindings, an `extension.vsixmanifest`, and a `[Content_Types].xml`. Auto-zips into `packages/visualstudio/makinda-icons.vsix` (~126 KB) when `zip` is on PATH.
+- New npm script `build:vsfull`; `build:all` now chains VS Code → JetBrains → Neovim → Emacs → Sublime → Visual Studio.
+
+### Changed
+
+- **Phase 5 auto-zip.** `npm run build:sublime` now produces `packages/sublime/makinda-icons.sublime-package` (~157 KB) directly when `zip` is on PATH; the old manual `cd && zip` step is documented as a fallback only.
+
+### Added (earlier in this Unreleased cycle)
+
 - **Phase 5 — Sublime Text emitter.** New build script [`scripts/build-sublime.mjs`](scripts/build-sublime.mjs) rasterizes the Hugeicons solid SVGs (via [`@resvg/resvg-js`](https://www.npmjs.com/package/@resvg/resvg-js)) into a Sublime package layout under [`packages/sublime/Makinda Icons/`](packages/sublime/): 165 PNGs (55 icons × 16/32/48 px) plus 23 `.tmPreferences` bindings for the manifest entries that map to known TextMate scopes. Build with `npm run build:sublime`, then `cd packages/sublime/Makinda\ Icons && zip -rq ../makinda-icons.sublime-package .` to produce the installable bundle.
 - New devDependency: `@resvg/resvg-js` (pure-rust SVG rasterizer, no system deps).
 - New npm script `build:sublime`; `build:all` now chains VS Code → JetBrains → Neovim → Emacs → Sublime.

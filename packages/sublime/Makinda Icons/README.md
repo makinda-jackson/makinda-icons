@@ -5,13 +5,16 @@ with `npm run build:sublime` from the monorepo root.
 
 ## Install
 
-1. Run `npm run build:sublime` to (re)generate this directory.
-2. Zip into a Sublime package:
-   ```bash
-   cd "packages/sublime/Makinda Icons" && zip -rq ../makinda-icons.sublime-package .
-   ```
-3. Drop `makinda-icons.sublime-package` into Sublime's `Installed Packages/`
-   directory and restart Sublime.
+1. Run `npm run build:sublime` to (re)generate this directory **and** the
+   `makinda-icons.sublime-package` zip alongside it.
+2. Drop `packages/sublime/makinda-icons.sublime-package` into Sublime's
+   `Installed Packages/` directory and restart Sublime.
+
+If `zip` isn't on PATH the build skips the auto-zip step; produce it manually:
+
+```bash
+cd "packages/sublime/Makinda Icons" && zip -rq ../makinda-icons.sublime-package .
+```
 
 ## Layout
 

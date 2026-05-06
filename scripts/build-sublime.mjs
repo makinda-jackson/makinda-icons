@@ -22,6 +22,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import url from "node:url";
+import { execFileSync } from "node:child_process";
 import { Resvg } from "@resvg/resvg-js";
 import { fileIcons } from "./manifest.mjs";
 import { enabledStyles } from "./styles.mjs";
@@ -219,13 +220,16 @@ with \`npm run build:sublime\` from the monorepo root.
 
 ## Install
 
-1. Run \`npm run build:sublime\` to (re)generate this directory.
-2. Zip into a Sublime package:
-   \`\`\`bash
-   cd "packages/sublime/Makinda Icons" && zip -rq ../makinda-icons.sublime-package .
-   \`\`\`
-3. Drop \`makinda-icons.sublime-package\` into Sublime's \`Installed Packages/\`
-   directory and restart Sublime.
+1. Run \`npm run build:sublime\` to (re)generate this directory **and** the
+   \`makinda-icons.sublime-package\` zip alongside it.
+2. Drop \`packages/sublime/makinda-icons.sublime-package\` into Sublime's
+   \`Installed Packages/\` directory and restart Sublime.
+
+If \`zip\` isn't on PATH the build skips the auto-zip step; produce it manually:
+
+\`\`\`bash
+cd "packages/sublime/Makinda Icons" && zip -rq ../makinda-icons.sublime-package .
+\`\`\`
 
 ## Layout
 
@@ -259,4 +263,20 @@ console.log(`  missing SVGs:        ${missingSvgs.length}`);
 for (const m of missingSvgs) console.log(`    • ${m}`);
 
 if (missingSvgs.length) process.exit(1);
-console.log(`\nNext: cd "packages/sublime/Makinda Icons" && zip -rq ../makinda-icons.sublime-package .`);
+
+// ---------- Auto-zip into .sublime-package ----------
+//
+// .sublime-package is just a regular zip with a renamed extension. Skip when
+// `zip` isn't on PATH (common on bare Windows shells) — the README documents
+// the manual step in that case.
+
+const zipOut = path.join(repoRoot, "packages", "sublime", "makinda-icons.sublime-package");
+try {
+    fs.rmSync(zipOut, { force: true });
+    execFileSync("zip", ["-rq", zipOut, "."], { cwd: pkgRoot, stdio: "inherit" });
+    const bytes = fs.statSync(zipOut).size;
+    console.log(`\nWrote: ${path.relative(repoRoot, zipOut)} (${(bytes / 1024).toFixed(1)} KB)`);
+} catch (err) {
+    console.warn(`\nSkipped auto-zip (${err.code === "ENOENT" ? "`zip` not on PATH" : err.message}).`);
+    console.warn(`Manual: cd "packages/sublime/Makinda Icons" && zip -rq ../makinda-icons.sublime-package .`);
+}

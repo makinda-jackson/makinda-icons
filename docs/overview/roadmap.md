@@ -98,16 +98,24 @@ Same Nerd Font / monochrome caveats as Neovim.
 - [x] Output 16 / 32 / 48 px PNGs (Sublime's `@2x` / `@3x` convention) — 55 icons × 3 sizes = 165 PNGs per build
 - [x] Generate `.tmPreferences` per scope binding — 23 prefs covering the 23 manifest entries with mapped TextMate scopes (extension-only icons can't bind via Sublime's public API)
 - [x] Package layout under [`packages/sublime/Makinda Icons/`](../../packages/sublime/) with self-contained README and zip command
-- [ ] Auto-zip into `makinda-icons.sublime-package` (currently a documented one-liner)
+- [x] Auto-zip into `makinda-icons.sublime-package` — `npm run build:sublime` produces the installable bundle when `zip` is on PATH (manual fallback documented)
 - [ ] Submit to Package Control
 
 ---
 
 ## Phase 6 — Visual Studio (Windows full IDE)
 
-**Status:** parked. Doable via VSIX with `.imagemanifest`, but niche audience and high build cost.
+**Status:** in progress. Build emits a working VSIX from the same manifest;
+publishing requires Windows + Visual Studio for sign-off testing.
 
-- [ ] Decide whether to pursue based on user demand
+- [x] Emitter [`scripts/build-vsfull.mjs`](../../scripts/build-vsfull.mjs) using `@resvg/resvg-js`
+- [x] Rasterize 55 icons × 16 / 24 / 32 px (VS Image Service file-icon sizes) → 165 PNGs
+- [x] Generate `MakindaIcons.imagemanifest` (55 monikers, 127 extension bindings, 57 filename bindings)
+- [x] Generate `extension.vsixmanifest` (VSIX 2.0, targets VS 2022 Community / Pro / Enterprise)
+- [x] Generate `[Content_Types].xml` and self-contained README under [`packages/visualstudio/MakindaIcons/`](../../packages/visualstudio/)
+- [x] Auto-zip into `packages/visualstudio/makinda-icons.vsix` when `zip` is on PATH
+- [ ] Smoke-test installation in Visual Studio 2022 on Windows
+- [ ] Publish to the Visual Studio Marketplace
 
 ---
 

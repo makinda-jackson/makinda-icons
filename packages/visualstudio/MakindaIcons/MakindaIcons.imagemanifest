@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageManifest xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">
+    <Symbols>
+        <String Name="Resources" Value="/MakindaIcons;Component/Resources" />
+        <Guid Name="MakindaIconsGuid" Value="{8a4f1d6e-2c7b-4b9f-9b3a-3e5a1c0d6f12}" />
+        <ID Name="File" Value="1000" />
+        <ID Name="Folder" Value="1001" />
+        <ID Name="FolderOpen" Value="1002" />
+        <ID Name="Code" Value="1003" />
+        <ID Name="CodeSquare" Value="1004" />
+        <ID Name="Js" Value="1005" />
+        <ID Name="Ts" Value="1006" />
+        <ID Name="Java" Value="1007" />
+        <ID Name="Php" Value="1008" />
+        <ID Name="C" Value="1009" />
+        <ID Name="Cpp" Value="1010" />
+        <ID Name="Python" Value="1011" />
+        <ID Name="Ruby" Value="1012" />
+        <ID Name="Go" Value="1013" />
+        <ID Name="Rust" Value="1014" />
+        <ID Name="Vue" Value="1015" />
+        <ID Name="Svelte" Value="1016" />
+        <ID Name="Astro" Value="1017" />
+        <ID Name="CommandLine" Value="1018" />
+        <ID Name="Html" Value="1019" />
+        <ID Name="Css" Value="1020" />
+        <ID Name="Json" Value="1021" />
+        <ID Name="Yaml" Value="1022" />
+        <ID Name="Xml" Value="1023" />
+        <ID Name="Markdown" Value="1024" />
+        <ID Name="License" Value="1025" />
+        <ID Name="Config" Value="1026" />
+        <ID Name="Pdf" Value="1027" />
+        <ID Name="Doc" Value="1028" />
+        <ID Name="Ppt" Value="1029" />
+        <ID Name="Csv" Value="1030" />
+        <ID Name="Txt" Value="1031" />
+        <ID Name="Image" Value="1032" />
+        <ID Name="Svg" Value="1033" />
+        <ID Name="Gif" Value="1034" />
+        <ID Name="Video" Value="1035" />
+        <ID Name="Audio" Value="1036" />
+        <ID Name="Archive" Value="1037" />
+        <ID Name="Database" Value="1038" />
+        <ID Name="Github" Value="1039" />
+        <ID Name="Figma" Value="1040" />
+        <ID Name="Font" Value="1041" />
+        <ID Name="Lock" Value="1042" />
+        <ID Name="FolderShared" Value="1043" />
+        <ID Name="FolderCloud" Value="1044" />
+        <ID Name="FolderLocked" Value="1045" />
+        <ID Name="FolderZip" Value="1046" />
+        <ID Name="FolderMusic" Value="1047" />
+        <ID Name="FolderVideo" Value="1048" />
+        <ID Name="FolderAudio" Value="1049" />
+        <ID Name="FolderSearch" Value="1050" />
+        <ID Name="FolderFavourite" Value="1051" />
+        <ID Name="FolderLibrary" Value="1052" />
+        <ID Name="FolderManagement" Value="1053" />
+        <ID Name="FolderCode" Value="1054" />
+    </Symbols>
+    <Images>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(File)">
+            <Source Uri="$(Resources)/file.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/file.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/file.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Folder)">
+            <Source Uri="$(Resources)/folder.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderOpen)">
+            <Source Uri="$(Resources)/folder-open.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-open.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-open.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Code)">
+            <Source Uri="$(Resources)/code.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/code.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/code.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(CodeSquare)">
+            <Source Uri="$(Resources)/code-square.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/code-square.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/code-square.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Js)">
+            <Source Uri="$(Resources)/js.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/js.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/js.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Ts)">
+            <Source Uri="$(Resources)/ts.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/ts.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/ts.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Java)">
+            <Source Uri="$(Resources)/java.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/java.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/java.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Php)">
+            <Source Uri="$(Resources)/php.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/php.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/php.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(C)">
+            <Source Uri="$(Resources)/c.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/c.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/c.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Cpp)">
+            <Source Uri="$(Resources)/cpp.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/cpp.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/cpp.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Python)">
+            <Source Uri="$(Resources)/python.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/python.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/python.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Ruby)">
+            <Source Uri="$(Resources)/ruby.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/ruby.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/ruby.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Go)">
+            <Source Uri="$(Resources)/go.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/go.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/go.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Rust)">
+            <Source Uri="$(Resources)/rust.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/rust.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/rust.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Vue)">
+            <Source Uri="$(Resources)/vue.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/vue.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/vue.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Svelte)">
+            <Source Uri="$(Resources)/svelte.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/svelte.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/svelte.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Astro)">
+            <Source Uri="$(Resources)/astro.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/astro.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/astro.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(CommandLine)">
+            <Source Uri="$(Resources)/command-line.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/command-line.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/command-line.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Html)">
+            <Source Uri="$(Resources)/html.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/html.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/html.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Css)">
+            <Source Uri="$(Resources)/css.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/css.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/css.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Json)">
+            <Source Uri="$(Resources)/json.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/json.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/json.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Yaml)">
+            <Source Uri="$(Resources)/yaml.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/yaml.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/yaml.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Xml)">
+            <Source Uri="$(Resources)/xml.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/xml.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/xml.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Markdown)">
+            <Source Uri="$(Resources)/markdown.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/markdown.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/markdown.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(License)">
+            <Source Uri="$(Resources)/license.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/license.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/license.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Config)">
+            <Source Uri="$(Resources)/config.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/config.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/config.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Pdf)">
+            <Source Uri="$(Resources)/pdf.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/pdf.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/pdf.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Doc)">
+            <Source Uri="$(Resources)/doc.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/doc.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/doc.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Ppt)">
+            <Source Uri="$(Resources)/ppt.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/ppt.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/ppt.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Csv)">
+            <Source Uri="$(Resources)/csv.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/csv.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/csv.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Txt)">
+            <Source Uri="$(Resources)/txt.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/txt.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/txt.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Image)">
+            <Source Uri="$(Resources)/image.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/image.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/image.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Svg)">
+            <Source Uri="$(Resources)/svg.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/svg.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/svg.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Gif)">
+            <Source Uri="$(Resources)/gif.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/gif.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/gif.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Video)">
+            <Source Uri="$(Resources)/video.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/video.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/video.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Audio)">
+            <Source Uri="$(Resources)/audio.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/audio.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/audio.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Archive)">
+            <Source Uri="$(Resources)/archive.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/archive.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/archive.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Database)">
+            <Source Uri="$(Resources)/database.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/database.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/database.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Github)">
+            <Source Uri="$(Resources)/github.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/github.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/github.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Figma)">
+            <Source Uri="$(Resources)/figma.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/figma.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/figma.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Font)">
+            <Source Uri="$(Resources)/font.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/font.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/font.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Lock)">
+            <Source Uri="$(Resources)/lock.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/lock.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/lock.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderShared)">
+            <Source Uri="$(Resources)/folder-shared.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-shared.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-shared.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderCloud)">
+            <Source Uri="$(Resources)/folder-cloud.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-cloud.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-cloud.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderLocked)">
+            <Source Uri="$(Resources)/folder-locked.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-locked.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-locked.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderZip)">
+            <Source Uri="$(Resources)/folder-zip.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-zip.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-zip.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderMusic)">
+            <Source Uri="$(Resources)/folder-music.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-music.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-music.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderVideo)">
+            <Source Uri="$(Resources)/folder-video.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-video.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-video.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderAudio)">
+            <Source Uri="$(Resources)/folder-audio.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-audio.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-audio.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderSearch)">
+            <Source Uri="$(Resources)/folder-search.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-search.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-search.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderFavourite)">
+            <Source Uri="$(Resources)/folder-favourite.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-favourite.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-favourite.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderLibrary)">
+            <Source Uri="$(Resources)/folder-library.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-library.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-library.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderManagement)">
+            <Source Uri="$(Resources)/folder-management.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-management.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-management.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(FolderCode)">
+            <Source Uri="$(Resources)/folder-code.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/folder-code.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/folder-code.32.png"><Size Value="32" /></Source>
+        </Image>
+    </Images>
+    <ImageFiles>
+        <ImageFile Extension=".coffee" Guid="$(MakindaIconsGuid)" ID="$(Code)" />
+        <ImageFile Extension=".js" Guid="$(MakindaIconsGuid)" ID="$(Js)" />
+        <ImageFile Extension=".mjs" Guid="$(MakindaIconsGuid)" ID="$(Js)" />
+        <ImageFile Extension=".cjs" Guid="$(MakindaIconsGuid)" ID="$(Js)" />
+        <ImageFile Extension=".jsx" Guid="$(MakindaIconsGuid)" ID="$(Js)" />
+        <ImageFile Extension=".ts" Guid="$(MakindaIconsGuid)" ID="$(Ts)" />
+        <ImageFile Extension=".tsx" Guid="$(MakindaIconsGuid)" ID="$(Ts)" />
+        <ImageFile Extension=".mts" Guid="$(MakindaIconsGuid)" ID="$(Ts)" />
+        <ImageFile Extension=".cts" Guid="$(MakindaIconsGuid)" ID="$(Ts)" />
+        <ImageFile Extension=".java" Guid="$(MakindaIconsGuid)" ID="$(Java)" />
+        <ImageFile Extension=".class" Guid="$(MakindaIconsGuid)" ID="$(Java)" />
+        <ImageFile Extension=".jar" Guid="$(MakindaIconsGuid)" ID="$(Java)" />
+        <ImageFile Extension=".php" Guid="$(MakindaIconsGuid)" ID="$(Php)" />
+        <ImageFile Extension=".phtml" Guid="$(MakindaIconsGuid)" ID="$(Php)" />
+        <ImageFile Extension=".c" Guid="$(MakindaIconsGuid)" ID="$(C)" />
+        <ImageFile Extension=".h" Guid="$(MakindaIconsGuid)" ID="$(C)" />
+        <ImageFile Extension=".cpp" Guid="$(MakindaIconsGuid)" ID="$(Cpp)" />
+        <ImageFile Extension=".cc" Guid="$(MakindaIconsGuid)" ID="$(Cpp)" />
+        <ImageFile Extension=".cxx" Guid="$(MakindaIconsGuid)" ID="$(Cpp)" />
+        <ImageFile Extension=".hpp" Guid="$(MakindaIconsGuid)" ID="$(Cpp)" />
+        <ImageFile Extension=".hh" Guid="$(MakindaIconsGuid)" ID="$(Cpp)" />
+        <ImageFile Extension=".hxx" Guid="$(MakindaIconsGuid)" ID="$(Cpp)" />
+        <ImageFile Extension=".py" Guid="$(MakindaIconsGuid)" ID="$(Python)" />
+        <ImageFile Extension=".pyi" Guid="$(MakindaIconsGuid)" ID="$(Python)" />
+        <ImageFile Extension=".pyc" Guid="$(MakindaIconsGuid)" ID="$(Python)" />
+        <ImageFile Extension=".pyw" Guid="$(MakindaIconsGuid)" ID="$(Python)" />
+        <ImageFile Extension=".ipynb" Guid="$(MakindaIconsGuid)" ID="$(Python)" />
+        <ImageFile Name="requirements.txt" Guid="$(MakindaIconsGuid)" ID="$(Python)" />
+        <ImageFile Name="Pipfile" Guid="$(MakindaIconsGuid)" ID="$(Python)" />
+        <ImageFile Name="Pipfile.lock" Guid="$(MakindaIconsGuid)" ID="$(Python)" />
+        <ImageFile Name="pyproject.toml" Guid="$(MakindaIconsGuid)" ID="$(Python)" />
+        <ImageFile Name="setup.py" Guid="$(MakindaIconsGuid)" ID="$(Python)" />
+        <ImageFile Name="setup.cfg" Guid="$(MakindaIconsGuid)" ID="$(Python)" />
+        <ImageFile Extension=".rb" Guid="$(MakindaIconsGuid)" ID="$(Ruby)" />
+        <ImageFile Extension=".erb" Guid="$(MakindaIconsGuid)" ID="$(Ruby)" />
+        <ImageFile Extension=".gemspec" Guid="$(MakindaIconsGuid)" ID="$(Ruby)" />
+        <ImageFile Name="Gemfile" Guid="$(MakindaIconsGuid)" ID="$(Ruby)" />
+        <ImageFile Name="Gemfile.lock" Guid="$(MakindaIconsGuid)" ID="$(Ruby)" />
+        <ImageFile Name="Rakefile" Guid="$(MakindaIconsGuid)" ID="$(Ruby)" />
+        <ImageFile Extension=".go" Guid="$(MakindaIconsGuid)" ID="$(Go)" />
+        <ImageFile Name="go.mod" Guid="$(MakindaIconsGuid)" ID="$(Go)" />
+        <ImageFile Name="go.sum" Guid="$(MakindaIconsGuid)" ID="$(Go)" />
+        <ImageFile Extension=".rs" Guid="$(MakindaIconsGuid)" ID="$(Rust)" />
+        <ImageFile Name="Cargo.toml" Guid="$(MakindaIconsGuid)" ID="$(Rust)" />
+        <ImageFile Name="Cargo.lock" Guid="$(MakindaIconsGuid)" ID="$(Rust)" />
+        <ImageFile Extension=".vue" Guid="$(MakindaIconsGuid)" ID="$(Vue)" />
+        <ImageFile Extension=".svelte" Guid="$(MakindaIconsGuid)" ID="$(Svelte)" />
+        <ImageFile Extension=".astro" Guid="$(MakindaIconsGuid)" ID="$(Astro)" />
+        <ImageFile Extension=".sh" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
+        <ImageFile Extension=".bash" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
+        <ImageFile Extension=".zsh" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
+        <ImageFile Extension=".fish" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
+        <ImageFile Extension=".ps1" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
+        <ImageFile Extension=".bat" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
+        <ImageFile Extension=".cmd" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
+        <ImageFile Name="Makefile" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
+        <ImageFile Name="Dockerfile" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
+        <ImageFile Name=".dockerignore" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
+        <ImageFile Extension=".html" Guid="$(MakindaIconsGuid)" ID="$(Html)" />
+        <ImageFile Extension=".htm" Guid="$(MakindaIconsGuid)" ID="$(Html)" />
+        <ImageFile Extension=".xhtml" Guid="$(MakindaIconsGuid)" ID="$(Html)" />
+        <ImageFile Extension=".css" Guid="$(MakindaIconsGuid)" ID="$(Css)" />
+        <ImageFile Extension=".scss" Guid="$(MakindaIconsGuid)" ID="$(Css)" />
+        <ImageFile Extension=".sass" Guid="$(MakindaIconsGuid)" ID="$(Css)" />
+        <ImageFile Extension=".less" Guid="$(MakindaIconsGuid)" ID="$(Css)" />
+        <ImageFile Extension=".styl" Guid="$(MakindaIconsGuid)" ID="$(Css)" />
+        <ImageFile Extension=".pcss" Guid="$(MakindaIconsGuid)" ID="$(Css)" />
+        <ImageFile Extension=".json" Guid="$(MakindaIconsGuid)" ID="$(Json)" />
+        <ImageFile Extension=".jsonc" Guid="$(MakindaIconsGuid)" ID="$(Json)" />
+        <ImageFile Extension=".json5" Guid="$(MakindaIconsGuid)" ID="$(Json)" />
+        <ImageFile Name="package.json" Guid="$(MakindaIconsGuid)" ID="$(Json)" />
+        <ImageFile Name="package-lock.json" Guid="$(MakindaIconsGuid)" ID="$(Json)" />
+        <ImageFile Name="tsconfig.json" Guid="$(MakindaIconsGuid)" ID="$(Json)" />
+        <ImageFile Name="tsconfig.base.json" Guid="$(MakindaIconsGuid)" ID="$(Json)" />
+        <ImageFile Name="jsconfig.json" Guid="$(MakindaIconsGuid)" ID="$(Json)" />
+        <ImageFile Extension=".yml" Guid="$(MakindaIconsGuid)" ID="$(Yaml)" />
+        <ImageFile Extension=".yaml" Guid="$(MakindaIconsGuid)" ID="$(Yaml)" />
+        <ImageFile Extension=".toml" Guid="$(MakindaIconsGuid)" ID="$(Yaml)" />
+        <ImageFile Name="docker-compose.yml" Guid="$(MakindaIconsGuid)" ID="$(Yaml)" />
+        <ImageFile Name="docker-compose.yaml" Guid="$(MakindaIconsGuid)" ID="$(Yaml)" />
+        <ImageFile Extension=".xml" Guid="$(MakindaIconsGuid)" ID="$(Xml)" />
+        <ImageFile Extension=".xsl" Guid="$(MakindaIconsGuid)" ID="$(Xml)" />
+        <ImageFile Extension=".xslt" Guid="$(MakindaIconsGuid)" ID="$(Xml)" />
+        <ImageFile Extension=".xsd" Guid="$(MakindaIconsGuid)" ID="$(Xml)" />
+        <ImageFile Extension=".plist" Guid="$(MakindaIconsGuid)" ID="$(Xml)" />
+        <ImageFile Extension=".md" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
+        <ImageFile Extension=".mdx" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
+        <ImageFile Extension=".markdown" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
+        <ImageFile Extension=".mdown" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
+        <ImageFile Extension=".rst" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
+        <ImageFile Extension=".adoc" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
+        <ImageFile Name="README" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
+        <ImageFile Name="README.md" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
+        <ImageFile Name="readme.md" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
+        <ImageFile Name="readme.markdown" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
+        <ImageFile Name="LICENSE" Guid="$(MakindaIconsGuid)" ID="$(License)" />
+        <ImageFile Name="LICENSE.md" Guid="$(MakindaIconsGuid)" ID="$(License)" />
+        <ImageFile Name="LICENSE.txt" Guid="$(MakindaIconsGuid)" ID="$(License)" />
+        <ImageFile Name="COPYING" Guid="$(MakindaIconsGuid)" ID="$(License)" />
+        <ImageFile Name="NOTICE" Guid="$(MakindaIconsGuid)" ID="$(License)" />
+        <ImageFile Extension=".config" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Extension=".conf" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Extension=".ini" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Extension=".cfg" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Extension=".properties" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Extension=".env" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".env" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".env.local" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".env.development" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".env.production" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".editorconfig" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".gitattributes" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".gitignore" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".npmrc" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".npmignore" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".prettierrc" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".prettierignore" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".eslintrc" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".eslintrc.json" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".eslintignore" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".stylelintrc" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".browserslistrc" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Extension=".pdf" Guid="$(MakindaIconsGuid)" ID="$(Pdf)" />
+        <ImageFile Extension=".doc" Guid="$(MakindaIconsGuid)" ID="$(Doc)" />
+        <ImageFile Extension=".docx" Guid="$(MakindaIconsGuid)" ID="$(Doc)" />
+        <ImageFile Extension=".rtf" Guid="$(MakindaIconsGuid)" ID="$(Doc)" />
+        <ImageFile Extension=".odt" Guid="$(MakindaIconsGuid)" ID="$(Doc)" />
+        <ImageFile Extension=".ppt" Guid="$(MakindaIconsGuid)" ID="$(Ppt)" />
+        <ImageFile Extension=".pptx" Guid="$(MakindaIconsGuid)" ID="$(Ppt)" />
+        <ImageFile Extension=".key" Guid="$(MakindaIconsGuid)" ID="$(Ppt)" />
+        <ImageFile Extension=".csv" Guid="$(MakindaIconsGuid)" ID="$(Csv)" />
+        <ImageFile Extension=".tsv" Guid="$(MakindaIconsGuid)" ID="$(Csv)" />
+        <ImageFile Extension=".txt" Guid="$(MakindaIconsGuid)" ID="$(Txt)" />
+        <ImageFile Extension=".log" Guid="$(MakindaIconsGuid)" ID="$(Txt)" />
+        <ImageFile Extension=".png" Guid="$(MakindaIconsGuid)" ID="$(Image)" />
+        <ImageFile Extension=".jpg" Guid="$(MakindaIconsGuid)" ID="$(Image)" />
+        <ImageFile Extension=".jpeg" Guid="$(MakindaIconsGuid)" ID="$(Image)" />
+        <ImageFile Extension=".webp" Guid="$(MakindaIconsGuid)" ID="$(Image)" />
+        <ImageFile Extension=".avif" Guid="$(MakindaIconsGuid)" ID="$(Image)" />
+        <ImageFile Extension=".bmp" Guid="$(MakindaIconsGuid)" ID="$(Image)" />
+        <ImageFile Extension=".ico" Guid="$(MakindaIconsGuid)" ID="$(Image)" />
+        <ImageFile Extension=".tiff" Guid="$(MakindaIconsGuid)" ID="$(Image)" />
+        <ImageFile Extension=".heic" Guid="$(MakindaIconsGuid)" ID="$(Image)" />
+        <ImageFile Extension=".svg" Guid="$(MakindaIconsGuid)" ID="$(Svg)" />
+        <ImageFile Extension=".gif" Guid="$(MakindaIconsGuid)" ID="$(Gif)" />
+        <ImageFile Extension=".mp4" Guid="$(MakindaIconsGuid)" ID="$(Video)" />
+        <ImageFile Extension=".mov" Guid="$(MakindaIconsGuid)" ID="$(Video)" />
+        <ImageFile Extension=".webm" Guid="$(MakindaIconsGuid)" ID="$(Video)" />
+        <ImageFile Extension=".mkv" Guid="$(MakindaIconsGuid)" ID="$(Video)" />
+        <ImageFile Extension=".avi" Guid="$(MakindaIconsGuid)" ID="$(Video)" />
+        <ImageFile Extension=".flv" Guid="$(MakindaIconsGuid)" ID="$(Video)" />
+        <ImageFile Extension=".mp3" Guid="$(MakindaIconsGuid)" ID="$(Audio)" />
+        <ImageFile Extension=".wav" Guid="$(MakindaIconsGuid)" ID="$(Audio)" />
+        <ImageFile Extension=".flac" Guid="$(MakindaIconsGuid)" ID="$(Audio)" />
+        <ImageFile Extension=".ogg" Guid="$(MakindaIconsGuid)" ID="$(Audio)" />
+        <ImageFile Extension=".aac" Guid="$(MakindaIconsGuid)" ID="$(Audio)" />
+        <ImageFile Extension=".m4a" Guid="$(MakindaIconsGuid)" ID="$(Audio)" />
+        <ImageFile Extension=".zip" Guid="$(MakindaIconsGuid)" ID="$(Archive)" />
+        <ImageFile Extension=".tar" Guid="$(MakindaIconsGuid)" ID="$(Archive)" />
+        <ImageFile Extension=".gz" Guid="$(MakindaIconsGuid)" ID="$(Archive)" />
+        <ImageFile Extension=".tgz" Guid="$(MakindaIconsGuid)" ID="$(Archive)" />
+        <ImageFile Extension=".rar" Guid="$(MakindaIconsGuid)" ID="$(Archive)" />
+        <ImageFile Extension=".7z" Guid="$(MakindaIconsGuid)" ID="$(Archive)" />
+        <ImageFile Extension=".bz2" Guid="$(MakindaIconsGuid)" ID="$(Archive)" />
+        <ImageFile Extension=".xz" Guid="$(MakindaIconsGuid)" ID="$(Archive)" />
+        <ImageFile Extension=".sql" Guid="$(MakindaIconsGuid)" ID="$(Database)" />
+        <ImageFile Extension=".db" Guid="$(MakindaIconsGuid)" ID="$(Database)" />
+        <ImageFile Extension=".sqlite" Guid="$(MakindaIconsGuid)" ID="$(Database)" />
+        <ImageFile Extension=".sqlite3" Guid="$(MakindaIconsGuid)" ID="$(Database)" />
+        <ImageFile Name="FUNDING.yml" Guid="$(MakindaIconsGuid)" ID="$(Github)" />
+        <ImageFile Name="CODEOWNERS" Guid="$(MakindaIconsGuid)" ID="$(Github)" />
+        <ImageFile Name="PULL_REQUEST_TEMPLATE.md" Guid="$(MakindaIconsGuid)" ID="$(Github)" />
+        <ImageFile Name="ISSUE_TEMPLATE.md" Guid="$(MakindaIconsGuid)" ID="$(Github)" />
+        <ImageFile Extension=".fig" Guid="$(MakindaIconsGuid)" ID="$(Figma)" />
+        <ImageFile Extension=".ttf" Guid="$(MakindaIconsGuid)" ID="$(Font)" />
+        <ImageFile Extension=".otf" Guid="$(MakindaIconsGuid)" ID="$(Font)" />
+        <ImageFile Extension=".woff" Guid="$(MakindaIconsGuid)" ID="$(Font)" />
+        <ImageFile Extension=".woff2" Guid="$(MakindaIconsGuid)" ID="$(Font)" />
+        <ImageFile Extension=".eot" Guid="$(MakindaIconsGuid)" ID="$(Font)" />
+        <ImageFile Name="yarn.lock" Guid="$(MakindaIconsGuid)" ID="$(Lock)" />
+        <ImageFile Name="pnpm-lock.yaml" Guid="$(MakindaIconsGuid)" ID="$(Lock)" />
+        <ImageFile Name="bun.lockb" Guid="$(MakindaIconsGuid)" ID="$(Lock)" />
+        <ImageFile Name="composer.lock" Guid="$(MakindaIconsGuid)" ID="$(Lock)" />
+        <ImageFile Name="poetry.lock" Guid="$(MakindaIconsGuid)" ID="$(Lock)" />
+    </ImageFiles>
+</ImageManifest>
