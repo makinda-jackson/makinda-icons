@@ -1,80 +1,207 @@
-# makinda-icons
+# Makinda Icons
 
-Multi-style icon themes for Visual Studio Code by Makinda Jackson, drawn from [Hugeicons](https://hugeicons.com). Covers both file/folder icons and product (UI) icons.
+Multi-style icon themes for Visual Studio Code and the wider VS Code family, by Makinda Jackson. Drawn from [Hugeicons](https://hugeicons.com), tuned to pair with the [Makinda Themes](https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes) color set.
 
-## Status
+This extension ships **two** independent themes you can mix and match:
 
-Phase 1: **Solid** (filled) — shipped as `Makinda Icons (Solid)` and `Makinda Product Icons (Solid)`. 124 starter icons, zero missing. Other Hugeicons styles (Duotone, Twotone, Stroke, Bulk, Sharp Solid, Sharp Stroke) are scaffolded but disabled — see [`docs/project-scope.md`](docs/project-scope.md).
+- **`Makinda Icons (Solid)`** — file & folder icons in the Explorer, tabs, breadcrumbs, Quick Open.
+- **`Makinda Product Icons (Solid)`** — UI icons in the Activity Bar, status bar, gutters, and panels (84 codicon overrides).
 
-## Repository structure
+> Currently shipping the **Solid** style. Duotone, Twotone, Stroke, Bulk, and Sharp variants are on the roadmap.
 
-```
-makinda-icons/
-├── package.json                       Extension manifest
-├── themes/                            Generated theme JSONs (don't hand-edit)
-│   ├── makinda-file-icon-theme.<style>.json
-│   └── makinda-product-icon-theme.<style>.json
-├── icons/
-│   └── <style>/                       SVGs copied from Hugeicons per style
-│       ├── file-icons/
-│       └── product-icons/
-├── scripts/
-│   ├── manifest.mjs                   Single source of truth: name → Hugeicons path
-│   ├── styles.mjs                     Style registry (which Hugeicons sets to build)
-│   └── build.mjs                      Per-style copy + theme JSON emit
-└── docs/                              Documentation about VS Code icons & this project
-```
+---
 
-## Develop
+## Install
 
-Prerequisite: an unzipped Hugeicons Pro download. The default source root is:
+Pick the section that matches your editor.
 
-```
-/Users/makindajack/Downloads/Compressed/Hugeicons Pro/25,000+ SVG icons
-```
+### Visual Studio Code · VS Code Insiders · GitHub Codespaces
 
-Override with `HUGEICONS_ROOT=/path/to/25,000+ SVG icons npm run build`.
+**From the Marketplace UI**
+
+1. Open **Extensions** (`Cmd/Ctrl + Shift + X`).
+2. Search for `Makinda Icons`.
+3. Click **Install**.
+
+**From the command line**
 
 ```sh
-npm run build           # build every enabled style (currently: solid)
-npm run build:clean     # wipe icons/ + themes/ and rebuild
-npm run build:solid     # build a specific style
-node scripts/build.mjs --style=solid --style=duotone   # build several
+# Stable
+code --install-extension makindajack.makinda-icons
+
+# Insiders
+code-insiders --install-extension makindajack.makinda-icons
 ```
 
-Then in VS Code:
+In Codespaces and `vscode.dev` / `github.dev`, install the same way as desktop VS Code — search and install from the in-browser Extensions view.
 
-1. Open this folder.
-2. Press `F5` to launch the Extension Development Host.
-3. `Cmd+Shift+P → Preferences: File Icon Theme → Makinda Icons (Solid)`
-4. `Cmd+Shift+P → Preferences: Product Icon Theme → Makinda Product Icons (Solid)`
+### Cursor
 
-## Add or change an icon
+1. Open **Extensions** in the sidebar.
+2. Search for `Makinda Icons`.
+3. Click **Install**. (Cursor pulls from Open VSX; the listing is mirrored automatically.)
 
-Edit [scripts/manifest.mjs](scripts/manifest.mjs) and re-run `npm run build`. The manifest is the only place you need to touch — file lists, theme JSONs, and copied SVGs are all derived from it.
+CLI alternative:
 
-## Add a new style variant
+```sh
+cursor --install-extension makindajack.makinda-icons
+```
 
-1. Flip `enabled: true` (or add a new entry) in [scripts/styles.mjs](scripts/styles.mjs).
-2. Add the matching `iconThemes` / `productIconThemes` entries in [package.json](package.json).
-3. Run `npm run build:clean`. Patch any per-style filename mismatches via `fileAlias` on the style entry.
+### Windsurf (Codeium)
 
-## Docs
+1. Open the **Extensions** view.
+2. Search for `Makinda Icons` and install.
 
-- [Project scope & workflow](docs/project-scope.md) ← **start here**
-- [What are VS Code icons](docs/overview/what-are-vscode-icons.md)
-- [How the project works](docs/overview/how-it-works.md)
-- [Supported IDEs](docs/overview/supported-ides.md)
-- [Roadmap & TODO](docs/overview/roadmap.md)
-- [How file icons work](docs/file-icons/how-file-icons-work.md)
-- [File icons checklist](docs/file-icons/file-icons-list.md)
-- [How product icons work](docs/product-icons/how-product-icons-work.md)
-- [Product icons checklist](docs/product-icons/product-icons-list.md)
-- [Building an icon theme](docs/theme-development/building-icon-themes.md)
+CLI:
 
-## Companion extension
+```sh
+windsurf --install-extension makindajack.makinda-icons
+```
 
-The matching **color theme** (Makinda Light + Makinda Dark) lives in [makinda-themes](https://github.com/makindajack/makinda-themes). The two are designed to be installed together but ship separately.
+### Trae (ByteDance)
+
+1. Open **Extensions**.
+2. Search for `Makinda Icons` and install.
+
+If your build of Trae can't reach the registry, use the manual install below.
+
+### VSCodium
+
+VSCodium uses the [Open VSX Registry](https://open-vsx.org), not the VS Code Marketplace.
+
+1. Open **Extensions**, search for `Makinda Icons`, install.
+2. Or from the CLI:
+
+```sh
+codium --install-extension makindajack.makinda-icons
+```
+
+### Gitpod · code-server · Eclipse Theia
+
+These editors also use Open VSX. Install via the in-app Extensions view, or:
+
+```sh
+# code-server
+code-server --install-extension makindajack.makinda-icons
+```
+
+If your code-server instance points at a different gallery, set:
+
+```sh
+export EXTENSIONS_GALLERY='{"serviceUrl":"https://open-vsx.org/vscode/gallery","itemUrl":"https://open-vsx.org/vscode/item"}'
+```
+
+before launching it.
+
+### Manual install (any compatible editor)
+
+If a registry isn't reachable, every editor listed above accepts a local `.vsix`:
+
+1. Download `makinda-icons-<version>.vsix` from the [GitHub Releases](https://github.com/makindajack/makinda-icons/releases) page.
+2. In your editor: **Extensions** view → `…` menu → **Install from VSIX…** → pick the file.
+3. Reload if prompted.
+
+CLI alternative — works for VS Code, VSCodium, Cursor, Windsurf, Trae, code-server:
+
+```sh
+<editor-cli> --install-extension /path/to/makinda-icons-<version>.vsix
+```
+
+### Not yet supported
+
+JetBrains IDEs, Sublime Text, Neovim, Emacs, Xcode, Visual Studio (Windows), Fleet, and Zed don't implement the VS Code icon-theme format. Separate ports are tracked in the [roadmap](https://github.com/makindajack/makinda-icons/blob/main/docs/overview/roadmap.md).
+
+---
+
+## Activate
+
+Once installed, switch each theme independently. They're separate settings — you can use one without the other.
+
+### File icons
+
+1. Open the Command Palette: `Cmd+Shift+P` (macOS) or `Ctrl+Shift+P` (Windows / Linux).
+2. Run **Preferences: File Icon Theme**.
+3. Select **Makinda Icons (Solid)**.
+
+Or set it directly in `settings.json`:
+
+```jsonc
+{
+  "workbench.iconTheme": "makinda-file-icons-solid",
+}
+```
+
+### Product icons (UI icons)
+
+1. Command Palette → **Preferences: Product Icon Theme**.
+2. Select **Makinda Product Icons (Solid)**.
+
+Or in `settings.json`:
+
+```jsonc
+{
+  "workbench.productIconTheme": "makinda-product-icons-solid",
+}
+```
+
+### Use both at once
+
+```jsonc
+{
+  "workbench.iconTheme": "makinda-file-icons-solid",
+  "workbench.productIconTheme": "makinda-product-icons-solid",
+}
+```
+
+---
+
+## Pair with Makinda Themes
+
+These icons are color-tuned to match the [Makinda Themes](https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes) color set:
+
+```jsonc
+{
+  "workbench.colorTheme": "Makinda Dark",
+  "workbench.iconTheme": "makinda-file-icons-solid",
+  "workbench.productIconTheme": "makinda-product-icons-solid",
+}
+```
+
+Auto-switch with your OS appearance:
+
+```jsonc
+{
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Makinda Light",
+  "workbench.preferredDarkColorTheme": "Makinda Dark",
+  "workbench.iconTheme": "makinda-file-icons-solid",
+  "workbench.productIconTheme": "makinda-product-icons-solid",
+}
+```
+
+---
+
+## Troubleshooting
+
+**Icons didn't change after installing.** Run **Preferences: File Icon Theme** _and_ **Preferences: Product Icon Theme** explicitly — installation alone doesn't activate either.
+
+**A specific file type still uses the default icon.** That extension isn't in the starter set yet. Open an [issue](https://github.com/makindajack/makinda-icons/issues) with the extension name and I'll add it.
+
+**Some UI icons (gutter, status bar) are unchanged.** Product Icon Themes can only override icons whose codicon ID is mapped. Anything not yet in the manifest falls back to the built-in codicon — that's by design, not a bug. The list of overrides will grow.
+
+**Cursor / Windsurf / Trae can't find it.** Their bundled Open VSX index sometimes lags. Fall back to the [manual `.vsix` install](#manual-install-any-compatible-editor).
+
+---
+
+## Links
+
+- [GitHub repository](https://github.com/makindajack/makinda-icons)
+- [Report an issue](https://github.com/makindajack/makinda-icons/issues)
+- [Roadmap](https://github.com/makindajack/makinda-icons/blob/main/docs/overview/roadmap.md)
+- [Contributing & build docs](https://github.com/makindajack/makinda-icons/blob/main/docs/README.dev.md)
+- [Companion color theme: Makinda Themes](https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes)
+
+---
 
 ## License
 

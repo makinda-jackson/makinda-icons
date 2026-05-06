@@ -2,6 +2,12 @@
 
 All notable changes to **Makinda Icons** will be documented in this file.
 
+## [1.0.2] — 2026-05-06
+
+### Changed
+
+- Rewrote the README as a Marketplace-facing install & activation guide covering every supported VS Code-family editor (VS Code, Insiders, Codespaces, Cursor, Windsurf, Trae, VSCodium, Gitpod, code-server, Theia). The previous developer-facing README was moved to [`docs/README.dev.md`](docs/README.dev.md).
+
 ## [1.0.1] — 2026-05-06
 
 First public release.
