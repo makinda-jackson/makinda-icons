@@ -11,9 +11,11 @@ Living checklist of what's done, what's next, and which editors we're targeting.
 - [x] VS Code extension scaffold (`package.json`, contribution points)
 - [x] Build pipeline (`scripts/manifest.mjs` + `scripts/build.mjs`)
 - [x] Starter set of **124 icons** copied from Hugeicons Pro
-- [x] File icon theme JSON generated → [`themes/makinda-file-icon-theme.json`](../../themes/makinda-file-icon-theme.json)
-- [x] Product icon theme JSON generated → [`themes/makinda-product-icon-theme.json`](../../themes/makinda-product-icon-theme.json)
+- [x] File icon theme JSON generated → [`themes/makinda-file-icon-theme.solid.json`](../../themes/makinda-file-icon-theme.solid.json)
+- [x] Product icon theme JSON generated → [`themes/makinda-product-icon-theme.solid.json`](../../themes/makinda-product-icon-theme.solid.json)
 - [x] Documentation set in [`docs/`](../)
+- [x] Bumped to **`1.0.1`** and made publishable (removed `private`, added `bugs` / `homepage`)
+- [x] `vsce package` smoke test green → `makinda-icons-1.0.1.vsix` (132 files, 137 KB)
 - [ ] Polish pass on existing 124 icons (visual QA, alignment, optical sizing)
 - [ ] Expand coverage toward ~300 file icons + full codicon override set
 - [ ] First public release on the VS Code Marketplace
@@ -23,15 +25,15 @@ Living checklist of what's done, what's next, and which editors we're targeting.
 
 ## Phase 1 — Ship the VS Code extension (current)
 
-**Goal:** a polished `0.1.0` release that works in every editor in the VS Code family.
+**Goal:** publish `1.0.1` to every registry that serves the VS Code family.
 
 - [ ] Final icon polish across the 124 starter icons
 - [ ] Add missing high-frequency file types (audit against [`docs/file-icons/file-icons-list.md`](../file-icons/file-icons-list.md))
 - [ ] Audit codicon coverage against [`docs/product-icons/product-icons-list.md`](../product-icons/product-icons-list.md)
-- [ ] `vsce package` smoke test
-- [ ] Publish to **VS Code Marketplace** (`makindajack.makinda-icons`)
-- [ ] Publish to **Open VSX Registry** — unlocks VSCodium, Cursor, Windsurf, Trae, Gitpod, Theia, code-server with zero extra code
-- [ ] Tag `v0.1.0` GitHub release with attached `.vsix`
+- [x] `vsce package` smoke test
+- [ ] Publish to **VS Code Marketplace** (`makindajack.makinda-icons`) — `vsce publish` (needs Azure DevOps PAT)
+- [ ] Publish to **Open VSX Registry** — `ovsx publish` (needs open-vsx.org token); unlocks VSCodium, Cursor, Windsurf, Trae, Gitpod, Theia, code-server with zero extra code
+- [ ] Tag `v1.0.1` GitHub release with attached `.vsix`
 
 Editors covered after Phase 1: **VS Code, VS Code Insiders, VSCodium, Cursor, Windsurf, Trae, GitHub Codespaces, vscode.dev, github.dev, Gitpod, code-server, Theia**.
 

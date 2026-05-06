@@ -2,9 +2,8 @@
     "name": "makinda-icons",
     "displayName": "Makinda Icons",
     "description": "Multi-style icon themes for VS Code by Makinda Jackson, drawn from Hugeicons. File icons + product icons.",
-    "version": "0.0.1",
+    "version": "1.0.1",
     "publisher": "makindajack",
-    "private": true,
     "license": "SEE LICENSE IN LICENSE.md",
     "engines": {
         "vscode": "^1.85.0"
@@ -22,8 +21,12 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/makindajack/makinda-icons"
+        "url": "https://github.com/makindajack/makinda-icons.git"
     },
+    "bugs": {
+        "url": "https://github.com/makindajack/makinda-icons/issues"
+    },
+    "homepage": "https://github.com/makindajack/makinda-icons#readme",
     "contributes": {
         "iconThemes": [
             {
