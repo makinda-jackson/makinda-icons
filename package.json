@@ -55,7 +55,8 @@
         "build:duotone": "node scripts/build.mjs --style=duotone",
         "build:jetbrains": "node scripts/build-jetbrains.mjs",
         "build:nvim": "node scripts/build-nvim.mjs",
-        "build:all": "node scripts/build.mjs && node scripts/build-jetbrains.mjs && node scripts/build-nvim.mjs"
+        "build:emacs": "node scripts/build-emacs.mjs",
+        "build:all": "node scripts/build.mjs && node scripts/build-jetbrains.mjs && node scripts/build-nvim.mjs && node scripts/build-emacs.mjs"
     },
     "devDependencies": {
         "fantasticon": "^4.1.0"

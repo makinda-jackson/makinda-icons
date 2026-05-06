@@ -80,9 +80,11 @@ Editors covered after Phase 1: **VS Code, VS Code Insiders, VSCodium, Cursor, Wi
 
 ## Phase 4 — Emacs
 
-- [ ] Emitter `scripts/build-emacs.mjs`
-- [ ] Generate `all-the-icons.el` / `nerd-icons.el` overlay
+- [x] Emitter [`scripts/build-emacs.mjs`](../../scripts/build-emacs.mjs)
+- [x] Generate `nerd-icons.el` overlay — single-file package at [`packages/emacs/makinda-icons.el`](../../packages/emacs/makinda-icons.el) (`makinda-icons-setup` pushes 127 ext + 56 filename overlays into `nerd-icons-extension-icon-alist` / `nerd-icons-regexp-icon-alist`)
+- [x] Shared glyph table extracted to [`scripts/nerd-font-glyphs.mjs`](../../scripts/nerd-font-glyphs.mjs) so Phase 3 (Neovim) and Phase 4 (Emacs) stay in lock-step
 - [ ] Publish via MELPA
+- [ ] `all-the-icons.el` adapter (later — `nerd-icons.el` is the active package in 2026)
 
 Same Nerd Font / monochrome caveats as Neovim.
 

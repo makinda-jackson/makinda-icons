@@ -6,6 +6,13 @@ All notable changes to **Makinda Icons** will be documented in this file.
 
 ### Added
 
+- **Phase 4 — Emacs emitter.** New build script [`scripts/build-emacs.mjs`](scripts/build-emacs.mjs) emits a single-file MELPA-ready package at [`packages/emacs/makinda-icons.el`](packages/emacs/makinda-icons.el). `(makinda-icons-setup)` pushes 55 Makinda glyphs / 127 extension overlays / 56 filename overlays onto `nerd-icons-extension-icon-alist` and `nerd-icons-regexp-icon-alist` — picked up automatically by anything that uses `nerd-icons-icon-for-file` (treemacs, dired-sidebar, doom-modeline, etc.). See [`packages/emacs/README.md`](packages/emacs/README.md).
+- New npm script `build:emacs`; `build:all` now chains VS Code → JetBrains → Neovim → Emacs.
+
+### Changed
+
+- **Shared glyph table.** Extracted the Nerd Font codepoint + Makinda palette table from `scripts/build-nvim.mjs` into [`scripts/nerd-font-glyphs.mjs`](scripts/nerd-font-glyphs.mjs) so the Neovim and Emacs builds stay in lock-step. No behavioral change in the Neovim output.
+
 - **Phase 3 — Neovim emitter.** New build script [`scripts/build-nvim.mjs`](scripts/build-nvim.mjs) reads the manifest and generates a `nvim-web-devicons` overlay plugin under [`packages/nvim/`](packages/nvim/) (`lua/makinda-icons/init.lua` + `icons.lua`). Maps 55 Makinda file icons to Nerd Font codepoints + Makinda palette colors, covering 127 extensions and 56 exact filenames with zero gaps. Install via `lazy.nvim` / `packer` and call `require("makinda-icons").setup()`. See [`packages/nvim/README.md`](packages/nvim/README.md).
 - New npm scripts: `build:nvim` and an updated `build:all` that now chains VS Code → JetBrains → Neovim.
 
