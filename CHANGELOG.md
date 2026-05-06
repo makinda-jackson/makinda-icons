@@ -2,6 +2,29 @@
 
 All notable changes to **Makinda Icons** will be documented in this file.
 
+## [1.1.0] — 2026-05-06
+
+### Added
+
+- **Six new theme variants.** The build pipeline now emits seven complete styles, each a fully separate icon theme + product icon theme in the VS Code theme picker:
+  - Makinda Icons (Solid) — original.
+  - Makinda Icons (Duotone) — new in v1.1.0.
+  - Makinda Icons (Twotone) — new in v1.1.0.
+  - Makinda Icons (Stroke) — new in v1.1.0.
+  - Makinda Icons (Bulk) — new in v1.1.0.
+  - Makinda Icons (Sharp Solid) — new in v1.1.0.
+  - Makinda Icons (Sharp Stroke) — new in v1.1.0.
+- All new variants are sourced from the same Hugeicons Pro library via [`scripts/manifest.mjs`](scripts/manifest.mjs); enable additional styles by toggling `enabled: true` in [`scripts/styles.mjs`](scripts/styles.mjs) and running `npm run build`.
+
+### Changed
+
+- `package.json` `contributes.iconThemes` and `contributes.productIconThemes` now expose all 7 variants (was 1).
+- `scripts/styles.mjs` — flipped `enabled: true` for `duotone`, `twotone`, `stroke`, `bulk`, `sharp-solid`, `sharp-stroke`.
+
+### Notes
+
+- A handful of icons are missing from some sets (10 cells across 1,764) and fall back to VS Code defaults: `Settings/setting-01.svg` (Twotone), `Add Remove Delete/cancel-square.svg` (Bulk), `Game & Sports/puzzle.svg` (Sharp/Solid + Sharp/Stroke). These can be patched via `fileAlias` in `scripts/styles.mjs` in a future release.
+
 ## [1.0.12] — 2026-05-06
 
 ### Added

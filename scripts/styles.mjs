@@ -30,31 +30,31 @@ export const styles = [
         id: "duotone",
         label: "Duotone",
         srcRoot: "Rounded/Duotone",
-        enabled: false, // Phase 2
+        enabled: true, // v1.1.0
     },
     {
         id: "twotone",
         label: "Twotone",
         srcRoot: "Rounded/Twotone",
-        enabled: false, // Phase 3
+        enabled: true, // v1.1.0
     },
     {
         id: "stroke",
         label: "Stroke",
         srcRoot: "Rounded/Stroke",
-        enabled: false, // Phase 3
+        enabled: true, // v1.1.0
     },
     {
         id: "bulk",
         label: "Bulk",
         srcRoot: "Rounded/Bulk",
-        enabled: false, // Phase 4
+        enabled: true, // v1.1.0
     },
     {
         id: "sharp-solid",
         label: "Sharp Solid",
         srcRoot: "Sharp/Solid",
-        enabled: false, // Phase 4
+        enabled: true, // v1.1.0
         categoryAlias: {
             "Arrows (Round)": "Arrows",
             "Arrows (Sharp)": "Arrows",
@@ -64,7 +64,7 @@ export const styles = [
         id: "sharp-stroke",
         label: "Sharp Stroke",
         srcRoot: "Sharp/Stroke",
-        enabled: false, // Phase 4
+        enabled: true, // v1.1.0
         categoryAlias: {
             "Arrows (Round)": "Arrows",
             "Arrows (Sharp)": "Arrows",

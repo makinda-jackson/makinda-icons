@@ -2,7 +2,7 @@
     "name": "makinda-icons",
     "displayName": "Makinda Icons",
     "description": "Multi-style icon themes for VS Code by Makinda Jackson, inspired by Hugeicons. File icons + product icons.",
-    "version": "1.0.12",
+    "version": "1.1.0",
     "publisher": "makindajack",
     "icon": "images/icon-dark.png",
     "galleryBanner": {
@@ -38,6 +38,36 @@
                 "id": "makinda-file-icons-solid",
                 "label": "Makinda Icons (Solid)",
                 "path": "./themes/makinda-file-icon-theme.solid.json"
+            },
+            {
+                "id": "makinda-file-icons-duotone",
+                "label": "Makinda Icons (Duotone)",
+                "path": "./themes/makinda-file-icon-theme.duotone.json"
+            },
+            {
+                "id": "makinda-file-icons-twotone",
+                "label": "Makinda Icons (Twotone)",
+                "path": "./themes/makinda-file-icon-theme.twotone.json"
+            },
+            {
+                "id": "makinda-file-icons-stroke",
+                "label": "Makinda Icons (Stroke)",
+                "path": "./themes/makinda-file-icon-theme.stroke.json"
+            },
+            {
+                "id": "makinda-file-icons-bulk",
+                "label": "Makinda Icons (Bulk)",
+                "path": "./themes/makinda-file-icon-theme.bulk.json"
+            },
+            {
+                "id": "makinda-file-icons-sharp-solid",
+                "label": "Makinda Icons (Sharp Solid)",
+                "path": "./themes/makinda-file-icon-theme.sharp-solid.json"
+            },
+            {
+                "id": "makinda-file-icons-sharp-stroke",
+                "label": "Makinda Icons (Sharp Stroke)",
+                "path": "./themes/makinda-file-icon-theme.sharp-stroke.json"
             }
         ],
         "productIconThemes": [
@@ -45,6 +75,36 @@
                 "id": "makinda-product-icons-solid",
                 "label": "Makinda Product Icons (Solid)",
                 "path": "./themes/makinda-product-icon-theme.solid.json"
+            },
+            {
+                "id": "makinda-product-icons-duotone",
+                "label": "Makinda Product Icons (Duotone)",
+                "path": "./themes/makinda-product-icon-theme.duotone.json"
+            },
+            {
+                "id": "makinda-product-icons-twotone",
+                "label": "Makinda Product Icons (Twotone)",
+                "path": "./themes/makinda-product-icon-theme.twotone.json"
+            },
+            {
+                "id": "makinda-product-icons-stroke",
+                "label": "Makinda Product Icons (Stroke)",
+                "path": "./themes/makinda-product-icon-theme.stroke.json"
+            },
+            {
+                "id": "makinda-product-icons-bulk",
+                "label": "Makinda Product Icons (Bulk)",
+                "path": "./themes/makinda-product-icon-theme.bulk.json"
+            },
+            {
+                "id": "makinda-product-icons-sharp-solid",
+                "label": "Makinda Product Icons (Sharp Solid)",
+                "path": "./themes/makinda-product-icon-theme.sharp-solid.json"
+            },
+            {
+                "id": "makinda-product-icons-sharp-stroke",
+                "label": "Makinda Product Icons (Sharp Stroke)",
+                "path": "./themes/makinda-product-icon-theme.sharp-stroke.json"
             }
         ]
     },

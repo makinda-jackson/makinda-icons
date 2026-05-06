@@ -1,0 +1,590 @@
+{
+  "$schema": "vscode://schemas/product-icon-theme",
+  "fonts": [
+    {
+      "id": "makinda-product-icons-duotone",
+      "src": [
+        {
+          "path": "./fonts/makinda-product-icons-duotone.woff2",
+          "format": "woff2"
+        },
+        {
+          "path": "./fonts/makinda-product-icons-duotone.woff",
+          "format": "woff"
+        }
+      ],
+      "weight": "normal",
+      "style": "normal"
+    }
+  ],
+  "iconDefinitions": {
+    "files": {
+      "fontCharacter": "\\E000",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "search": {
+      "fontCharacter": "\\E001",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "search-view-icon": {
+      "fontCharacter": "\\E002",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "source-control": {
+      "fontCharacter": "\\E003",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "source-control-view-icon": {
+      "fontCharacter": "\\E004",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "debug-alt": {
+      "fontCharacter": "\\E005",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "run-view-icon": {
+      "fontCharacter": "\\E006",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "extensions": {
+      "fontCharacter": "\\E007",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "extensions-view-icon": {
+      "fontCharacter": "\\E008",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "account": {
+      "fontCharacter": "\\E009",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "settings-gear": {
+      "fontCharacter": "\\E00A",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "settings-view-bar-icon": {
+      "fontCharacter": "\\E00B",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "chevron-up": {
+      "fontCharacter": "\\E00C",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "chevron-down": {
+      "fontCharacter": "\\E00D",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "chevron-left": {
+      "fontCharacter": "\\E00E",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "chevron-right": {
+      "fontCharacter": "\\E00F",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "arrow-up": {
+      "fontCharacter": "\\E010",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "arrow-down": {
+      "fontCharacter": "\\E011",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "arrow-left": {
+      "fontCharacter": "\\E012",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "arrow-right": {
+      "fontCharacter": "\\E013",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "fold": {
+      "fontCharacter": "\\E014",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "unfold": {
+      "fontCharacter": "\\E015",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "expand-all": {
+      "fontCharacter": "\\E016",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "collapse-all": {
+      "fontCharacter": "\\E017",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "add": {
+      "fontCharacter": "\\E018",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "plus": {
+      "fontCharacter": "\\E019",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "remove": {
+      "fontCharacter": "\\E01A",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "close": {
+      "fontCharacter": "\\E01B",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "close-all": {
+      "fontCharacter": "\\E01C",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "trash": {
+      "fontCharacter": "\\E01D",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "clear-all": {
+      "fontCharacter": "\\E01E",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "check": {
+      "fontCharacter": "\\E01F",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "pass": {
+      "fontCharacter": "\\E020",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "error": {
+      "fontCharacter": "\\E021",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "warning": {
+      "fontCharacter": "\\E022",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "info": {
+      "fontCharacter": "\\E023",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "question": {
+      "fontCharacter": "\\E024",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "new-file": {
+      "fontCharacter": "\\E025",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "new-folder": {
+      "fontCharacter": "\\E026",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "save": {
+      "fontCharacter": "\\E027",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "file": {
+      "fontCharacter": "\\E028",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "folder": {
+      "fontCharacter": "\\E029",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "folder-opened": {
+      "fontCharacter": "\\E02A",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "edit": {
+      "fontCharacter": "\\E02B",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "pencil": {
+      "fontCharacter": "\\E02C",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "copy": {
+      "fontCharacter": "\\E02D",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "comment": {
+      "fontCharacter": "\\E02E",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "eye": {
+      "fontCharacter": "\\E02F",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "eye-closed": {
+      "fontCharacter": "\\E030",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "git-branch": {
+      "fontCharacter": "\\E031",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "git-commit": {
+      "fontCharacter": "\\E032",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "git-merge": {
+      "fontCharacter": "\\E033",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "git-compare": {
+      "fontCharacter": "\\E034",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "git-pull-request": {
+      "fontCharacter": "\\E035",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "github": {
+      "fontCharacter": "\\E036",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "bug": {
+      "fontCharacter": "\\E037",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "play": {
+      "fontCharacter": "\\E038",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "debug-start": {
+      "fontCharacter": "\\E039",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "debug-continue": {
+      "fontCharacter": "\\E03A",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "debug-pause": {
+      "fontCharacter": "\\E03B",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "debug-stop": {
+      "fontCharacter": "\\E03C",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "debug-restart": {
+      "fontCharacter": "\\E03D",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "debug-disconnect": {
+      "fontCharacter": "\\E03E",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "debug-step-into": {
+      "fontCharacter": "\\E03F",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "debug-step-out": {
+      "fontCharacter": "\\E040",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "debug-step-over": {
+      "fontCharacter": "\\E041",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "stop": {
+      "fontCharacter": "\\E042",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "stop-circle": {
+      "fontCharacter": "\\E043",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "record": {
+      "fontCharacter": "\\E044",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "record-keys": {
+      "fontCharacter": "\\E045",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "terminal": {
+      "fontCharacter": "\\E046",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "terminal-bash": {
+      "fontCharacter": "\\E047",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "bell": {
+      "fontCharacter": "\\E048",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "bell-dot": {
+      "fontCharacter": "\\E049",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "heart": {
+      "fontCharacter": "\\E04A",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "star-empty": {
+      "fontCharacter": "\\E04B",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "star-full": {
+      "fontCharacter": "\\E04C",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "bookmark": {
+      "fontCharacter": "\\E04D",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "tag": {
+      "fontCharacter": "\\E04E",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "filter": {
+      "fontCharacter": "\\E04F",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "refresh": {
+      "fontCharacter": "\\E050",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "sync": {
+      "fontCharacter": "\\E051",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "lock": {
+      "fontCharacter": "\\E052",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "unlock": {
+      "fontCharacter": "\\E053",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "menu": {
+      "fontCharacter": "\\E054",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "ellipsis": {
+      "fontCharacter": "\\E055",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "kebab-vertical": {
+      "fontCharacter": "\\E056",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "home": {
+      "fontCharacter": "\\E057",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "globe": {
+      "fontCharacter": "\\E058",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "key": {
+      "fontCharacter": "\\E059",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "gear": {
+      "fontCharacter": "\\E05A",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "tools": {
+      "fontCharacter": "\\E05B",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "lightbulb": {
+      "fontCharacter": "\\E05C",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "pin": {
+      "fontCharacter": "\\E05D",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "pinned": {
+      "fontCharacter": "\\E05E",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "unpin": {
+      "fontCharacter": "\\E05F",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "clock": {
+      "fontCharacter": "\\E060",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "history": {
+      "fontCharacter": "\\E061",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "calendar": {
+      "fontCharacter": "\\E062",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "layout-sidebar-left": {
+      "fontCharacter": "\\E063",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "layout-sidebar-right": {
+      "fontCharacter": "\\E064",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "chrome-close": {
+      "fontCharacter": "\\E065",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "chrome-minimize": {
+      "fontCharacter": "\\E066",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "chrome-maximize": {
+      "fontCharacter": "\\E067",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "chrome-restore": {
+      "fontCharacter": "\\E068",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "screen-full": {
+      "fontCharacter": "\\E069",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "screen-normal": {
+      "fontCharacter": "\\E06A",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "cloud": {
+      "fontCharacter": "\\E06B",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "cloud-download": {
+      "fontCharacter": "\\E06C",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "cloud-upload": {
+      "fontCharacter": "\\E06D",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "desktop-download": {
+      "fontCharacter": "\\E06E",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "archive": {
+      "fontCharacter": "\\E06F",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "package": {
+      "fontCharacter": "\\E070",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "repo": {
+      "fontCharacter": "\\E071",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "library": {
+      "fontCharacter": "\\E072",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "code": {
+      "fontCharacter": "\\E073",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "go-to-file": {
+      "fontCharacter": "\\E074",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "file-code": {
+      "fontCharacter": "\\E075",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "export": {
+      "fontCharacter": "\\E076",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "import": {
+      "fontCharacter": "\\E077",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "discard": {
+      "fontCharacter": "\\E078",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "link": {
+      "fontCharacter": "\\E079",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "link-external": {
+      "fontCharacter": "\\E07A",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "share": {
+      "fontCharacter": "\\E07B",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "mail": {
+      "fontCharacter": "\\E07C",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "mail-read": {
+      "fontCharacter": "\\E07D",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "inbox": {
+      "fontCharacter": "\\E07E",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "reply": {
+      "fontCharacter": "\\E07F",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "comment-discussion": {
+      "fontCharacter": "\\E080",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "note": {
+      "fontCharacter": "\\E081",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "notebook": {
+      "fontCharacter": "\\E082",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "output": {
+      "fontCharacter": "\\E083",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "console": {
+      "fontCharacter": "\\E084",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "sign-in": {
+      "fontCharacter": "\\E085",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "sign-out": {
+      "fontCharacter": "\\E086",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "feedback": {
+      "fontCharacter": "\\E087",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "thumbsup": {
+      "fontCharacter": "\\E088",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "thumbsdown": {
+      "fontCharacter": "\\E089",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "loading": {
+      "fontCharacter": "\\E08A",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "search-stop": {
+      "fontCharacter": "\\E08B",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "zoom-in": {
+      "fontCharacter": "\\E08C",
+      "fontId": "makinda-product-icons-duotone"
+    },
+    "zoom-out": {
+      "fontCharacter": "\\E08D",
+      "fontId": "makinda-product-icons-duotone"
+    }
+  }
+}
