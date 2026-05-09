@@ -6,9 +6,9 @@ This document defines **what we're building, why, and how we work on it**. It is
 
 ## 1. What this project is
 
-`makinda-icons` is a single VS Code extension that ships **multiple icon themes** by Makinda Jackson, inspired by the [Hugeicons](https://hugeicons.com) Pro library.
+`makinda-icons` is a single VS Code extension that ships **multiple icon themes** by Makinda Jackson.
 
-Each Hugeicons drawing style becomes a separate, user-selectable theme. Each style covers **both** kinds of VS Code iconography:
+Each upstream drawing style becomes a separate, user-selectable theme. Each style covers **both** kinds of VS Code iconography:
 
 - a **file icon theme** (Explorer, tabs, file pickers)
 - a **product icon theme** (activity bar, status bar, debug controls, etc.)
@@ -19,13 +19,13 @@ So a user can, for example, pick _Makinda Icons (Solid)_ for files and _Makinda 
 
 - One coherent visual language across **the entire VS Code surface** — file icons and product icons sharing one visual family.
 - A personal brand artifact for Makinda Jackson's portfolio.
-- A practical, license-respecting reuse of an asset library I already own (Hugeicons Pro).
+- A practical, license-respecting reuse of an asset library I already own (the upstream icon library).
 
 ## 3. Scope
 
 ### In scope
 
-- Shipping every Hugeicons style as a theme variant (see §4).
+- Shipping every upstream style as a theme variant (see §4).
 - A build pipeline that converts a single manifest (`scripts/manifest.mjs`) into per-style icon folders and theme JSONs.
 - Documentation explaining VS Code's icon model so the theme is easy to maintain (`docs/`).
 - Coverage of the most common file/folder types, languages, frameworks, and product (codicon) IDs.
@@ -33,7 +33,7 @@ So a user can, for example, pick _Makinda Icons (Solid)_ for files and _Makinda 
 ### Out of scope (for now)
 
 - An icon font pipeline. We use per-icon SVGs in both icon themes; we are not generating a `.woff` codicon-replacement font yet.
-- Hand-drawn or original artwork. Every icon is sourced from Hugeicons.
+- Hand-drawn or original artwork. Every icon is sourced from the upstream library.
 - Support for editors other than VS Code (Cursor, JetBrains, etc.).
 - Localized icon variants.
 - 100% codicon coverage on day one — partial product-icon themes are valid; unmapped IDs fall back to the built-in codicon.
@@ -45,7 +45,7 @@ So a user can, for example, pick _Makinda Icons (Solid)_ for files and _Makinda 
 
 ## 4. Style variants
 
-Hugeicons Pro ships these styles (folder layout under `25,000+ SVG icons/`):
+The upstream icon library ships these styles (folder layout under `25,000+ SVG icons/`):
 
 | Variant | Style   | Description                              | Phase |
 | ------- | ------- | ---------------------------------------- | ----- |
@@ -93,7 +93,7 @@ styles config ──┘                └► themes/...<style>.json  (generated
 package.json registers one iconTheme + one productIconTheme per built style.
 ```
 
-- **One manifest, many styles.** `scripts/manifest.mjs` is style-agnostic — it lists Hugeicons paths _relative to a style root_ (e.g. `Files Folders/file-01.svg`). The build script applies that manifest against each enabled style root.
+- **One manifest, many styles.** `scripts/manifest.mjs` is style-agnostic — it lists upstream paths _relative to a style root_ (e.g. `Files Folders/file-01.svg`). The build script applies that manifest against each enabled style root.
 - **Category aliasing.** Sharp variants collapse `Arrows (Round)` and `Arrows (Sharp)` into a single `Arrows` folder. The build resolves these via per-style alias maps.
 - **No node deps.** Build runs on plain Node ≥ 18, no `package-lock.json` baggage.
 - **Icon assets are committed.** Marketplace consumers shouldn't need to install anything to use the extension; the SVGs are part of the `.vsix`.
@@ -127,13 +127,13 @@ Before publishing a style:
 - [ ] Manual sweep of the Explorer with a representative project (TS, Markdown, configs, images, folders)
 - [ ] Manual sweep of the Activity Bar, Status Bar, Source Control view, Debug toolbar
 - [ ] Light + Dark + High Contrast all readable
-- [ ] No accidental `fill="white"` reading as transparent in dark mode (Hugeicons Solid uses `fill` so verify)
+- [ ] No accidental `fill="white"` reading as transparent in dark mode (Upstream Solid uses `fill` so verify)
 - [ ] Marketplace screenshot updated
 
 ## 9. Licensing
 
 - Code (manifest, build, theme JSONs): owned by Makinda Jackson — license TBD before v1.
-- Icon assets: derived from Hugeicons Pro under Makinda's personal license. Forks must obtain their own Hugeicons Pro license. See [LICENSE.md](../../LICENSE.md).
+- Icon assets: derived from the upstream icon library under Makinda's personal license. Forks must obtain their own license to the upstream library. See [LICENSE.md](../../LICENSE.md).
 - Brand-mark icons (GitHub, Figma, etc.) used under nominative fair use to identify file types.
 
 ## 10. Open questions

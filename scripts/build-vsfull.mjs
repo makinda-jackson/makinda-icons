@@ -34,8 +34,8 @@ import { enabledStyles } from "./styles.mjs";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
-const HUGEICONS_ROOT = process.env.HUGEICONS_ROOT
-    || "/Users/makindajack/Downloads/Compressed/Hugeicons Pro/25,000+ SVG icons";
+const ICONS_SRC_ROOT = process.env.ICONS_SRC_ROOT
+    || "/Users/makindajack/Downloads/Compressed/icons-src/25,000+ SVG icons";
 const pkgJson = JSON.parse(fs.readFileSync(path.join(repoRoot, "package.json"), "utf8"));
 
 const FILL = "#1e2022"; // dark glyph for VS's typical light Solution Explorer
@@ -64,9 +64,9 @@ for (const f of fs.readdirSync(resourcesDir)) {
 function resolveSrc(rel) {
     if (path.isAbsolute(rel)) return rel;
     if (style.srcRoot && !rel.startsWith("../")) {
-        return path.join(HUGEICONS_ROOT, style.srcRoot, rel);
+        return path.join(ICONS_SRC_ROOT, style.srcRoot, rel);
     }
-    return path.join(HUGEICONS_ROOT, rel);
+    return path.join(ICONS_SRC_ROOT, rel);
 }
 
 function recolor(svg, color) {
@@ -187,7 +187,7 @@ const vsixManifest = `<?xml version="1.0" encoding="utf-8"?>
         <Description xml:space="preserve">File icons for Visual Studio — same icon set as the Makinda Icons VS Code extension. ${renderedIcons} file icons via the Image Service.</Description>
         <MoreInfo>https://github.com/makindajack/makinda-icons</MoreInfo>
         <License>LICENSE.md</License>
-        <Tags>icons, file-icons, theme, makinda, hugeicons</Tags>
+        <Tags>icons, file-icons, theme, makinda</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,)" />
@@ -290,7 +290,7 @@ try {
 
 console.log("makinda-icons (visualstudio) build");
 console.log(`  style:               ${style.id}`);
-console.log(`  HUGEICONS_ROOT:      ${HUGEICONS_ROOT}`);
+console.log(`  ICONS_SRC_ROOT:      ${ICONS_SRC_ROOT}`);
 console.log(`  rasterized icons:    ${renderedIcons} (×${SIZES.length} sizes = ${renderedIcons * SIZES.length} PNGs)`);
 console.log(`  monikers:            ${monikers.length}`);
 console.log(`  ext bindings:        ${monikers.reduce((n, m) => n + m.extensions.length, 0)}`);

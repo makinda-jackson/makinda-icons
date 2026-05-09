@@ -1,8 +1,8 @@
-// Style registry — one entry per Hugeicons style we ship as a theme variant.
+// Style registry — one entry per upstream style we ship as a theme variant.
 //
 // `id`           : kebab-case slug used in theme ids and on-disk paths
 // `label`        : suffix shown in the VS Code theme picker
-// `srcRoot`      : Hugeicons subpath (under HUGEICONS_ROOT) for this style
+// `srcRoot`      : upstream subpath (under ICONS_SRC_ROOT) for this style
 // `categoryAlias`: optional remap when a manifest path's category folder
 //                  doesn't exist in this style (e.g. Sharp collapses
 //                  "Arrows (Round)" / "Arrows (Sharp)" → "Arrows")

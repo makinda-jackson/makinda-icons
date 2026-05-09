@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">Multi-style icon themes for VS Code and the wider VS Code family — inspired by Hugeicons, tuned for the Makinda brand.</h4>
+<h4 align="center">Multi-style icon themes for VS Code and the wider VS Code family — tuned for the Makinda brand.</h4>
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-icons">
@@ -35,7 +35,7 @@ This extension ships **two** independent themes you can mix and match:
 - **`Makinda Icons (Solid)`** — file & folder icons in the Explorer, tabs, breadcrumbs, Quick Open.
 - **`Makinda Product Icons (Solid)`** — UI icons in the Activity Bar, status bar, gutters, and panels (84 codicon overrides).
 
-> Iconography inspired by [Hugeicons](https://hugeicons.com). Currently shipping the **Solid** style. Duotone, Twotone, Stroke, Bulk, and Sharp variants are on the roadmap.
+> Currently shipping the **Solid** style. Duotone, Twotone, Stroke, Bulk, and Sharp variants are on the roadmap.
 
 ---
 
@@ -233,4 +233,4 @@ Auto-switch with your OS appearance:
 
 ## License
 
-See [LICENSE.md](LICENSE.md). Icon assets are derived from Hugeicons Pro and are not redistributable without your own Hugeicons license.
+See [LICENSE.md](LICENSE.md).

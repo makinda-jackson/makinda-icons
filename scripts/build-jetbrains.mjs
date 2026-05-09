@@ -10,7 +10,7 @@
 //
 // Run: `npm run build:jetbrains`
 //
-// Uses the same Hugeicons source root + recoloring rules as the VS Code build.
+// Uses the same upstream source root + recoloring rules as the VS Code build.
 // File icons get two color variants because IntelliJ's New UI also ships
 // monochrome icons that look better when recolored to the active foreground.
 
@@ -22,8 +22,8 @@ import { enabledStyles } from "./styles.mjs";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
-const HUGEICONS_ROOT = process.env.HUGEICONS_ROOT
-    || "/Users/makindajack/Downloads/Compressed/Hugeicons Pro/25,000+ SVG icons";
+const ICONS_SRC_ROOT = process.env.ICONS_SRC_ROOT
+    || "/Users/makindajack/Downloads/Compressed/icons-src/25,000+ SVG icons";
 
 // IntelliJ's recommended foreground tints for monochrome icons. These match
 // Makinda's dark/light fg.default and the VS Code variants for visual parity.
@@ -56,9 +56,9 @@ for (const f of fs.readdirSync(iconsOutDir)) {
 function resolveSrc(rel) {
     if (path.isAbsolute(rel)) return rel;
     if (style.srcRoot && !rel.startsWith("../")) {
-        return path.join(HUGEICONS_ROOT, style.srcRoot, rel);
+        return path.join(ICONS_SRC_ROOT, style.srcRoot, rel);
     }
-    return path.join(HUGEICONS_ROOT, rel);
+    return path.join(ICONS_SRC_ROOT, rel);
 }
 
 function recolor(svg, color) {
@@ -153,7 +153,7 @@ const pluginXml = `<idea-plugin>
     <vendor email="hello@makinda.dev" url="https://github.com/makindajack/makinda-icons">Makinda Jackson</vendor>
 
     <description><![CDATA[
-        File icons for the IntelliJ Platform — inspired by Hugeicons, tuned for the Makinda brand.<br/>
+        File icons for the IntelliJ Platform — tuned for the Makinda brand, tuned for the Makinda brand.<br/>
         Same icon set as the <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-icons">Makinda Icons VS Code extension</a>.<br/><br/>
         Currently shipping the <b>Solid</b> style (${copied} file icons). Auto-adapts to light/dark themes.
     ]]></description>
@@ -180,7 +180,7 @@ fs.writeFileSync(path.join(metaInfDir, "plugin.xml"), pluginXml);
 
 console.log(`makinda-icons (jetbrains) build`);
 console.log(`  style:           ${style.id}`);
-console.log(`  HUGEICONS_ROOT:  ${HUGEICONS_ROOT}`);
+console.log(`  ICONS_SRC_ROOT:  ${ICONS_SRC_ROOT}`);
 console.log(`  icons emitted:   ${copied} (×2 with _dark variants = ${copied * 2})`);
 console.log(`  ext mappings:    ${Object.keys(byExt).length}`);
 console.log(`  name mappings:   ${Object.keys(byName).length}`);

@@ -1,15 +1,15 @@
-// Single source of truth that maps Hugeicons (Rounded/Duotone) sources to
+// Single source of truth that maps upstream (Rounded/Duotone) sources to
 // makinda icon names. The build script (./build.mjs) reads this manifest,
 // copies the SVGs into the icons/ folders, and emits both theme JSONs.
 //
 // To add or replace an icon: edit this file and re-run `npm run build`.
-// Source path is relative to HUGEICONS_ROOT (configured in build.mjs).
+// Source path is relative to ICONS_SRC_ROOT (configured in build.mjs).
 
 // ---------- File icons ----------
 //
 // `name` is the canonical icon id (no extension). It also becomes the SVG
 // filename inside icons/file-icons/.
-// `src` is the relative path inside Hugeicons Rounded/Duotone.
+// `src` is the relative path inside the upstream Rounded/Duotone tree.
 // `extensions` / `fileNames` / `languageIds` populate the file-icon theme JSON.
 
 export const fileIcons = [
@@ -210,7 +210,7 @@ export const fileIcons = [
         languageIds: ["sql"]
     },
 
-    // Brand-ish (limited by what Hugeicons ships)
+    // Brand-ish (limited by what the upstream library ships)
     {
         name: "github",
         src: "Brand Logo/github.svg",
@@ -331,7 +331,7 @@ export const productIcons = [
     { id: "source-control-view-icon", src: "Git/git-branch.svg" },
     { id: "debug-alt", src: "Programming Language/bug-01.svg" },
     { id: "run-view-icon", src: "Programming Language/bug-01.svg" },
-    // Hugeicons doesn't ship a puzzle-piece in many categories; the Game &
+    // the upstream library doesn't ship a puzzle-piece in many categories; the Game &
     // Sports puzzle reads more like "extension/plugin" than the previous
     // generic "shapes" glyph.
     { id: "extensions", src: "Game & Sports/puzzle.svg" },

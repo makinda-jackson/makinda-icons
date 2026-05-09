@@ -14,7 +14,7 @@ All notable changes to **Makinda Icons** will be documented in this file.
   - Makinda Icons (Bulk) — new in v1.1.0.
   - Makinda Icons (Sharp Solid) — new in v1.1.0.
   - Makinda Icons (Sharp Stroke) — new in v1.1.0.
-- All new variants are sourced from the same Hugeicons Pro library via [`scripts/manifest.mjs`](scripts/manifest.mjs); enable additional styles by toggling `enabled: true` in [`scripts/styles.mjs`](scripts/styles.mjs) and running `npm run build`.
+- All new variants are sourced from the same upstream icon library via [`scripts/manifest.mjs`](scripts/manifest.mjs); enable additional styles by toggling `enabled: true` in [`scripts/styles.mjs`](scripts/styles.mjs) and running `npm run build`.
 
 ### Changed
 
@@ -43,7 +43,7 @@ All notable changes to **Makinda Icons** will be documented in this file.
 
 ### Added (earlier in this Unreleased cycle)
 
-- **Phase 5 — Sublime Text emitter.** New build script [`scripts/build-sublime.mjs`](scripts/build-sublime.mjs) rasterizes the Hugeicons solid SVGs (via [`@resvg/resvg-js`](https://www.npmjs.com/package/@resvg/resvg-js)) into a Sublime package layout under [`packages/sublime/Makinda Icons/`](packages/sublime/): 165 PNGs (55 icons × 16/32/48 px) plus 23 `.tmPreferences` bindings for the manifest entries that map to known TextMate scopes. Build with `npm run build:sublime`, then `cd packages/sublime/Makinda\ Icons && zip -rq ../makinda-icons.sublime-package .` to produce the installable bundle.
+- **Phase 5 — Sublime Text emitter.** New build script [`scripts/build-sublime.mjs`](scripts/build-sublime.mjs) rasterizes the solid SVGs (via [`@resvg/resvg-js`](https://www.npmjs.com/package/@resvg/resvg-js)) into a Sublime package layout under [`packages/sublime/Makinda Icons/`](packages/sublime/): 165 PNGs (55 icons × 16/32/48 px) plus 23 `.tmPreferences` bindings for the manifest entries that map to known TextMate scopes. Build with `npm run build:sublime`, then `cd packages/sublime/Makinda\ Icons && zip -rq ../makinda-icons.sublime-package .` to produce the installable bundle.
 - New devDependency: `@resvg/resvg-js` (pure-rust SVG rasterizer, no system deps).
 - New npm script `build:sublime`; `build:all` now chains VS Code → JetBrains → Neovim → Emacs → Sublime.
 
@@ -117,7 +117,7 @@ All notable changes to **Makinda Icons** will be documented in this file.
 ### Changed
 
 - Marketplace tile now uses the dark brand logo (`images/icon-dark.png`) — interim asset until a custom icon-pack logo is designed.
-- Wording: "drawn from Hugeicons" → **"inspired by Hugeicons"** across the README, package description, and dev docs.
+- Wording: "drawn from the upstream library" → **"tuned for the Makinda brand"** across the README, package description, and dev docs.
 
 ## [1.0.4] — 2026-05-06
 
@@ -130,7 +130,7 @@ All notable changes to **Makinda Icons** will be documented in this file.
 
 ### Fixed
 
-- **Product icons now adopt the editor theme color.** Previously every product-icon SVG shipped with a hard-coded `#141B34` fill from Hugeicons, which made them invisible (or near-invisible) on dark themes. The build now rewrites all `fill`/`stroke` colors on product icons to `currentColor`, so VS Code's CSS-driven theming applies correctly. File icons retain their original colors — VS Code never recolors file icons.
+- **Product icons now adopt the editor theme color.** Previously every product-icon SVG shipped with a hard-coded `#141B34` fill from the upstream library, which made them invisible (or near-invisible) on dark themes. The build now rewrites all `fill`/`stroke` colors on product icons to `currentColor`, so VS Code's CSS-driven theming applies correctly. File icons retain their original colors — VS Code never recolors file icons.
 
 ## [1.0.2] — 2026-05-06
 
@@ -152,12 +152,12 @@ First public release.
 
 ### Notes
 
-- Other Hugeicons styles (Duotone, Twotone, Stroke, Bulk, Sharp Solid, Sharp Stroke) are scaffolded but disabled until later phases. See [`docs/project-scope.md`](docs/project-scope.md).
+- Other upstream styles (Duotone, Twotone, Stroke, Bulk, Sharp Solid, Sharp Stroke) are scaffolded but disabled until later phases. See [`docs/project-scope.md`](docs/project-scope.md).
 - Companion color theme: [makinda-themes](https://github.com/makindajack/makinda-themes).
 
 ## [Unreleased]
 
-- Refactored to multi-style architecture: each Hugeicons style ships as its own theme variant.
+- Refactored to multi-style architecture: each upstream style ships as its own theme variant.
 - Added [`docs/project-scope.md`](docs/project-scope.md) defining phases, naming, and workflow.
 - **Phase 1 active: Solid (filled).** Other styles scaffolded (Duotone, Twotone, Stroke, Bulk, Sharp Solid, Sharp Stroke) but disabled.
 - Build script supports `--style=<id>` selection and per-style filename aliasing.

@@ -8,6 +8,6 @@ docs/
 packages/
 
 # Source SVG folders are shipped (themes reference them)
-# but raw Hugeicons originals stay out of the .vsix.
+# but raw upstream originals stay out of the .vsix.
 
 *.vsix

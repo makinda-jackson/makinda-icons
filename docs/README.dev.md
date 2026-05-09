@@ -1,10 +1,10 @@
 # makinda-icons
 
-Multi-style icon themes for Visual Studio Code by Makinda Jackson, inspired by [Hugeicons](https://hugeicons.com). Covers both file/folder icons and product (UI) icons.
+Multi-style icon themes for Visual Studio Code by Makinda Jackson, tuned for the Makinda brand. Covers both file/folder icons and product (UI) icons.
 
 ## Status
 
-Phase 1: **Solid** (filled) — shipped as `Makinda Icons (Solid)` and `Makinda Product Icons (Solid)`. 124 starter icons, zero missing. Other Hugeicons styles (Duotone, Twotone, Stroke, Bulk, Sharp Solid, Sharp Stroke) are scaffolded but disabled — see [`docs/project-scope.md`](docs/project-scope.md).
+Phase 1: **Solid** (filled) — shipped as `Makinda Icons (Solid)` and `Makinda Product Icons (Solid)`. 124 starter icons, zero missing. Other upstream styles (Duotone, Twotone, Stroke, Bulk, Sharp Solid, Sharp Stroke) are scaffolded but disabled — see [`docs/project-scope.md`](docs/project-scope.md).
 
 ## Repository structure
 
@@ -15,27 +15,27 @@ makinda-icons/
 │   ├── makinda-file-icon-theme.<style>.json
 │   └── makinda-product-icon-theme.<style>.json
 ├── icons/
-│   └── <style>/                       SVGs copied from Hugeicons per style
+│   └── <style>/                       SVGs copied from the upstream library per style
 │       ├── file-icons/
 │       │   ├── dark/
 │       │   └── light/
 │       └── product-icons/
 ├── scripts/
-│   ├── manifest.mjs                   Single source of truth: name → Hugeicons path
-│   ├── styles.mjs                     Style registry (which Hugeicons sets to build)
+│   ├── manifest.mjs                   Single source of truth: name → upstream path
+│   ├── styles.mjs                     Style registry (which upstream sets to build)
 │   └── build.mjs                      Per-style copy + theme JSON emit
 └── docs/                              Documentation about VS Code icons & this project
 ```
 
 ## Develop
 
-Prerequisite: an unzipped Hugeicons Pro download. The default source root is:
+Prerequisite: an unzipped copy of the upstream icon library. The default source root is:
 
 ```
-/Users/makindajack/Downloads/Compressed/Hugeicons Pro/25,000+ SVG icons
+/Users/makindajack/Downloads/Compressed/icons-src/25,000+ SVG icons
 ```
 
-Override with `HUGEICONS_ROOT=/path/to/25,000+ SVG icons npm run build`.
+Override with `ICONS_SRC_ROOT=/path/to/25,000+ SVG icons npm run build`.
 
 ```sh
 npm run build           # build every enabled style (currently: solid)
@@ -80,4 +80,4 @@ The matching **color theme** (Makinda Light + Makinda Dark) lives in [makinda-th
 
 ## License
 
-See [LICENSE.md](LICENSE.md). Icon assets are derived from Hugeicons Pro and are not redistributable without your own Hugeicons license.
+See [LICENSE.md](LICENSE.md). Icon assets are derived from the upstream icon library and are not redistributable without your own license to the upstream library.

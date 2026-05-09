@@ -7,7 +7,7 @@
 //   • themes/makinda-file-icon-theme.<style>.json
 //   • themes/makinda-product-icon-theme.<style>.json
 //
-// Override the Hugeicons source root with HUGEICONS_ROOT env var.
+// Override the upstream library source root with ICONS_SRC_ROOT env var.
 // Pass --style=<id> (repeatable) to limit the build to specific styles.
 
 import fs from "node:fs";
@@ -20,8 +20,8 @@ import { enabledStyles, styles as allStyles } from "./styles.mjs";
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
 
-const HUGEICONS_ROOT = process.env.HUGEICONS_ROOT
-    || "/Users/makindajack/Downloads/Compressed/Hugeicons Pro/25,000+ SVG icons";
+const ICONS_SRC_ROOT = process.env.ICONS_SRC_ROOT
+    || "/Users/makindajack/Downloads/Compressed/icons-src/25,000+ SVG icons";
 
 // Allow CLI selection (e.g. `node scripts/build.mjs --style=solid`)
 const cliStyles = process.argv
@@ -41,7 +41,7 @@ function resolveSrc(style, manifestPath) {
     const aliased = style.fileAlias?.[manifestPath] ?? manifestPath;
     const [category, ...rest] = aliased.split("/");
     const remapped = style.categoryAlias?.[category] ?? category;
-    return path.join(HUGEICONS_ROOT, style.srcRoot, remapped, rest.join("/"));
+    return path.join(ICONS_SRC_ROOT, style.srcRoot, remapped, rest.join("/"));
 }
 
 async function buildStyle(style) {
@@ -71,7 +71,7 @@ async function buildStyle(style) {
         }
         if (opts.recolorToCurrentColor) {
             // VS Code colors product icons via CSS `color`, which only works when
-            // the SVG uses fill="currentColor"/stroke="currentColor". Hugeicons
+            // the SVG uses fill="currentColor"/stroke="currentColor". The upstream library
             // ships with hard-coded #141B34 fills, so without this rewrite the
             // icons render as dark navy on dark themes (invisible).
             const svg = fs.readFileSync(srcAbs, "utf8")
@@ -244,7 +244,7 @@ async function buildStyle(style) {
 }
 
 console.log(`makinda-icons build`);
-console.log(`  HUGEICONS_ROOT: ${HUGEICONS_ROOT}`);
+console.log(`  ICONS_SRC_ROOT: ${ICONS_SRC_ROOT}`);
 
 let failed = false;
 for (const style of targetStyles) {

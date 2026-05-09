@@ -79,7 +79,7 @@ Re-run `npm run build:nvim` from the repo root after editing the manifest.
 
 ## Limitations
 
-- **Monochrome glyphs.** Terminal Neovim can't render the Hugeicons SVGs
+- **Monochrome glyphs.** Terminal Neovim can't render the SVGs
   themselves; you get a Nerd Font codepoint instead. The Makinda _colors_ still
   apply via the highlight group set by `nvim-web-devicons`.
 - **No directory icons.** `nvim-web-devicons` only themes files. If you want

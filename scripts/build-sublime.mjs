@@ -1,6 +1,6 @@
 // Makinda Icons — Sublime Text emitter
 //
-// Reads scripts/manifest.mjs and rasterizes the Hugeicons solid SVGs into a
+// Reads scripts/manifest.mjs and rasterizes the solid SVGs into a
 // Sublime Text package layout:
 //
 //   packages/sublime/Makinda Icons/
@@ -29,8 +29,8 @@ import { enabledStyles } from "./styles.mjs";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
-const HUGEICONS_ROOT = process.env.HUGEICONS_ROOT
-    || "/Users/makindajack/Downloads/Compressed/Hugeicons Pro/25,000+ SVG icons";
+const ICONS_SRC_ROOT = process.env.ICONS_SRC_ROOT
+    || "/Users/makindajack/Downloads/Compressed/icons-src/25,000+ SVG icons";
 
 const FILL = "#1e2022"; // dark glyph on Sublime's typical light sidebar bg
 const SIZES = [
@@ -64,9 +64,9 @@ for (const dir of [iconsOutDir, prefsOutDir]) {
 function resolveSrc(rel) {
     if (path.isAbsolute(rel)) return rel;
     if (style.srcRoot && !rel.startsWith("../")) {
-        return path.join(HUGEICONS_ROOT, style.srcRoot, rel);
+        return path.join(ICONS_SRC_ROOT, style.srcRoot, rel);
     }
-    return path.join(HUGEICONS_ROOT, rel);
+    return path.join(ICONS_SRC_ROOT, rel);
 }
 
 function recolor(svg, color) {
@@ -254,7 +254,7 @@ fs.writeFileSync(path.join(pkgRoot, "README.md"), readme);
 
 console.log("makinda-icons (sublime) build");
 console.log(`  style:               ${style.id}`);
-console.log(`  HUGEICONS_ROOT:      ${HUGEICONS_ROOT}`);
+console.log(`  ICONS_SRC_ROOT:      ${ICONS_SRC_ROOT}`);
 console.log(`  rasterized icons:    ${renderedIcons} (×3 sizes = ${renderedIcons * 3} PNGs)`);
 console.log(`  tmPreferences:       ${writtenPrefs}`);
 console.log(`  no scope mapping:    ${skippedNoScope.length}`);

@@ -6,7 +6,7 @@ manifest as the [Makinda Icons VS Code extension][vscode], the
 [Neovim plugin](../nvim/README.md).
 
 Like the Neovim port, Emacs in a terminal can only render Nerd Font glyphs
-(not the original Hugeicons SVGs). This package maps each Makinda file type
+(not the original SVGs). This package maps each Makinda file type
 to the closest Nerd Font codepoint plus a color from the Makinda palette.
 
 ## Requirements
