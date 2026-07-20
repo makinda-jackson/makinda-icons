@@ -39,6 +39,15 @@ intellijPlatform {
         }
     }
 
+    pluginVerification {
+        ides {
+            // Verify against the same baseline used to build the plugin
+            ide(IntelliJPlatformType.IntellijIdeaCommunity, "2023.3")
+            // Also verify against the latest stable release
+            recommended()
+        }
+    }
+
     signing {
         certificateChain = providers.environmentVariable("CERTIFICATE_CHAIN")
         privateKey = providers.environmentVariable("PRIVATE_KEY")
