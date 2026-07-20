@@ -1,5 +1,6 @@
 // Makinda Icons — JetBrains plugin build
 // Uses the new IntelliJ Platform Gradle Plugin (2.x).
+import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
 
 plugins {
     id("org.jetbrains.kotlin.jvm") version "2.0.21"
