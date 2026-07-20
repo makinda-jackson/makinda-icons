@@ -1,21 +1,38 @@
 <idea-plugin>
     <id>com.makinda.icons</id>
     <name>Makinda Icons</name>
-    <vendor email="hello@makinda.dev" url="https://github.com/makindajack/makinda-icons">Makinda Jackson</vendor>
+    <vendor email="hello@makinda.dev" url="https://github.com/makinda-jackson/makinda-icons">Makinda Jackson</vendor>
 
     <description><![CDATA[
-        File icons for the IntelliJ Platform — tuned for the Makinda brand.<br/>
-        Same icon set as the <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-icons">Makinda Icons VS Code extension</a>.<br/><br/>
-        Currently shipping the <b>Solid</b> style (55 file icons). Auto-adapts to light/dark themes.
-    ]]>    </description>
+        Beautiful, consistent file icons for the IntelliJ Platform — the same icon set
+        as the <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-icons">Makinda Icons VS Code extension</a>.<br/><br/>
+        <b>102 file icons</b> — Solid style, auto-adapts to light and dark IDE themes.<br/><br/>
+        Covers: JavaScript · TypeScript · Python · Rust · Go · Java · PHP · C/C++ ·
+        Ruby · Vue · Svelte · Astro · Dart · SQL · TOML · Shell scripts (bash, zsh, fish,
+        powershell, nushell) · Git dotfiles · .env / dotenv · README · CHANGELOG ·
+        SECURITY · CONTRIBUTING · Next.js config · and many more.
+    ]]></description>
 
     <change-notes><![CDATA[
+        <h3>1.1.0</h3>
+        <ul>
+            <li>Added 29 new file icons: dart, bash, zsh, fish, powershell, nushell,
+                batch, sql, toml, tsv, binary, env, dotenv, editorconfig, gitignore,
+                gitattributes, gitmodules, npmignore, readme, changelog, notice,
+                authors, contributing, code-of-conduct, security, todo, next,
+                javascript, typescript</li>
+            <li>Upgraded coarse mappings to dedicated icons: .gitignore, .env,
+                .toml, .bat/.cmd, .ps1, README.md, etc.</li>
+            <li>Added rc-file name bindings: .bashrc, .zshrc, .zprofile, config.fish,
+                and shell history files</li>
+            <li>Added 138 extension mappings and 107 filename mappings total</li>
+        </ul>
         <h3>1.0.0</h3>
         <ul>
             <li>Initial JetBrains release: 55 file icons via FileIconProvider</li>
             <li>Auto light/dark via <code>_dark.svg</code> variants</li>
         </ul>
-    ]]>    </change-notes>
+    ]]></change-notes>
 
     <depends>com.intellij.modules.platform</depends>
 

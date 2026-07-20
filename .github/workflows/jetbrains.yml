@@ -1,0 +1,73 @@
+name: JetBrains Plugin
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "packages/jetbrains/**"
+      - ".github/workflows/jetbrains.yml"
+    tags:
+      - "jb/v*"
+  pull_request:
+    paths:
+      - "packages/jetbrains/**"
+
+jobs:
+  build:
+    name: Build & verify
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/jetbrains
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+
+      - name: Build plugin
+        run: ./gradlew buildPlugin
+
+      - name: Verify plugin
+        run: ./gradlew verifyPlugin
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: makinda-icons-jetbrains
+          path: packages/jetbrains/build/distributions/*.zip
+
+  publish:
+    name: Publish to Marketplace
+    needs: build
+    runs-on: ubuntu-latest
+    # Only publish on a jb/v* tag push
+    if: startsWith(github.ref, 'refs/tags/jb/v')
+    defaults:
+      run:
+        working-directory: packages/jetbrains
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+
+      - name: Sign and publish
+        env:
+          CERTIFICATE_CHAIN: ${{ secrets.JB_CERTIFICATE_CHAIN }}
+          PRIVATE_KEY: ${{ secrets.JB_PRIVATE_KEY }}
+          PRIVATE_KEY_PASSWORD: ${{ secrets.JB_PRIVATE_KEY_PASSWORD }}
+          PUBLISH_TOKEN: ${{ secrets.JB_PUBLISH_TOKEN }}
+        run: ./gradlew signPlugin publishPlugin
