@@ -44,8 +44,10 @@ intellijPlatform {
         ides {
             // Verify against the same baseline used to build the plugin
             ide(IntelliJPlatformType.IntellijIdeaCommunity, "2023.3")
-            // Also verify against the latest stable release
-            recommended()
+            // Also check the latest stable releases
+            ide(IntelliJPlatformType.IntellijIdeaCommunity, "2024.1")
+            ide(IntelliJPlatformType.IntellijIdeaCommunity, "2024.3")
+            // recommended() removed — resolves unreleased versions and breaks CI
         }
     }
 
