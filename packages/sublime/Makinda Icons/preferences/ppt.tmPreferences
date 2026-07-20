@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda ppt</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.ppt</string>
+        <string>*.pptx</string>
+        <string>*.odp</string>
+        <string>*.key</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_ppt</string>
+    </dict>
+    <key>uuid</key>
+    <string>F085488D-0A4B-4EE5-861C-CE36F0528C9C</string>
+</dict>
+</plist>

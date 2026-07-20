@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda lock</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.lock</string>
+        <string>package-lock.json</string>
+        <string>yarn.lock</string>
+        <string>Gemfile.lock</string>
+        <string>Pipfile.lock</string>
+        <string>composer.lock</string>
+        <string>pnpm-lock.yaml</string>
+        <string>bun.lock</string>
+        <string>bun.lockb</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_lock</string>
+    </dict>
+    <key>uuid</key>
+    <string>DA7284AB-8A37-4262-866E-0B8BB488EB01</string>
+</dict>
+</plist>

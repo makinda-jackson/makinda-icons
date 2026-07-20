@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda code-square</string>
+    <key>scope</key>
+    <string>source.makefile, source.dockerfile, source.nix</string>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_code-square</string>
+    </dict>
+    <key>uuid</key>
+    <string>D0AB419C-0675-4276-9514-1C636EC90F68</string>
+</dict>
+</plist>

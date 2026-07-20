@@ -58,6 +58,35 @@
         <ID Name="FolderLibrary" Value="1052" />
         <ID Name="FolderManagement" Value="1053" />
         <ID Name="FolderCode" Value="1054" />
+        <ID Name="Dart" Value="1055" />
+        <ID Name="Bash" Value="1056" />
+        <ID Name="Zsh" Value="1057" />
+        <ID Name="Fish" Value="1058" />
+        <ID Name="Powershell" Value="1059" />
+        <ID Name="Nushell" Value="1060" />
+        <ID Name="Batch" Value="1061" />
+        <ID Name="Sql" Value="1062" />
+        <ID Name="Toml" Value="1063" />
+        <ID Name="Tsv" Value="1064" />
+        <ID Name="Binary" Value="1065" />
+        <ID Name="Dotenv" Value="1066" />
+        <ID Name="Env" Value="1067" />
+        <ID Name="Editorconfig" Value="1068" />
+        <ID Name="Gitignore" Value="1069" />
+        <ID Name="Gitattributes" Value="1070" />
+        <ID Name="Gitmodules" Value="1071" />
+        <ID Name="Npmignore" Value="1072" />
+        <ID Name="Readme" Value="1073" />
+        <ID Name="Changelog" Value="1074" />
+        <ID Name="Notice" Value="1075" />
+        <ID Name="Authors" Value="1076" />
+        <ID Name="Contributing" Value="1077" />
+        <ID Name="CodeOfConduct" Value="1078" />
+        <ID Name="Security" Value="1079" />
+        <ID Name="Todo" Value="1080" />
+        <ID Name="Next" Value="1081" />
+        <ID Name="Javascript" Value="1082" />
+        <ID Name="Typescript" Value="1083" />
     </Symbols>
     <Images>
         <Image Guid="$(MakindaIconsGuid)" ID="$(File)">
@@ -335,6 +364,151 @@
             <Source Uri="$(Resources)/folder-code.24.png"><Size Value="24" /></Source>
             <Source Uri="$(Resources)/folder-code.32.png"><Size Value="32" /></Source>
         </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Dart)">
+            <Source Uri="$(Resources)/code.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/code.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/code.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Bash)">
+            <Source Uri="$(Resources)/command-line.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/command-line.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/command-line.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Zsh)">
+            <Source Uri="$(Resources)/command-line.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/command-line.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/command-line.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Fish)">
+            <Source Uri="$(Resources)/command-line.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/command-line.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/command-line.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Powershell)">
+            <Source Uri="$(Resources)/command-line.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/command-line.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/command-line.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Nushell)">
+            <Source Uri="$(Resources)/command-line.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/command-line.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/command-line.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Batch)">
+            <Source Uri="$(Resources)/command-line.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/command-line.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/command-line.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Sql)">
+            <Source Uri="$(Resources)/database.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/database.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/database.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Toml)">
+            <Source Uri="$(Resources)/config.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/config.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/config.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Tsv)">
+            <Source Uri="$(Resources)/csv.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/csv.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/csv.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Binary)">
+            <Source Uri="$(Resources)/file.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/file.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/file.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Dotenv)">
+            <Source Uri="$(Resources)/config.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/config.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/config.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Env)">
+            <Source Uri="$(Resources)/config.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/config.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/config.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Editorconfig)">
+            <Source Uri="$(Resources)/config.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/config.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/config.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Gitignore)">
+            <Source Uri="$(Resources)/config.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/config.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/config.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Gitattributes)">
+            <Source Uri="$(Resources)/config.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/config.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/config.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Gitmodules)">
+            <Source Uri="$(Resources)/config.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/config.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/config.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Npmignore)">
+            <Source Uri="$(Resources)/config.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/config.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/config.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Readme)">
+            <Source Uri="$(Resources)/markdown.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/markdown.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/markdown.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Changelog)">
+            <Source Uri="$(Resources)/markdown.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/markdown.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/markdown.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Notice)">
+            <Source Uri="$(Resources)/license.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/license.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/license.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Authors)">
+            <Source Uri="$(Resources)/license.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/license.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/license.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Contributing)">
+            <Source Uri="$(Resources)/license.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/license.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/license.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(CodeOfConduct)">
+            <Source Uri="$(Resources)/license.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/license.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/license.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Security)">
+            <Source Uri="$(Resources)/license.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/license.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/license.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Todo)">
+            <Source Uri="$(Resources)/code.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/code.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/code.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Next)">
+            <Source Uri="$(Resources)/code.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/code.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/code.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Javascript)">
+            <Source Uri="$(Resources)/js.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/js.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/js.32.png"><Size Value="32" /></Source>
+        </Image>
+        <Image Guid="$(MakindaIconsGuid)" ID="$(Typescript)">
+            <Source Uri="$(Resources)/ts.16.png"><Size Value="16" /></Source>
+            <Source Uri="$(Resources)/ts.24.png"><Size Value="24" /></Source>
+            <Source Uri="$(Resources)/ts.32.png"><Size Value="32" /></Source>
+        </Image>
     </Images>
     <ImageFiles>
         <ImageFile Extension=".coffee" Guid="$(MakindaIconsGuid)" ID="$(Code)" />
@@ -386,12 +560,12 @@
         <ImageFile Extension=".svelte" Guid="$(MakindaIconsGuid)" ID="$(Svelte)" />
         <ImageFile Extension=".astro" Guid="$(MakindaIconsGuid)" ID="$(Astro)" />
         <ImageFile Extension=".sh" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
-        <ImageFile Extension=".bash" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
-        <ImageFile Extension=".zsh" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
-        <ImageFile Extension=".fish" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
-        <ImageFile Extension=".ps1" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
-        <ImageFile Extension=".bat" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
-        <ImageFile Extension=".cmd" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
+        <ImageFile Extension=".bash" Guid="$(MakindaIconsGuid)" ID="$(Bash)" />
+        <ImageFile Extension=".zsh" Guid="$(MakindaIconsGuid)" ID="$(Zsh)" />
+        <ImageFile Extension=".fish" Guid="$(MakindaIconsGuid)" ID="$(Fish)" />
+        <ImageFile Extension=".ps1" Guid="$(MakindaIconsGuid)" ID="$(Powershell)" />
+        <ImageFile Extension=".bat" Guid="$(MakindaIconsGuid)" ID="$(Batch)" />
+        <ImageFile Extension=".cmd" Guid="$(MakindaIconsGuid)" ID="$(Batch)" />
         <ImageFile Name="Makefile" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
         <ImageFile Name="Dockerfile" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
         <ImageFile Name=".dockerignore" Guid="$(MakindaIconsGuid)" ID="$(CommandLine)" />
@@ -414,7 +588,7 @@
         <ImageFile Name="jsconfig.json" Guid="$(MakindaIconsGuid)" ID="$(Json)" />
         <ImageFile Extension=".yml" Guid="$(MakindaIconsGuid)" ID="$(Yaml)" />
         <ImageFile Extension=".yaml" Guid="$(MakindaIconsGuid)" ID="$(Yaml)" />
-        <ImageFile Extension=".toml" Guid="$(MakindaIconsGuid)" ID="$(Yaml)" />
+        <ImageFile Extension=".toml" Guid="$(MakindaIconsGuid)" ID="$(Toml)" />
         <ImageFile Name="docker-compose.yml" Guid="$(MakindaIconsGuid)" ID="$(Yaml)" />
         <ImageFile Name="docker-compose.yaml" Guid="$(MakindaIconsGuid)" ID="$(Yaml)" />
         <ImageFile Extension=".xml" Guid="$(MakindaIconsGuid)" ID="$(Xml)" />
@@ -428,30 +602,30 @@
         <ImageFile Extension=".mdown" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
         <ImageFile Extension=".rst" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
         <ImageFile Extension=".adoc" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
-        <ImageFile Name="README" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
-        <ImageFile Name="README.md" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
-        <ImageFile Name="readme.md" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
-        <ImageFile Name="readme.markdown" Guid="$(MakindaIconsGuid)" ID="$(Markdown)" />
+        <ImageFile Name="README" Guid="$(MakindaIconsGuid)" ID="$(Readme)" />
+        <ImageFile Name="README.md" Guid="$(MakindaIconsGuid)" ID="$(Readme)" />
+        <ImageFile Name="readme.md" Guid="$(MakindaIconsGuid)" ID="$(Readme)" />
+        <ImageFile Name="readme.markdown" Guid="$(MakindaIconsGuid)" ID="$(Readme)" />
         <ImageFile Name="LICENSE" Guid="$(MakindaIconsGuid)" ID="$(License)" />
         <ImageFile Name="LICENSE.md" Guid="$(MakindaIconsGuid)" ID="$(License)" />
         <ImageFile Name="LICENSE.txt" Guid="$(MakindaIconsGuid)" ID="$(License)" />
-        <ImageFile Name="COPYING" Guid="$(MakindaIconsGuid)" ID="$(License)" />
-        <ImageFile Name="NOTICE" Guid="$(MakindaIconsGuid)" ID="$(License)" />
+        <ImageFile Name="COPYING" Guid="$(MakindaIconsGuid)" ID="$(Notice)" />
+        <ImageFile Name="NOTICE" Guid="$(MakindaIconsGuid)" ID="$(Notice)" />
         <ImageFile Extension=".config" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
         <ImageFile Extension=".conf" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
         <ImageFile Extension=".ini" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
         <ImageFile Extension=".cfg" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
         <ImageFile Extension=".properties" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
         <ImageFile Extension=".env" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
-        <ImageFile Name=".env" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
-        <ImageFile Name=".env.local" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
-        <ImageFile Name=".env.development" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
-        <ImageFile Name=".env.production" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
-        <ImageFile Name=".editorconfig" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
-        <ImageFile Name=".gitattributes" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
-        <ImageFile Name=".gitignore" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".env" Guid="$(MakindaIconsGuid)" ID="$(Dotenv)" />
+        <ImageFile Name=".env.local" Guid="$(MakindaIconsGuid)" ID="$(Dotenv)" />
+        <ImageFile Name=".env.development" Guid="$(MakindaIconsGuid)" ID="$(Dotenv)" />
+        <ImageFile Name=".env.production" Guid="$(MakindaIconsGuid)" ID="$(Dotenv)" />
+        <ImageFile Name=".editorconfig" Guid="$(MakindaIconsGuid)" ID="$(Editorconfig)" />
+        <ImageFile Name=".gitattributes" Guid="$(MakindaIconsGuid)" ID="$(Gitattributes)" />
+        <ImageFile Name=".gitignore" Guid="$(MakindaIconsGuid)" ID="$(Gitignore)" />
         <ImageFile Name=".npmrc" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
-        <ImageFile Name=".npmignore" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
+        <ImageFile Name=".npmignore" Guid="$(MakindaIconsGuid)" ID="$(Npmignore)" />
         <ImageFile Name=".prettierrc" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
         <ImageFile Name=".prettierignore" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
         <ImageFile Name=".eslintrc" Guid="$(MakindaIconsGuid)" ID="$(Config)" />
@@ -468,7 +642,7 @@
         <ImageFile Extension=".pptx" Guid="$(MakindaIconsGuid)" ID="$(Ppt)" />
         <ImageFile Extension=".key" Guid="$(MakindaIconsGuid)" ID="$(Ppt)" />
         <ImageFile Extension=".csv" Guid="$(MakindaIconsGuid)" ID="$(Csv)" />
-        <ImageFile Extension=".tsv" Guid="$(MakindaIconsGuid)" ID="$(Csv)" />
+        <ImageFile Extension=".tsv" Guid="$(MakindaIconsGuid)" ID="$(Tsv)" />
         <ImageFile Extension=".txt" Guid="$(MakindaIconsGuid)" ID="$(Txt)" />
         <ImageFile Extension=".log" Guid="$(MakindaIconsGuid)" ID="$(Txt)" />
         <ImageFile Extension=".png" Guid="$(MakindaIconsGuid)" ID="$(Image)" />
@@ -502,10 +676,10 @@
         <ImageFile Extension=".7z" Guid="$(MakindaIconsGuid)" ID="$(Archive)" />
         <ImageFile Extension=".bz2" Guid="$(MakindaIconsGuid)" ID="$(Archive)" />
         <ImageFile Extension=".xz" Guid="$(MakindaIconsGuid)" ID="$(Archive)" />
-        <ImageFile Extension=".sql" Guid="$(MakindaIconsGuid)" ID="$(Database)" />
+        <ImageFile Extension=".sql" Guid="$(MakindaIconsGuid)" ID="$(Sql)" />
         <ImageFile Extension=".db" Guid="$(MakindaIconsGuid)" ID="$(Database)" />
-        <ImageFile Extension=".sqlite" Guid="$(MakindaIconsGuid)" ID="$(Database)" />
-        <ImageFile Extension=".sqlite3" Guid="$(MakindaIconsGuid)" ID="$(Database)" />
+        <ImageFile Extension=".sqlite" Guid="$(MakindaIconsGuid)" ID="$(Sql)" />
+        <ImageFile Extension=".sqlite3" Guid="$(MakindaIconsGuid)" ID="$(Sql)" />
         <ImageFile Name="FUNDING.yml" Guid="$(MakindaIconsGuid)" ID="$(Github)" />
         <ImageFile Name="CODEOWNERS" Guid="$(MakindaIconsGuid)" ID="$(Github)" />
         <ImageFile Name="PULL_REQUEST_TEMPLATE.md" Guid="$(MakindaIconsGuid)" ID="$(Github)" />
@@ -521,5 +695,20 @@
         <ImageFile Name="bun.lockb" Guid="$(MakindaIconsGuid)" ID="$(Lock)" />
         <ImageFile Name="composer.lock" Guid="$(MakindaIconsGuid)" ID="$(Lock)" />
         <ImageFile Name="poetry.lock" Guid="$(MakindaIconsGuid)" ID="$(Lock)" />
+        <ImageFile Name="CHANGELOG" Guid="$(MakindaIconsGuid)" ID="$(Changelog)" />
+        <ImageFile Name="CHANGELOG.md" Guid="$(MakindaIconsGuid)" ID="$(Changelog)" />
+        <ImageFile Name="AUTHORS" Guid="$(MakindaIconsGuid)" ID="$(Authors)" />
+        <ImageFile Name="AUTHORS.md" Guid="$(MakindaIconsGuid)" ID="$(Authors)" />
+        <ImageFile Name="CONTRIBUTING" Guid="$(MakindaIconsGuid)" ID="$(Contributing)" />
+        <ImageFile Name="CONTRIBUTING.md" Guid="$(MakindaIconsGuid)" ID="$(Contributing)" />
+        <ImageFile Name="CODE_OF_CONDUCT.md" Guid="$(MakindaIconsGuid)" ID="$(CodeOfConduct)" />
+        <ImageFile Name="SECURITY.md" Guid="$(MakindaIconsGuid)" ID="$(Security)" />
+        <ImageFile Name="TODO" Guid="$(MakindaIconsGuid)" ID="$(Todo)" />
+        <ImageFile Name="TODO.md" Guid="$(MakindaIconsGuid)" ID="$(Todo)" />
+        <ImageFile Name="next.config.js" Guid="$(MakindaIconsGuid)" ID="$(Next)" />
+        <ImageFile Name="next.config.ts" Guid="$(MakindaIconsGuid)" ID="$(Next)" />
+        <ImageFile Name="next.config.mjs" Guid="$(MakindaIconsGuid)" ID="$(Next)" />
+        <ImageFile Extension=".dart" Guid="$(MakindaIconsGuid)" ID="$(Dart)" />
+        <ImageFile Extension=".nu" Guid="$(MakindaIconsGuid)" ID="$(Nushell)" />
     </ImageFiles>
 </ImageManifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda svg</string>
+    <key>scope</key>
+    <string>text.xml.svg</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.svg</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_svg</string>
+    </dict>
+    <key>uuid</key>
+    <string>865EDF46-9BF0-47E8-83B9-FEE83B3D21B3</string>
+</dict>
+</plist>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda audio</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.mp3</string>
+        <string>*.wav</string>
+        <string>*.ogg</string>
+        <string>*.flac</string>
+        <string>*.m4a</string>
+        <string>*.aac</string>
+        <string>*.wma</string>
+        <string>*.aiff</string>
+        <string>*.opus</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_audio</string>
+    </dict>
+    <key>uuid</key>
+    <string>AEF6E0CB-7EFA-4D6B-8C0B-EC397E1AC677</string>
+</dict>
+</plist>

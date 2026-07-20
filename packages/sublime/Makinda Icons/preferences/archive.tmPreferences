@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda archive</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.zip</string>
+        <string>*.tar</string>
+        <string>*.gz</string>
+        <string>*.tgz</string>
+        <string>*.tar.gz</string>
+        <string>*.tar.bz2</string>
+        <string>*.rar</string>
+        <string>*.7z</string>
+        <string>*.bz2</string>
+        <string>*.xz</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_archive</string>
+    </dict>
+    <key>uuid</key>
+    <string>166FD326-2064-407C-9F30-7C66D31F1422</string>
+</dict>
+</plist>

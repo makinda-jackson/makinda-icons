@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda gif</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.gif</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_gif</string>
+    </dict>
+    <key>uuid</key>
+    <string>DC8456B3-7432-40F2-8BC7-187D53B60F45</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda csv</string>
+    <key>scope</key>
+    <string>text.plain.csv</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.csv</string>
+        <string>*.tsv</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_csv</string>
+    </dict>
+    <key>uuid</key>
+    <string>DDF5157F-A4D6-40DF-922B-1B7ABF8BB551</string>
+</dict>
+</plist>
