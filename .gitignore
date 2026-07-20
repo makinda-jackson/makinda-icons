@@ -2,3 +2,7 @@ node_modules/
 *.vsix
 .DS_Store
 .vscode-test/
+
+# JetBrains Gradle Plugin cache
+.intellijPlatform/
+packages/jetbrains/.intellijPlatform/

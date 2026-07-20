@@ -25,6 +25,7 @@ dependencies {
         // 2023.3 = IC-233 baseline (covers all current JetBrains IDEs)
         intellijIdeaCommunity("2023.3")
         instrumentationTools()
+        pluginVerifier()
     }
 }
 

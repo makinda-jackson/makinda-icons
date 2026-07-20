@@ -3,16 +3,15 @@ name: build
 on:
   push:
     branches: [main]
+    tags:
+      - "vscode/v*"
   pull_request:
     branches: [main]
 
 jobs:
   build:
+    name: Build & validate
     runs-on: ubuntu-latest
-    # The upstream source tree isn't checked into the repo. Without it,
-    # only the validation steps that touch `themes/` and the existing
-    # generated assets can run. The matrix targets are exercised in the
-    # `package` job below using a stub fixture if ICONS_FIXTURE is set.
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -21,8 +20,6 @@ jobs:
           cache: npm
       - run: npm ci
 
-      # Sanity-check the manifest + theme JSON parsers without needing
-      # access to a proprietary upstream SVG library.
       - name: Validate manifest
         run: node -e "import('./scripts/manifest.mjs').then(m => { if (!Array.isArray(m.fileIcons)) process.exit(1); console.log('manifest ok:', m.fileIcons.length, 'file icons'); })"
 
@@ -31,7 +28,7 @@ jobs:
           node -e "JSON.parse(require('fs').readFileSync('themes/makinda-file-icon-theme.solid.json','utf8'))"
           node -e "JSON.parse(require('fs').readFileSync('themes/makinda-product-icon-theme.solid.json','utf8'))"
 
-      - name: vsce package smoke test
+      - name: Package extension
         run: npx --yes @vscode/vsce package --no-dependencies --out makinda-icons.ci.vsix
 
       - uses: actions/upload-artifact@v4
@@ -39,3 +36,27 @@ jobs:
           name: vsix
           path: makinda-icons.ci.vsix
           if-no-files-found: error
+
+  publish:
+    name: Publish to VS Code Marketplace
+    needs: build
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/vscode/v')
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      - name: Publish to VS Code Marketplace
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: npx --yes @vscode/vsce publish --no-dependencies --pat "$VSCE_PAT"
+
+      - name: Publish to Open VSX Registry
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+        run: npx --yes ovsx publish --no-dependencies --pat "$OVSX_PAT"
+        continue-on-error: true
