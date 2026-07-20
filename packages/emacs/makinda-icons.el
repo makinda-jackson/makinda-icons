@@ -1,4 +1,4 @@
-;;; makinda-icons.el --- Makinda file icons for Emacs -*- lexical-binding: t; -*-
+;;; makinda-icons.el --- Makinda file icons for nerd-icons.el -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2026 Makinda Jackson
 
@@ -145,8 +145,7 @@
     ("todo" . ("" . "#f1c75b"))
     ("next" . ("" . "#8b949e"))
     ("javascript" . ("" . "#f1c75b"))
-    ("typescript" . ("" . "#5aa6ff"))
-    )
+    ("typescript" . ("" . "#5aa6ff")))
   "Alist of (NAME . (GLYPH . HEX-COLOR)).
 NAME matches the canonical icon id from scripts/manifest.mjs.")
 
@@ -294,17 +293,12 @@ color from `makinda-icons--glyphs` is used as the foreground."
     ("yml" makinda-icons--render "yaml")
     ("zip" makinda-icons--render "archive")
     ("zsh" makinda-icons--render "zsh")
-    
     ("dart" makinda-icons--render "dart")
-    
     ("nu" makinda-icons--render "nushell")
-    
     ("bin" makinda-icons--render "binary")
-    
     ("exe" makinda-icons--render "binary")
-    
-    ("dll" makinda-icons--render "binary")
-    )  "Extension → Makinda icon spec.  Same shape as
+    ("dll" makinda-icons--render "binary"))
+  "Extension → Makinda icon spec.  Same shape as
 `nerd-icons-extension-icon-alist` so entries can be pushed there directly.")
 
 (defconst makinda-icons-regexp-icon-alist
@@ -364,8 +358,7 @@ color from `makinda-icons--glyphs` is used as the foreground."
     ("\\`setup\\.py\\'" makinda-icons--render "python")
     ("\\`tsconfig\\.base\\.json\\'" makinda-icons--render "json")
     ("\\`tsconfig\\.json\\'" makinda-icons--render "json")
-    ("\\`yarn\\.lock\\'" makinda-icons--render "lock")
-    )
+    ("\\`yarn\\.lock\\'" makinda-icons--render "lock"))
   "Filename regex → Makinda icon spec.  Same shape as
 `nerd-icons-regexp-icon-alist`.  Anchored to the full filename.")
 
