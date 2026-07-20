@@ -234,6 +234,161 @@ export const fileIcons = [
         src: "Files Folders/file-locked.svg",
         fileNames: ["yarn.lock", "pnpm-lock.yaml", "bun.lockb", "composer.lock", "poetry.lock"]
     },
+
+    // Additional languages
+    { name: "dart", src: "Programming Language/dart.svg", extensions: ["dart"], languageIds: ["dart"] },
+    { name: "javascript", src: "Brand Logo/java-script.svg" },
+    { name: "typescript", src: "Brand Logo/typescript-01.svg" },
+    {
+        name: "bash",
+        src: "Programming Language/command-line.svg",
+        extensions: ["bash"],
+        fileNames: [".bash_profile", ".bashrc", ".bash_history", ".bash_logout"],
+        languageIds: ["shellscript"]
+    },
+    {
+        name: "zsh",
+        src: "Programming Language/command-line.svg",
+        extensions: ["zsh"],
+        fileNames: [".zshrc", ".zprofile", ".zshenv", ".zsh_history", ".zsh_profile", ".zlogin", ".zlogout"]
+    },
+    {
+        name: "fish",
+        src: "Programming Language/command-line.svg",
+        extensions: ["fish"],
+        fileNames: ["config.fish"]
+    },
+    {
+        name: "powershell",
+        src: "Programming Language/code.svg",
+        extensions: ["ps1", "psm1", "psd1", "psx"],
+        languageIds: ["powershell"]
+    },
+    {
+        name: "nushell",
+        src: "Programming Language/code.svg",
+        extensions: ["nu"],
+        languageIds: ["nushell"]
+    },
+    {
+        name: "batch",
+        src: "Programming Language/command-line.svg",
+        extensions: ["bat", "cmd"],
+        languageIds: ["bat"]
+    },
+    {
+        name: "sql",
+        src: "Programming Language/sql.svg",
+        extensions: ["sql"],
+        languageIds: ["sql"]
+    },
+    {
+        name: "toml",
+        src: "Programming Language/binary-code.svg",
+        extensions: ["toml"],
+        fileNames: [".cargo/config.toml", "rust-toolchain.toml"],
+        languageIds: ["toml"]
+    },
+    { name: "tsv", src: "Files Folders/csv-01.svg", extensions: ["tsv"] },
+    {
+        name: "binary",
+        src: "Files Folders/binary-file.svg",
+        extensions: ["exe", "dll", "so", "bin", "wasm", "o"]
+    },
+
+    // Config / dotfiles with dedicated icons
+    {
+        name: "env",
+        src: "Settings/setting-01.svg",
+        extensions: ["env"]
+    },
+    {
+        name: "dotenv",
+        src: "Settings/setting-01.svg",
+        fileNames: [".env", ".env.local", ".env.development", ".env.production",
+            ".env.test", ".env.staging", ".env.example", ".env.sample"]
+    },
+    {
+        name: "editorconfig",
+        src: "Settings/setting-01.svg",
+        fileNames: [".editorconfig"]
+    },
+    {
+        name: "gitignore",
+        src: "Files Folders/file-git.svg",
+        fileNames: [".gitignore", ".gitignore_global"]
+    },
+    {
+        name: "gitattributes",
+        src: "Files Folders/file-git.svg",
+        fileNames: [".gitattributes"]
+    },
+    {
+        name: "gitmodules",
+        src: "Files Folders/file-git.svg",
+        fileNames: [".gitmodules"]
+    },
+    {
+        name: "npmignore",
+        src: "Files Folders/file-security.svg",
+        fileNames: [".npmignore"]
+    },
+
+    // Documentation / community files
+    {
+        name: "readme",
+        src: "Files Folders/scroll.svg",
+        fileNames: ["readme", "readme.md", "readme.txt", "readme.markdown",
+            "readme.rst", "readme.adoc"]
+    },
+    {
+        name: "changelog",
+        src: "Files Folders/file-info.svg",
+        fileNames: ["changelog", "changelog.md", "changelog.txt",
+            "changes", "changes.md", "history.md", "history.txt",
+            "releasenotes.md", "release_notes.md"]
+    },
+    {
+        name: "notice",
+        src: "Files Folders/file-info.svg",
+        fileNames: ["notice", "notice.md", "notice.txt"]
+    },
+    {
+        name: "authors",
+        src: "Users/user-edit-01.svg",
+        fileNames: ["authors", "authors.md", "authors.txt", "maintainers",
+            "maintainers.md", "contributors.md"]
+    },
+    {
+        name: "contributing",
+        src: "Users/user-add-01.svg",
+        fileNames: ["contributing", "contributing.md", "contributing.txt",
+            "contribution.md"]
+    },
+    {
+        name: "code-of-conduct",
+        src: "Users/group.svg",
+        fileNames: ["code_of_conduct", "code-of-conduct.md", "code_of_conduct.md",
+            "code_of_conduct.txt"]
+    },
+    {
+        name: "security",
+        src: "Security/shield-01.svg",
+        fileNames: ["security", "security.md", "security.txt"]
+    },
+    {
+        name: "todo",
+        src: "Note Task/task-01.svg",
+        fileNames: ["todo", "todo.md", "todo.txt", "tasks.md"]
+    },
+
+    // Framework config
+    {
+        name: "next",
+        src: "Brand Logo/next-js.svg",
+        fileNames: ["next.config.js", "next.config.ts", "next.config.mjs", "next.config.cjs"]
+    },
+
     // Folder variants (each gets a `-open` companion below)
     { name: "folder-shared", src: "Files Folders/folder-shared-01.svg" },
     { name: "folder-cloud", src: "Files Folders/folder-cloud.svg" },
@@ -247,16 +402,35 @@ export const fileIcons = [
     { name: "folder-library", src: "Files Folders/folder-library.svg" },
     { name: "folder-management", src: "Files Folders/folder-management.svg" },
     { name: "folder-code", src: "Programming Language/code-folder.svg" },
+    // New specific folder variants
+    { name: "folder-src", src: "Files Folders/folder-code.svg" },
+    { name: "folder-app", src: "Files Folders/folder-mobile.svg" },
+    { name: "folder-pages", src: "Files Folders/folder-file.svg" },
+    { name: "folder-routes", src: "Files Folders/folder-network.svg" },
+    { name: "folder-components", src: "Files Folders/folder-attachment.svg" },
+    { name: "folder-scripts", src: "Files Folders/folder-code.svg" },
+    { name: "folder-assets", src: "Files Folders/folder-add.svg" },
+    { name: "folder-images", src: "Files Folders/folder-video.svg" },
+    { name: "folder-fonts", src: "Files Folders/folder-favourite.svg" },
+    { name: "folder-icons", src: "Files Folders/folder-star.svg" },
+    { name: "folder-themes", src: "Files Folders/folder-settings.svg" },
+    { name: "folder-tests", src: "Files Folders/folder-search.svg" },
+    { name: "folder-coverage", src: "Files Folders/folder-check.svg" },
+    { name: "folder-docs", src: "Files Folders/folder-library.svg" },
+    { name: "folder-public", src: "Files Folders/folder-shared.svg" },
+    { name: "folder-styles", src: "Edit Formatting/colors.svg" },
+    { name: "folder-root", src: "Files Folders/folder-01.svg" },
+    { name: "folder-cache", src: "Files Folders/folder-zip.svg" },
 ];
 
 // Folder name → icon mapping (closed). The build also generates an `-open`
 // variant by reusing `folder-open.svg` unless an explicit override is added.
 export const folderNames = {
-    src: "folder-code",
-    app: "folder-code",
-    pages: "folder-code",
-    routes: "folder-code",
-    components: "folder-code",
+    src: "folder-src",
+    app: "folder-app",
+    pages: "folder-pages",
+    routes: "folder-routes",
+    components: "folder-components",
     hooks: "folder-code",
     utils: "folder-code",
     lib: "folder-library",
@@ -269,29 +443,35 @@ export const folderNames = {
     context: "folder-management",
     providers: "folder-management",
     layouts: "folder-code",
-    styles: "folder-favourite",
-    public: "folder-shared",
-    static: "folder-shared",
-    assets: "folder-favourite",
-    images: "folder-video",
-    fonts: "folder-favourite",
-    icons: "folder-favourite",
-    themes: "folder-favourite",
+    styles: "folder-styles",
+    css: "folder-styles",
+    sass: "folder-styles",
+    scss: "folder-styles",
+    public: "folder-public",
+    static: "folder-public",
+    assets: "folder-assets",
+    images: "folder-images",
+    img: "folder-images",
+    media: "folder-images",
+    fonts: "folder-fonts",
+    icons: "folder-icons",
+    themes: "folder-themes",
     locales: "folder-shared",
     i18n: "folder-shared",
     config: "folder-management",
-    scripts: "folder-code",
+    scripts: "folder-scripts",
     tools: "folder-management",
-    test: "folder-search",
-    tests: "folder-search",
-    __tests__: "folder-search",
-    spec: "folder-search",
-    e2e: "folder-search",
-    mocks: "folder-search",
-    fixtures: "folder-search",
+    test: "folder-tests",
+    tests: "folder-tests",
+    __tests__: "folder-tests",
+    spec: "folder-tests",
+    e2e: "folder-tests",
+    mocks: "folder-tests",
+    fixtures: "folder-tests",
     types: "folder-code",
     typings: "folder-code",
-    docs: "folder-library",
+    docs: "folder-docs",
+    documentation: "folder-docs",
     examples: "folder-library",
     demo: "folder-library",
     controllers: "folder-code",
@@ -304,9 +484,9 @@ export const folderNames = {
     dist: "folder-zip",
     build: "folder-zip",
     out: "folder-zip",
-    coverage: "folder-search",
-    cache: "folder-zip",
-    ".cache": "folder-zip",
+    coverage: "folder-coverage",
+    cache: "folder-cache",
+    ".cache": "folder-cache",
     ".git": "folder-locked",
     ".github": "folder-shared",
     ".vscode": "folder-management",
