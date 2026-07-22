@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda Excel</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.xls</string>
+        <string>*.xlsx</string>
+        <string>*.xlsm</string>
+        <string>*.ods</string>
+        <string>*.numbers</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_excel</string>
+    </dict>
+    <key>uuid</key>
+    <string>E09ADA12-E5FB-40CF-BF76-AA73CD9FB117</string>
+</dict>
+</plist>

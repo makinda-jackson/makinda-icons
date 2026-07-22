@@ -92,6 +92,31 @@ class MakindaFileIconProvider : FileIconProvider {
         private val ICON_YAML: Icon = load("yaml")
         private val ICON_ZSH: Icon = load("zsh")
 
+        private val ICON_AIFF: Icon = load("aiff")
+        private val ICON_CERTIFICATE: Icon = load("certificate")
+        private val ICON_CONTRACT: Icon = load("contract")
+        private val ICON_EPS: Icon = load("eps")
+        private val ICON_EXCEL: Icon = load("excel")
+        private val ICON_JPG_ICON: Icon = load("jpg-icon")
+        private val ICON_MIDI: Icon = load("midi")
+        private val ICON_MOV_ICON: Icon = load("mov-icon")
+        private val ICON_MP3_ICON: Icon = load("mp3-icon")
+        private val ICON_MP4_ICON: Icon = load("mp4-icon")
+        private val ICON_MUSIC_FILE: Icon = load("music-file")
+        private val ICON_ODF: Icon = load("odf")
+        private val ICON_PNG_ICON: Icon = load("png-icon")
+        private val ICON_POWERPOINT: Icon = load("powerpoint")
+        private val ICON_SHIELD: Icon = load("shield")
+        private val ICON_SVG_ICON: Icon = load("svg-icon")
+        private val ICON_TEX: Icon = load("tex")
+        private val ICON_USER_FILE: Icon = load("user-file")
+        private val ICON_VECTOR: Icon = load("vector")
+        private val ICON_WAV_ICON: Icon = load("wav-icon")
+        private val ICON_WAVEFORM: Icon = load("waveform")
+        private val ICON_WORD: Icon = load("word")
+        private val ICON_XML_ICON: Icon = load("xml-icon")
+        private val ICON_ZIP_ICON: Icon = load("zip-icon")
+
         private val BY_EXT: Map<String, Icon> = mapOf(
         "7z" to ICON_ARCHIVE,
         "aac" to ICON_AUDIO,
@@ -231,6 +256,73 @@ class MakindaFileIconProvider : FileIconProvider {
         "yml" to ICON_YAML,
         "zip" to ICON_ARCHIVE,
         "zsh" to ICON_ZSH,
+        "abc" to ICON_MUSIC_FILE,
+        "ai" to ICON_EPS,
+        "aif" to ICON_AIFF,
+        "aifc" to ICON_AIFF,
+        "aiff" to ICON_AIFF,
+        "bib" to ICON_TEX,
+        "cab" to ICON_ZIP_ICON,
+        "cdr" to ICON_VECTOR,
+        "cer" to ICON_SHIELD,
+        "cls" to ICON_TEX,
+        "csr" to ICON_SHIELD,
+        "crt" to ICON_SHIELD,
+        "der" to ICON_SHIELD,
+        "docm" to ICON_WORD,
+        "dot" to ICON_WORD,
+        "dotx" to ICON_WORD,
+        "eps" to ICON_EPS,
+        "jfif" to ICON_JPG_ICON,
+        "jpe" to ICON_JPG_ICON,
+        "kar" to ICON_MIDI,
+        "lic" to ICON_CERTIFICATE,
+        "license" to ICON_CERTIFICATE,
+        "ltx" to ICON_TEX,
+        "lz" to ICON_ZIP_ICON,
+        "lzma" to ICON_ZIP_ICON,
+        "lzo" to ICON_ZIP_ICON,
+        "m4v" to ICON_MP4_ICON,
+        "mid" to ICON_MIDI,
+        "midi" to ICON_MIDI,
+        "mov" to ICON_MOV_ICON,
+        "mp3" to ICON_MP3_ICON,
+        "mp4" to ICON_MP4_ICON,
+        "musicxml" to ICON_MUSIC_FILE,
+        "mxl" to ICON_MUSIC_FILE,
+        "numbers" to ICON_EXCEL,
+        "odb" to ICON_ODF,
+        "odf" to ICON_ODF,
+        "odg" to ICON_ODF,
+        "odm" to ICON_ODF,
+        "odp" to ICON_POWERPOINT,
+        "ods" to ICON_EXCEL,
+        "oga" to ICON_WAVEFORM,
+        "opus" to ICON_WAVEFORM,
+        "p12" to ICON_SHIELD,
+        "p7b" to ICON_SHIELD,
+        "pem" to ICON_SHIELD,
+        "pfx" to ICON_SHIELD,
+        "png" to ICON_PNG_ICON,
+        "pot" to ICON_POWERPOINT,
+        "potx" to ICON_POWERPOINT,
+        "pps" to ICON_POWERPOINT,
+        "ppsx" to ICON_POWERPOINT,
+        "sk" to ICON_VECTOR,
+        "sk1" to ICON_VECTOR,
+        "spx" to ICON_WAVEFORM,
+        "sty" to ICON_TEX,
+        "svg" to ICON_SVG_ICON,
+        "tex" to ICON_TEX,
+        "vcf" to ICON_USER_FILE,
+        "vcard" to ICON_USER_FILE,
+        "wav" to ICON_WAV_ICON,
+        "wsdl" to ICON_XML_ICON,
+        "xaml" to ICON_XML_ICON,
+        "xls" to ICON_EXCEL,
+        "xlsm" to ICON_EXCEL,
+        "xlsx" to ICON_EXCEL,
+        "xlsm" to ICON_EXCEL,
         )
 
         private val BY_NAME: Map<String, Icon> = mapOf(
@@ -341,6 +433,14 @@ class MakindaFileIconProvider : FileIconProvider {
         "tsconfig.base.json" to ICON_JSON,
         "tsconfig.json" to ICON_JSON,
         "yarn.lock" to ICON_LOCK,
+        "agreement.md" to ICON_CONTRACT,
+        "copying" to ICON_CERTIFICATE,
+        "license" to ICON_CERTIFICATE,
+        "license.md" to ICON_CERTIFICATE,
+        "notice" to ICON_CERTIFICATE,
+        "terms" to ICON_CONTRACT,
+        "terms.md" to ICON_CONTRACT,
+        "terms.txt" to ICON_CONTRACT,
         )
     }
 }

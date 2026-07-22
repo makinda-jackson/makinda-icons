@@ -87,6 +87,30 @@
         <ID Name="Next" Value="1081" />
         <ID Name="Javascript" Value="1082" />
         <ID Name="Typescript" Value="1083" />
+        <ID Name="Word" Value="1084" />
+        <ID Name="Excel" Value="1085" />
+        <ID Name="Powerpoint" Value="1086" />
+        <ID Name="Eps" Value="1087" />
+        <ID Name="Vector" Value="1088" />
+        <ID Name="PngIcon" Value="1089" />
+        <ID Name="JpgIcon" Value="1090" />
+        <ID Name="Midi" Value="1091" />
+        <ID Name="Aiff" Value="1092" />
+        <ID Name="WavIcon" Value="1093" />
+        <ID Name="Mp3Icon" Value="1094" />
+        <ID Name="Waveform" Value="1095" />
+        <ID Name="Mp4Icon" Value="1096" />
+        <ID Name="MovIcon" Value="1097" />
+        <ID Name="ZipIcon" Value="1098" />
+        <ID Name="Tex" Value="1099" />
+        <ID Name="XmlIcon" Value="1100" />
+        <ID Name="Odf" Value="1101" />
+        <ID Name="Shield" Value="1102" />
+        <ID Name="Certificate" Value="1103" />
+        <ID Name="Contract" Value="1104" />
+        <ID Name="UserFile" Value="1105" />
+        <ID Name="MusicFile" Value="1106" />
+        <ID Name="SvgIcon" Value="1107" />
     </Symbols>
     <Images>
         <Image Guid="$(MakindaIconsGuid)" ID="$(File)">
@@ -710,5 +734,77 @@
         <ImageFile Name="next.config.mjs" Guid="$(MakindaIconsGuid)" ID="$(Next)" />
         <ImageFile Extension=".dart" Guid="$(MakindaIconsGuid)" ID="$(Dart)" />
         <ImageFile Extension=".nu" Guid="$(MakindaIconsGuid)" ID="$(Nushell)" />
+        <ImageFile Extension=".docm" Guid="$(MakindaIconsGuid)" ID="$(Word)" />
+        <ImageFile Extension=".dot" Guid="$(MakindaIconsGuid)" ID="$(Word)" />
+        <ImageFile Extension=".dotx" Guid="$(MakindaIconsGuid)" ID="$(Word)" />
+        <ImageFile Extension=".xls" Guid="$(MakindaIconsGuid)" ID="$(Excel)" />
+        <ImageFile Extension=".xlsx" Guid="$(MakindaIconsGuid)" ID="$(Excel)" />
+        <ImageFile Extension=".xlsm" Guid="$(MakindaIconsGuid)" ID="$(Excel)" />
+        <ImageFile Extension=".ods" Guid="$(MakindaIconsGuid)" ID="$(Excel)" />
+        <ImageFile Extension=".numbers" Guid="$(MakindaIconsGuid)" ID="$(Excel)" />
+        <ImageFile Extension=".pps" Guid="$(MakindaIconsGuid)" ID="$(Powerpoint)" />
+        <ImageFile Extension=".ppsx" Guid="$(MakindaIconsGuid)" ID="$(Powerpoint)" />
+        <ImageFile Extension=".pot" Guid="$(MakindaIconsGuid)" ID="$(Powerpoint)" />
+        <ImageFile Extension=".potx" Guid="$(MakindaIconsGuid)" ID="$(Powerpoint)" />
+        <ImageFile Extension=".odp" Guid="$(MakindaIconsGuid)" ID="$(Powerpoint)" />
+        <ImageFile Extension=".eps" Guid="$(MakindaIconsGuid)" ID="$(Eps)" />
+        <ImageFile Extension=".ai" Guid="$(MakindaIconsGuid)" ID="$(Eps)" />
+        <ImageFile Extension=".sk" Guid="$(MakindaIconsGuid)" ID="$(Vector)" />
+        <ImageFile Extension=".sk1" Guid="$(MakindaIconsGuid)" ID="$(Vector)" />
+        <ImageFile Extension=".cdr" Guid="$(MakindaIconsGuid)" ID="$(Vector)" />
+        <ImageFile Extension=".png" Guid="$(MakindaIconsGuid)" ID="$(PngIcon)" />
+        <ImageFile Extension=".jpe" Guid="$(MakindaIconsGuid)" ID="$(JpgIcon)" />
+        <ImageFile Extension=".jfif" Guid="$(MakindaIconsGuid)" ID="$(JpgIcon)" />
+        <ImageFile Extension=".midi" Guid="$(MakindaIconsGuid)" ID="$(Midi)" />
+        <ImageFile Extension=".mid" Guid="$(MakindaIconsGuid)" ID="$(Midi)" />
+        <ImageFile Extension=".kar" Guid="$(MakindaIconsGuid)" ID="$(Midi)" />
+        <ImageFile Extension=".aiff" Guid="$(MakindaIconsGuid)" ID="$(Aiff)" />
+        <ImageFile Extension=".aif" Guid="$(MakindaIconsGuid)" ID="$(Aiff)" />
+        <ImageFile Extension=".aifc" Guid="$(MakindaIconsGuid)" ID="$(Aiff)" />
+        <ImageFile Extension=".wav" Guid="$(MakindaIconsGuid)" ID="$(WavIcon)" />
+        <ImageFile Extension=".mp3" Guid="$(MakindaIconsGuid)" ID="$(Mp3Icon)" />
+        <ImageFile Extension=".opus" Guid="$(MakindaIconsGuid)" ID="$(Waveform)" />
+        <ImageFile Extension=".oga" Guid="$(MakindaIconsGuid)" ID="$(Waveform)" />
+        <ImageFile Extension=".spx" Guid="$(MakindaIconsGuid)" ID="$(Waveform)" />
+        <ImageFile Extension=".mp4" Guid="$(MakindaIconsGuid)" ID="$(Mp4Icon)" />
+        <ImageFile Extension=".m4v" Guid="$(MakindaIconsGuid)" ID="$(Mp4Icon)" />
+        <ImageFile Extension=".mov" Guid="$(MakindaIconsGuid)" ID="$(MovIcon)" />
+        <ImageFile Extension=".cab" Guid="$(MakindaIconsGuid)" ID="$(ZipIcon)" />
+        <ImageFile Extension=".lz" Guid="$(MakindaIconsGuid)" ID="$(ZipIcon)" />
+        <ImageFile Extension=".lzma" Guid="$(MakindaIconsGuid)" ID="$(ZipIcon)" />
+        <ImageFile Extension=".lzo" Guid="$(MakindaIconsGuid)" ID="$(ZipIcon)" />
+        <ImageFile Extension=".tex" Guid="$(MakindaIconsGuid)" ID="$(Tex)" />
+        <ImageFile Extension=".ltx" Guid="$(MakindaIconsGuid)" ID="$(Tex)" />
+        <ImageFile Extension=".sty" Guid="$(MakindaIconsGuid)" ID="$(Tex)" />
+        <ImageFile Extension=".cls" Guid="$(MakindaIconsGuid)" ID="$(Tex)" />
+        <ImageFile Extension=".bib" Guid="$(MakindaIconsGuid)" ID="$(Tex)" />
+        <ImageFile Extension=".xaml" Guid="$(MakindaIconsGuid)" ID="$(XmlIcon)" />
+        <ImageFile Extension=".wsdl" Guid="$(MakindaIconsGuid)" ID="$(XmlIcon)" />
+        <ImageFile Extension=".odb" Guid="$(MakindaIconsGuid)" ID="$(Odf)" />
+        <ImageFile Extension=".odg" Guid="$(MakindaIconsGuid)" ID="$(Odf)" />
+        <ImageFile Extension=".odm" Guid="$(MakindaIconsGuid)" ID="$(Odf)" />
+        <ImageFile Extension=".odf" Guid="$(MakindaIconsGuid)" ID="$(Odf)" />
+        <ImageFile Extension=".pem" Guid="$(MakindaIconsGuid)" ID="$(Shield)" />
+        <ImageFile Extension=".crt" Guid="$(MakindaIconsGuid)" ID="$(Shield)" />
+        <ImageFile Extension=".cer" Guid="$(MakindaIconsGuid)" ID="$(Shield)" />
+        <ImageFile Extension=".p12" Guid="$(MakindaIconsGuid)" ID="$(Shield)" />
+        <ImageFile Extension=".pfx" Guid="$(MakindaIconsGuid)" ID="$(Shield)" />
+        <ImageFile Extension=".p7b" Guid="$(MakindaIconsGuid)" ID="$(Shield)" />
+        <ImageFile Extension=".der" Guid="$(MakindaIconsGuid)" ID="$(Shield)" />
+        <ImageFile Extension=".csr" Guid="$(MakindaIconsGuid)" ID="$(Shield)" />
+        <ImageFile Extension=".lic" Guid="$(MakindaIconsGuid)" ID="$(Certificate)" />
+        <ImageFile Extension=".vcf" Guid="$(MakindaIconsGuid)" ID="$(UserFile)" />
+        <ImageFile Extension=".vcard" Guid="$(MakindaIconsGuid)" ID="$(UserFile)" />
+        <ImageFile Extension=".mxl" Guid="$(MakindaIconsGuid)" ID="$(MusicFile)" />
+        <ImageFile Extension=".musicxml" Guid="$(MakindaIconsGuid)" ID="$(MusicFile)" />
+        <ImageFile Extension=".abc" Guid="$(MakindaIconsGuid)" ID="$(MusicFile)" />
+        <ImageFile Extension=".svg" Guid="$(MakindaIconsGuid)" ID="$(SvgIcon)" />
+        <ImageFile Name="TERMS" Guid="$(MakindaIconsGuid)" ID="$(Contract)" />
+        <ImageFile Name="TERMS.md" Guid="$(MakindaIconsGuid)" ID="$(Contract)" />
+        <ImageFile Name="TERMS.txt" Guid="$(MakindaIconsGuid)" ID="$(Contract)" />
+        <ImageFile Name="AGREEMENT.md" Guid="$(MakindaIconsGuid)" ID="$(Contract)" />
+        <ImageFile Name="LICENSE" Guid="$(MakindaIconsGuid)" ID="$(Certificate)" />
+        <ImageFile Name="COPYING" Guid="$(MakindaIconsGuid)" ID="$(Certificate)" />
+        <ImageFile Name="NOTICE" Guid="$(MakindaIconsGuid)" ID="$(Certificate)" />
     </ImageFiles>
 </ImageManifest>

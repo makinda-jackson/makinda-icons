@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda Waveform</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.opus</string>
+        <string>*.oga</string>
+        <string>*.spx</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_waveform</string>
+    </dict>
+    <key>uuid</key>
+    <string>8361A0F6-D782-4701-9E23-EFC782293DED</string>
+</dict>
+</plist>

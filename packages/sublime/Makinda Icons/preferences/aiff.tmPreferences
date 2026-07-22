@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda Aiff</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.aiff</string>
+        <string>*.aif</string>
+        <string>*.aifc</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_aiff</string>
+    </dict>
+    <key>uuid</key>
+    <string>3B31F4BD-EF95-4F28-A836-723DEA934D91</string>
+</dict>
+</plist>

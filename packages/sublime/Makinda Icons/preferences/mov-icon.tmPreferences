@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda Mov Icon</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.mov</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_mov_icon</string>
+    </dict>
+    <key>uuid</key>
+    <string>74DB64E0-11C3-449B-A7B4-C04E76BA7E9E</string>
+</dict>
+</plist>

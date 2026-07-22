@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda Mp3 Icon</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.mp3</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_mp3_icon</string>
+    </dict>
+    <key>uuid</key>
+    <string>0CCE35D9-B398-4C85-A701-D3D51F75FD91</string>
+</dict>
+</plist>

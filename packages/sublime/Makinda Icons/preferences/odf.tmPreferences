@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda Odf</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.odb</string>
+        <string>*.odg</string>
+        <string>*.odm</string>
+        <string>*.odf</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_odf</string>
+    </dict>
+    <key>uuid</key>
+    <string>9A18C835-9A51-43A9-B348-46048EAC86E7</string>
+</dict>
+</plist>
