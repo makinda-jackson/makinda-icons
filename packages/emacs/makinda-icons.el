@@ -6,7 +6,7 @@
 ;; Assisted-by: Claude:claude-opus-4-7
 ;; Maintainer: Makinda Jackson <hello@makinda.dev>
 ;; URL: https://github.com/makindajack/makinda-icons
-;; Version: 1.2.0
+;; Version: 1.2.1
 ;; Package-Requires: ((emacs "27.1") (nerd-icons "0.1.0"))
 ;; Keywords: faces, icons, files
 
