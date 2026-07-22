@@ -1,127 +1,127 @@
 {
-    "name": "makinda-icons",
-    "displayName": "Makinda Icons",
-    "description": "Multi-style icon themes for VS Code by Makinda Jackson. File icons + product icons.",
-    "version": "1.1.1",
-    "publisher": "makindajack",
-    "icon": "images/icon-dark.png",
-    "galleryBanner": {
-        "color": "#0e0e0f",
-        "theme": "dark"
-    },
-    "license": "SEE LICENSE IN LICENSE.md",
-    "engines": {
-        "vscode": "^1.85.0"
-    },
-    "categories": [
-        "Themes"
+  "name": "makinda-icons",
+  "displayName": "Makinda Icons",
+  "description": "Multi-style icon themes for VS Code by Makinda Jackson. File icons + product icons.",
+  "version": "1.2.0",
+  "publisher": "makindajack",
+  "icon": "images/icon-dark.png",
+  "galleryBanner": {
+    "color": "#0e0e0f",
+    "theme": "dark"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "icons",
+    "icon-theme",
+    "product-icons",
+    "solid",
+    "duotone"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makindajack/makinda-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/makindajack/makinda-icons/issues"
+  },
+  "homepage": "https://github.com/makindajack/makinda-icons#readme",
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "makinda-file-icons-solid",
+        "label": "Makinda Icons (Solid)",
+        "path": "./themes/makinda-file-icon-theme.solid.json"
+      },
+      {
+        "id": "makinda-file-icons-duotone",
+        "label": "Makinda Icons (Duotone)",
+        "path": "./themes/makinda-file-icon-theme.duotone.json"
+      },
+      {
+        "id": "makinda-file-icons-twotone",
+        "label": "Makinda Icons (Twotone)",
+        "path": "./themes/makinda-file-icon-theme.twotone.json"
+      },
+      {
+        "id": "makinda-file-icons-stroke",
+        "label": "Makinda Icons (Stroke)",
+        "path": "./themes/makinda-file-icon-theme.stroke.json"
+      },
+      {
+        "id": "makinda-file-icons-bulk",
+        "label": "Makinda Icons (Bulk)",
+        "path": "./themes/makinda-file-icon-theme.bulk.json"
+      },
+      {
+        "id": "makinda-file-icons-sharp-solid",
+        "label": "Makinda Icons (Sharp Solid)",
+        "path": "./themes/makinda-file-icon-theme.sharp-solid.json"
+      },
+      {
+        "id": "makinda-file-icons-sharp-stroke",
+        "label": "Makinda Icons (Sharp Stroke)",
+        "path": "./themes/makinda-file-icon-theme.sharp-stroke.json"
+      }
     ],
-    "keywords": [
-        "icons",
-        "icon-theme",
-        "product-icons",
-        "solid",
-        "duotone"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/makindajack/makinda-icons.git"
-    },
-    "bugs": {
-        "url": "https://github.com/makindajack/makinda-icons/issues"
-    },
-    "homepage": "https://github.com/makindajack/makinda-icons#readme",
-    "contributes": {
-        "iconThemes": [
-            {
-                "id": "makinda-file-icons-solid",
-                "label": "Makinda Icons (Solid)",
-                "path": "./themes/makinda-file-icon-theme.solid.json"
-            },
-            {
-                "id": "makinda-file-icons-duotone",
-                "label": "Makinda Icons (Duotone)",
-                "path": "./themes/makinda-file-icon-theme.duotone.json"
-            },
-            {
-                "id": "makinda-file-icons-twotone",
-                "label": "Makinda Icons (Twotone)",
-                "path": "./themes/makinda-file-icon-theme.twotone.json"
-            },
-            {
-                "id": "makinda-file-icons-stroke",
-                "label": "Makinda Icons (Stroke)",
-                "path": "./themes/makinda-file-icon-theme.stroke.json"
-            },
-            {
-                "id": "makinda-file-icons-bulk",
-                "label": "Makinda Icons (Bulk)",
-                "path": "./themes/makinda-file-icon-theme.bulk.json"
-            },
-            {
-                "id": "makinda-file-icons-sharp-solid",
-                "label": "Makinda Icons (Sharp Solid)",
-                "path": "./themes/makinda-file-icon-theme.sharp-solid.json"
-            },
-            {
-                "id": "makinda-file-icons-sharp-stroke",
-                "label": "Makinda Icons (Sharp Stroke)",
-                "path": "./themes/makinda-file-icon-theme.sharp-stroke.json"
-            }
-        ],
-        "productIconThemes": [
-            {
-                "id": "makinda-product-icons-solid",
-                "label": "Makinda Product Icons (Solid)",
-                "path": "./themes/makinda-product-icon-theme.solid.json"
-            },
-            {
-                "id": "makinda-product-icons-duotone",
-                "label": "Makinda Product Icons (Duotone)",
-                "path": "./themes/makinda-product-icon-theme.duotone.json"
-            },
-            {
-                "id": "makinda-product-icons-twotone",
-                "label": "Makinda Product Icons (Twotone)",
-                "path": "./themes/makinda-product-icon-theme.twotone.json"
-            },
-            {
-                "id": "makinda-product-icons-stroke",
-                "label": "Makinda Product Icons (Stroke)",
-                "path": "./themes/makinda-product-icon-theme.stroke.json"
-            },
-            {
-                "id": "makinda-product-icons-bulk",
-                "label": "Makinda Product Icons (Bulk)",
-                "path": "./themes/makinda-product-icon-theme.bulk.json"
-            },
-            {
-                "id": "makinda-product-icons-sharp-solid",
-                "label": "Makinda Product Icons (Sharp Solid)",
-                "path": "./themes/makinda-product-icon-theme.sharp-solid.json"
-            },
-            {
-                "id": "makinda-product-icons-sharp-stroke",
-                "label": "Makinda Product Icons (Sharp Stroke)",
-                "path": "./themes/makinda-product-icon-theme.sharp-stroke.json"
-            }
-        ]
-    },
-    "scripts": {
-        "build": "node scripts/build.mjs",
-        "build:clean": "rm -rf icons themes && node scripts/build.mjs",
-        "build:solid": "node scripts/build.mjs --style=solid",
-        "build:duotone": "node scripts/build.mjs --style=duotone",
-        "build:jetbrains": "node scripts/build-jetbrains.mjs",
-        "build:nvim": "node scripts/build-nvim.mjs",
-        "build:emacs": "node scripts/build-emacs.mjs",
-        "build:sublime": "node scripts/build-sublime.mjs",
-        "build:vsfull": "node scripts/build-vsfull.mjs",
-        "build:contact-sheet": "node scripts/build-contact-sheet.mjs",
-        "build:all": "node scripts/build.mjs && node scripts/build-jetbrains.mjs && node scripts/build-nvim.mjs && node scripts/build-emacs.mjs && node scripts/build-sublime.mjs && node scripts/build-vsfull.mjs && node scripts/build-contact-sheet.mjs"
-    },
-    "devDependencies": {
-        "@resvg/resvg-js": "^2.6.2",
-        "fantasticon": "^4.1.0"
-    }
+    "productIconThemes": [
+      {
+        "id": "makinda-product-icons-solid",
+        "label": "Makinda Product Icons (Solid)",
+        "path": "./themes/makinda-product-icon-theme.solid.json"
+      },
+      {
+        "id": "makinda-product-icons-duotone",
+        "label": "Makinda Product Icons (Duotone)",
+        "path": "./themes/makinda-product-icon-theme.duotone.json"
+      },
+      {
+        "id": "makinda-product-icons-twotone",
+        "label": "Makinda Product Icons (Twotone)",
+        "path": "./themes/makinda-product-icon-theme.twotone.json"
+      },
+      {
+        "id": "makinda-product-icons-stroke",
+        "label": "Makinda Product Icons (Stroke)",
+        "path": "./themes/makinda-product-icon-theme.stroke.json"
+      },
+      {
+        "id": "makinda-product-icons-bulk",
+        "label": "Makinda Product Icons (Bulk)",
+        "path": "./themes/makinda-product-icon-theme.bulk.json"
+      },
+      {
+        "id": "makinda-product-icons-sharp-solid",
+        "label": "Makinda Product Icons (Sharp Solid)",
+        "path": "./themes/makinda-product-icon-theme.sharp-solid.json"
+      },
+      {
+        "id": "makinda-product-icons-sharp-stroke",
+        "label": "Makinda Product Icons (Sharp Stroke)",
+        "path": "./themes/makinda-product-icon-theme.sharp-stroke.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:clean": "rm -rf icons themes && node scripts/build.mjs",
+    "build:solid": "node scripts/build.mjs --style=solid",
+    "build:duotone": "node scripts/build.mjs --style=duotone",
+    "build:jetbrains": "node scripts/build-jetbrains.mjs",
+    "build:nvim": "node scripts/build-nvim.mjs",
+    "build:emacs": "node scripts/build-emacs.mjs",
+    "build:sublime": "node scripts/build-sublime.mjs",
+    "build:vsfull": "node scripts/build-vsfull.mjs",
+    "build:contact-sheet": "node scripts/build-contact-sheet.mjs",
+    "build:all": "node scripts/build.mjs && node scripts/build-jetbrains.mjs && node scripts/build-nvim.mjs && node scripts/build-emacs.mjs && node scripts/build-sublime.mjs && node scripts/build-vsfull.mjs && node scripts/build-contact-sheet.mjs"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "fantasticon": "^4.1.0"
+  }
 }
