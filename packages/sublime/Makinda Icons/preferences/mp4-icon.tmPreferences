@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda Mp4 Icon</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.mp4</string>
+        <string>*.m4v</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_mp4_icon</string>
+    </dict>
+    <key>uuid</key>
+    <string>0EE85DA8-DCA3-4694-A878-5782B76CA99C</string>
+</dict>
+</plist>

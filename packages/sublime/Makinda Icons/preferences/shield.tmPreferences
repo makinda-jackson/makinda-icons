@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda Shield</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.pem</string>
+        <string>*.crt</string>
+        <string>*.cer</string>
+        <string>*.p12</string>
+        <string>*.pfx</string>
+        <string>*.p7b</string>
+        <string>*.der</string>
+        <string>*.csr</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_shield</string>
+    </dict>
+    <key>uuid</key>
+    <string>A6B4BD77-D72A-400F-AD23-DA3D6C3A26FF</string>
+</dict>
+</plist>

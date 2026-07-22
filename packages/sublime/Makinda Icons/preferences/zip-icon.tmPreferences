@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda Zip Icon</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.cab</string>
+        <string>*.lz</string>
+        <string>*.lzma</string>
+        <string>*.lzo</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_zip_icon</string>
+    </dict>
+    <key>uuid</key>
+    <string>20446A90-6DB6-40EE-A96E-089675C010CB</string>
+</dict>
+</plist>

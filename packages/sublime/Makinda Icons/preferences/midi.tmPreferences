@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda Midi</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.midi</string>
+        <string>*.mid</string>
+        <string>*.kar</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_midi</string>
+    </dict>
+    <key>uuid</key>
+    <string>934A1CE3-6B18-4528-BC72-73662E607953</string>
+</dict>
+</plist>

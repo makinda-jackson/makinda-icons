@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda Tex</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.tex</string>
+        <string>*.ltx</string>
+        <string>*.sty</string>
+        <string>*.cls</string>
+        <string>*.bib</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_tex</string>
+    </dict>
+    <key>uuid</key>
+    <string>DE4FF702-324A-4E33-BDB1-1C3C660713DB</string>
+</dict>
+</plist>

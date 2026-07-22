@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Makinda User File</string>
+    <key>file_patterns</key>
+    <array>
+        <string>*.vcf</string>
+        <string>*.vcard</string>
+    </array>
+    <key>settings</key>
+    <dict>
+        <key>icon</key>
+        <string>file_type_user_file</string>
+    </dict>
+    <key>uuid</key>
+    <string>66B8A678-6BF6-447F-B7BB-E183CB01ACF0</string>
+</dict>
+</plist>
