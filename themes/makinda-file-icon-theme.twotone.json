@@ -606,6 +606,144 @@
     },
     "_folder_cache_light": {
       "iconPath": "../icons/solid/file-icons/light/folder-cache.svg"
+    },
+    "_word": {
+      "iconPath": "../icons/solid/file-icons/dark/word.svg"
+    },
+    "_word_light": {
+      "iconPath": "../icons/solid/file-icons/light/word.svg"
+    },
+    "_excel": {
+      "iconPath": "../icons/solid/file-icons/dark/excel.svg"
+    },
+    "_excel_light": {
+      "iconPath": "../icons/solid/file-icons/light/excel.svg"
+    },
+    "_powerpoint": {
+      "iconPath": "../icons/solid/file-icons/dark/powerpoint.svg"
+    },
+    "_powerpoint_light": {
+      "iconPath": "../icons/solid/file-icons/light/powerpoint.svg"
+    },
+    "_eps": {
+      "iconPath": "../icons/solid/file-icons/dark/eps.svg"
+    },
+    "_eps_light": {
+      "iconPath": "../icons/solid/file-icons/light/eps.svg"
+    },
+    "_vector": {
+      "iconPath": "../icons/solid/file-icons/dark/vector.svg"
+    },
+    "_vector_light": {
+      "iconPath": "../icons/solid/file-icons/light/vector.svg"
+    },
+    "_png_icon": {
+      "iconPath": "../icons/solid/file-icons/dark/png-icon.svg"
+    },
+    "_png_icon_light": {
+      "iconPath": "../icons/solid/file-icons/light/png-icon.svg"
+    },
+    "_jpg_icon": {
+      "iconPath": "../icons/solid/file-icons/dark/jpg-icon.svg"
+    },
+    "_jpg_icon_light": {
+      "iconPath": "../icons/solid/file-icons/light/jpg-icon.svg"
+    },
+    "_midi": {
+      "iconPath": "../icons/solid/file-icons/dark/midi.svg"
+    },
+    "_midi_light": {
+      "iconPath": "../icons/solid/file-icons/light/midi.svg"
+    },
+    "_aiff": {
+      "iconPath": "../icons/solid/file-icons/dark/aiff.svg"
+    },
+    "_aiff_light": {
+      "iconPath": "../icons/solid/file-icons/light/aiff.svg"
+    },
+    "_wav_icon": {
+      "iconPath": "../icons/solid/file-icons/dark/wav-icon.svg"
+    },
+    "_wav_icon_light": {
+      "iconPath": "../icons/solid/file-icons/light/wav-icon.svg"
+    },
+    "_mp3_icon": {
+      "iconPath": "../icons/solid/file-icons/dark/mp3-icon.svg"
+    },
+    "_mp3_icon_light": {
+      "iconPath": "../icons/solid/file-icons/light/mp3-icon.svg"
+    },
+    "_waveform": {
+      "iconPath": "../icons/solid/file-icons/dark/waveform.svg"
+    },
+    "_waveform_light": {
+      "iconPath": "../icons/solid/file-icons/light/waveform.svg"
+    },
+    "_mp4_icon": {
+      "iconPath": "../icons/solid/file-icons/dark/mp4-icon.svg"
+    },
+    "_mp4_icon_light": {
+      "iconPath": "../icons/solid/file-icons/light/mp4-icon.svg"
+    },
+    "_mov_icon": {
+      "iconPath": "../icons/solid/file-icons/dark/mov-icon.svg"
+    },
+    "_mov_icon_light": {
+      "iconPath": "../icons/solid/file-icons/light/mov-icon.svg"
+    },
+    "_zip_icon": {
+      "iconPath": "../icons/solid/file-icons/dark/zip-icon.svg"
+    },
+    "_zip_icon_light": {
+      "iconPath": "../icons/solid/file-icons/light/zip-icon.svg"
+    },
+    "_tex": {
+      "iconPath": "../icons/solid/file-icons/dark/tex.svg"
+    },
+    "_tex_light": {
+      "iconPath": "../icons/solid/file-icons/light/tex.svg"
+    },
+    "_xml_icon": {
+      "iconPath": "../icons/solid/file-icons/dark/xml-icon.svg"
+    },
+    "_xml_icon_light": {
+      "iconPath": "../icons/solid/file-icons/light/xml-icon.svg"
+    },
+    "_odf": {
+      "iconPath": "../icons/solid/file-icons/dark/odf.svg"
+    },
+    "_odf_light": {
+      "iconPath": "../icons/solid/file-icons/light/odf.svg"
+    },
+    "_shield": {
+      "iconPath": "../icons/solid/file-icons/dark/shield.svg"
+    },
+    "_shield_light": {
+      "iconPath": "../icons/solid/file-icons/light/shield.svg"
+    },
+    "_certificate": {
+      "iconPath": "../icons/solid/file-icons/dark/certificate.svg"
+    },
+    "_certificate_light": {
+      "iconPath": "../icons/solid/file-icons/light/certificate.svg"
+    },
+    "_contract": {
+      "iconPath": "../icons/solid/file-icons/dark/contract.svg"
+    },
+    "_contract_light": {
+      "iconPath": "../icons/solid/file-icons/light/contract.svg"
+    },
+    "_user_file": {
+      "iconPath": "../icons/solid/file-icons/dark/user-file.svg"
+    },
+    "_user_file_light": {
+      "iconPath": "../icons/solid/file-icons/light/user-file.svg"
+    },
+    "_music_file": {
+      "iconPath": "../icons/solid/file-icons/dark/music-file.svg"
+    },
+    "_music_file_light": {
+      "iconPath": "../icons/solid/file-icons/light/music-file.svg"
     }
   },
   "file": "_file",
@@ -751,7 +889,67 @@
     "so": "_binary",
     "bin": "_binary",
     "wasm": "_binary",
-    "o": "_binary"
+    "o": "_binary",
+    "docm": "_word",
+    "dot": "_word",
+    "dotx": "_word",
+    "xls": "_excel",
+    "xlsx": "_excel",
+    "xlsm": "_excel",
+    "ods": "_excel",
+    "numbers": "_excel",
+    "pps": "_powerpoint",
+    "ppsx": "_powerpoint",
+    "pot": "_powerpoint",
+    "potx": "_powerpoint",
+    "odp": "_powerpoint",
+    "eps": "_eps",
+    "ai": "_eps",
+    "sk": "_vector",
+    "sk1": "_vector",
+    "cdr": "_vector",
+    "jpe": "_jpg_icon",
+    "jfif": "_jpg_icon",
+    "midi": "_midi",
+    "mid": "_midi",
+    "kar": "_midi",
+    "aiff": "_aiff",
+    "aif": "_aiff",
+    "aifc": "_aiff",
+    "opus": "_waveform",
+    "oga": "_waveform",
+    "spx": "_waveform",
+    "m4v": "_mp4_icon",
+    "cab": "_zip_icon",
+    "lz": "_zip_icon",
+    "lzma": "_zip_icon",
+    "lzo": "_zip_icon",
+    "tex": "_tex",
+    "ltx": "_tex",
+    "sty": "_tex",
+    "cls": "_tex",
+    "bib": "_tex",
+    "xaml": "_xml_icon",
+    "wsdl": "_xml_icon",
+    "odb": "_odf",
+    "odg": "_odf",
+    "odm": "_odf",
+    "odf": "_odf",
+    "pem": "_shield",
+    "crt": "_shield",
+    "cer": "_shield",
+    "p12": "_shield",
+    "pfx": "_shield",
+    "p7b": "_shield",
+    "der": "_shield",
+    "csr": "_shield",
+    "license": "_certificate",
+    "lic": "_certificate",
+    "vcf": "_user_file",
+    "vcard": "_user_file",
+    "mxl": "_music_file",
+    "musicxml": "_music_file",
+    "abc": "_music_file"
   },
   "fileNames": {
     "requirements.txt": "_python",
@@ -861,7 +1059,15 @@
     ".env.example": "_dotenv",
     ".env.sample": "_dotenv",
     ".env.staging": "_dotenv",
-    ".env.test": "_dotenv"
+    ".env.test": "_dotenv",
+    "TERMS": "_contract",
+    "TERMS.md": "_contract",
+    "TERMS.txt": "_contract",
+    "AGREEMENT.md": "_contract",
+    "LICENSE": "_certificate",
+    "LICENSE.md": "_certificate",
+    "COPYING": "_certificate",
+    "NOTICE": "_certificate"
   },
   "languageIds": {
     "coffeescript": "_code",
@@ -905,7 +1111,8 @@
     "properties": "_config",
     "dotenv": "_dotenv",
     "dart": "_dart",
-    "nushell": "_nushell"
+    "nushell": "_nushell",
+    "latex": "_tex"
   },
   "folderNames": {
     "src": "_folder_src",
@@ -1136,7 +1343,7 @@
       "tsv": "_csv_light",
       "txt": "_txt_light",
       "log": "_txt_light",
-      "png": "_image_light",
+      "png": "_png_icon_light",
       "jpg": "_image_light",
       "jpeg": "_image_light",
       "webp": "_image_light",
@@ -1147,14 +1354,14 @@
       "heic": "_image_light",
       "svg": "_svg_light",
       "gif": "_gif_light",
-      "mp4": "_video_light",
-      "mov": "_video_light",
+      "mp4": "_mp4_icon_light",
+      "mov": "_mov_icon_light",
       "webm": "_video_light",
       "mkv": "_video_light",
       "avi": "_video_light",
       "flv": "_video_light",
-      "mp3": "_audio_light",
-      "wav": "_audio_light",
+      "mp3": "_mp3_icon_light",
+      "wav": "_wav_icon_light",
       "flac": "_audio_light",
       "ogg": "_audio_light",
       "aac": "_audio_light",
@@ -1193,7 +1400,67 @@
       "so": "_binary_light",
       "bin": "_binary_light",
       "wasm": "_binary_light",
-      "o": "_binary_light"
+      "o": "_binary_light",
+      "docm": "_word_light",
+      "dot": "_word_light",
+      "dotx": "_word_light",
+      "xls": "_excel_light",
+      "xlsx": "_excel_light",
+      "xlsm": "_excel_light",
+      "ods": "_excel_light",
+      "numbers": "_excel_light",
+      "pps": "_powerpoint_light",
+      "ppsx": "_powerpoint_light",
+      "pot": "_powerpoint_light",
+      "potx": "_powerpoint_light",
+      "odp": "_powerpoint_light",
+      "eps": "_eps_light",
+      "ai": "_eps_light",
+      "sk": "_vector_light",
+      "sk1": "_vector_light",
+      "cdr": "_vector_light",
+      "jpe": "_jpg_icon_light",
+      "jfif": "_jpg_icon_light",
+      "midi": "_midi_light",
+      "mid": "_midi_light",
+      "kar": "_midi_light",
+      "aiff": "_aiff_light",
+      "aif": "_aiff_light",
+      "aifc": "_aiff_light",
+      "opus": "_waveform_light",
+      "oga": "_waveform_light",
+      "spx": "_waveform_light",
+      "m4v": "_mp4_icon_light",
+      "cab": "_zip_icon_light",
+      "lz": "_zip_icon_light",
+      "lzma": "_zip_icon_light",
+      "lzo": "_zip_icon_light",
+      "tex": "_tex_light",
+      "ltx": "_tex_light",
+      "sty": "_tex_light",
+      "cls": "_tex_light",
+      "bib": "_tex_light",
+      "xaml": "_xml_icon_light",
+      "wsdl": "_xml_icon_light",
+      "odb": "_odf_light",
+      "odg": "_odf_light",
+      "odm": "_odf_light",
+      "odf": "_odf_light",
+      "pem": "_shield_light",
+      "crt": "_shield_light",
+      "cer": "_shield_light",
+      "p12": "_shield_light",
+      "pfx": "_shield_light",
+      "p7b": "_shield_light",
+      "der": "_shield_light",
+      "csr": "_shield_light",
+      "license": "_certificate_light",
+      "lic": "_certificate_light",
+      "vcf": "_user_file_light",
+      "vcard": "_user_file_light",
+      "mxl": "_music_file_light",
+      "musicxml": "_music_file_light",
+      "abc": "_music_file_light"
     },
     "fileNames": {
       "requirements.txt": "_python_light",
@@ -1304,7 +1571,15 @@
       "release_notes.md": "_changelog_light",
       "releasenotes.md": "_changelog_light",
       "security.txt": "_security_light",
-      "todo.txt": "_todo_light"
+      "todo.txt": "_todo_light",
+      "TERMS": "_contract_light",
+      "TERMS.md": "_contract_light",
+      "TERMS.txt": "_contract_light",
+      "AGREEMENT.md": "_contract_light",
+      "LICENSE": "_certificate_light",
+      "LICENSE.md": "_certificate_light",
+      "COPYING": "_certificate_light",
+      "NOTICE": "_certificate_light"
     },
     "languageIds": {
       "coffeescript": "_code_light",
@@ -1348,7 +1623,8 @@
       "properties": "_config_light",
       "dotenv": "_dotenv_light",
       "dart": "_dart_light",
-      "nushell": "_nushell_light"
+      "nushell": "_nushell_light",
+      "latex": "_tex_light"
     },
     "folderNames": {
       "src": "_folder_code_light",
