@@ -1298,7 +1298,13 @@
       "next.config.js": "_next_light",
       "next.config.ts": "_next_light",
       "next.config.mjs": "_next_light",
-      "next.config.cjs": "_next_light"
+      "next.config.cjs": "_next_light",
+      "code_of_conduct.txt": "_code_of_conduct_light",
+      "contribution.md": "_contributing_light",
+      "release_notes.md": "_changelog_light",
+      "releasenotes.md": "_changelog_light",
+      "security.txt": "_security_light",
+      "todo.txt": "_todo_light"
     },
     "languageIds": {
       "coffeescript": "_code_light",
