@@ -7,9 +7,9 @@ re-run `npm run build:vsfull` after changing
 ## What's here
 
 - `extension.vsixmanifest` — VSIX 2.0 manifest, targets VS 2022 (17.0)+
-- `MakindaIcons.imagemanifest` — VS Image Service map (55 monikers,
-  127 extension bindings,
-  57 filename bindings)
+- `MakindaIcons.imagemanifest` — VS Image Service map (0 monikers,
+  0 extension bindings,
+  0 filename bindings)
 - `Resources/<name>.<size>.png` — 16/24/32 px raster variants per icon
 - `[Content_Types].xml` — required by the VSIX zip format
 
